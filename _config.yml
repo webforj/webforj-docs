@@ -1,6 +1,6 @@
 title: DWCJ - The Dynamic Web Client for Java
 logo: /assets/img/logo.png
 description: Develop your PWA Progressive Web App in Java and Deploy it to the BBj application server
-show_downloads: true
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
