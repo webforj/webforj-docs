@@ -44,6 +44,11 @@ public class HelloWorldJava extends App{
 }
 ```
 
+The result is a modern, responsive HTML5 Web App. 
+
+![ScreenShotHelloWorld](https://user-images.githubusercontent.com/4833070/170955904-2eb3b3ac-eb42-428f-aa5a-d126067a4d4f.png)
+
+
 ## Components
 
 The [DWCJ Engine](https://github.com/DwcJava/engine) is the core of the API. It exposes the core UI elements like Buttons, Labels,
