@@ -1,123 +1,63 @@
----
-layout: default
----
+# The DWCJ Dynamic Web Client for Java
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+The DWCJ project implements a Java API to implement modern, responsive HTML5 WebApps in Java (or Kotlin).
+These apps plug into BBj's application server stack.
 
-[Link to another page](./another-page.html).
+## What is this?
 
-There should be whitespace between paragraphs.
+The [HelloWorldJava](https://github.com/DwcJava/HelloWorldJava) sample illustrated how to work
+with DWCJ's Java API:
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+```java
+package samples;
+import org.dwcj.*;
+import org.dwcj.controls.*;
+import org.dwcj.events.ButtonPushEvent;
+import org.dwcj.exceptions.DwcAppInitializeException;
+import org.dwcj.panels.AppPanel;
+import org.dwcj.controls.IExpansible.Expanse;
+import org.dwcj.controls.IThemable.Theme;
 
-# Header 1
+public class HelloWorldJava extends App{
+    @Override
+    public void run() throws DwcAppInitializeException {
+        AppPanel panel = new AppPanel();
+        panel.setStyle("display","inline-grid");
+        panel.setStyle("gap","20px");
+        panel.setStyle("margin","20px");
+        panel.setStyle("padding","20px");
+        panel.setStyle("border","1px dotted");
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+        panel.add(new Label("Hello World"));
 
-## Header 2
+        Button btn = new Button("Say Hello");
+        panel.add(btn);
+        btn.setTheme(Theme.DANGER);
+        btn.setExpanse(Expanse.MEDIUM);
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+        btn.onClick(this::onButtonPush);
+    }
 
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
+    private void onButtonPush(ButtonPushEvent buttonPushEvent) {
+        App.msgbox("Hello World");
+    }
 }
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+The result is a modern, responsive HTML5 Web App.
 
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+![ScreenShotHelloWorld](https://user-images.githubusercontent.com/4833070/170955904-2eb3b3ac-eb42-428f-aa5a-d126067a4d4f.png)
 
 
-### Definition lists can be used with HTML syntax.
+## Components
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+The [DWCJ Engine](https://github.com/DwcJava/engine) is the core of the API. It exposes the core UI elements like Buttons, Labels,
+Input Fields, Tree Control, Data Grid and most everything else you need for your WebApp.
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+The demos listed in the [DWCJ GitHub Organization](https://github.com/DwcJava) illustrate how to work with the API.
 
-```
-The final element.
-```
+The Apps deploy on [BBj's Application Server](https://www.basis.cloud/download-product).
+Use the [DWCJ Plug-In for BBj](https://github.com/BBj-Plugins/DWCJ) to configure and deploy your project.
+
+(stay tuned for detailed setup instructions)
+
