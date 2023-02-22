@@ -58,7 +58,7 @@
   `,s.iv`
     max-width: 50%;
     font-size: 5em;
-    color: black;
+    /* color: black; */
     font-weight: bold;
     text-align: center;
 
