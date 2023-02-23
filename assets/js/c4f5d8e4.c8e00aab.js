@@ -22,6 +22,9 @@
     `,f=s.iv`
         font-size: 2.15em;
         font-weight: bold;
+        @media screen and (max-width: 992px) {
+            font-size: 1.65em;
+        }
     `,h=s.iv`
         font-size: 1.15em;
     
@@ -68,7 +71,7 @@
     }
   `),a=s.iv`
     font-size: 1.6em;
-    color: slategrey;
+    /* color: slategrey; */
     max-width: 60%;
     text-align: center;
 
@@ -84,20 +87,25 @@
   `,r=s.iv`
     display: flex;
     gap: 20px;
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
   `;return(0,s.tZ)("div",{css:e},(0,s.tZ)("h1",{css:t},"The Dynamic Web Client for Java"),(0,s.tZ)("p",{css:a},"The DWCJ provides a robust and flexible framework that can help you deliver a modern and engaging web user interface with ease."),(0,s.tZ)("div",{css:r},(0,s.tZ)(i.Z,{css:n,className:"button button--primary button--lg",to:"docs/intro"},"Get Started"),(0,s.tZ)(i.Z,{className:"button button--secondary button--lg",to:"docs/intro"},"View Documentation")))}function f(){const e=s.iv`
     display: flex;
     flex-direction: row;
     width: 60%;
     height: fit-content;
-    /* border: 2px gray solid;*/
     border-radius: 20px;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(69,0,111,1) 100%);
+    background: #1B1B1D;
     align-self: center;
     align-items: center;
     justify-content: space-around;
     padding: 30px;
     margin-bottom: 50px;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      border-radius: 0px;
+    }
   `,t=s.iv`
     display: flex;
     flex-direction: column;
@@ -110,10 +118,10 @@
   `,n=s.iv`
     color: white;
 
-  `,i=s.iv`
+  `,r=s.iv`
     color: white;
-  `;return(0,s.tZ)("div",{css:e},(0,s.tZ)("img",{src:"https://www.basis-europe.eu/wp-content/uploads/Javaland-1-768x461.jpg",css:a}),(0,s.tZ)("div",{css:t},(0,s.tZ)("h2",{css:n},"Catch us at Javaland 2023!"),(0,s.tZ)("p",{css:i},"Come say hello and tell us what you think about the new Dynamic Web Client for Java at the Javaland conference this March at Phantasialand Br\xfchl")))}function h(){const e=s.iv`
+  `;return(0,s.tZ)("div",{css:e},(0,s.tZ)("img",{src:"https://www.javaland.eu/typo3conf/ext/doag/Resources/Public/Images/logo_javaland.png",css:a}),(0,s.tZ)("div",{css:t},(0,s.tZ)("h2",{css:n},"Catch us at Javaland 2023!"),(0,s.tZ)("p",{css:r},"Come say hello and tell us what you think about the new Dynamic Web Client for Java at the Javaland conference this March at Phantasialand Br\xfchl."),(0,s.tZ)(i.Z,{className:"button button--primary button--lg",to:"https://www.javaland.eu/de/home/"},"More Information")))}function h(){const e=s.iv`
     display: flex;
     flex-direction: column;
     width: 100%;
-  `,{siteConfig:t}=(s.iv,(0,r.Z)());return(0,s.tZ)(l.Z,{title:`${t.title}`,description:"Description will go into a meta tag in <head />"},(0,s.tZ)("div",{css:e},(0,s.tZ)(p,null),(0,s.tZ)(f,null),(0,s.tZ)(m,null)))}},1588:(e,t,a)=>{a.d(t,{Z:()=>n});const n=a.p+"assets/images/design_kit-70f6e935da7e6c34c2dcb55980783f58.png"},2274:(e,t,a)=>{a.d(t,{Z:()=>n});const n=a.p+"assets/images/development-85ba617b89b445d9c00a6c64197f077b.png"},3238:(e,t,a)=>{a.d(t,{Z:()=>n});const n=a.p+"assets/images/dynamic-967591988ad6e77d2242008c558e99aa.png"},2225:(e,t,a)=>{a.d(t,{Z:()=>n});const n=a.p+"assets/images/performance-31a1b8d9bfe24f6ff814013de04f28c1.png"}}]);
+  `,{siteConfig:t}=(s.iv,(0,r.Z)());return(0,s.tZ)(l.Z,{title:`${t.title}`,description:"Description will go into a meta tag in <head />"},(0,s.tZ)("div",{css:e},(0,s.tZ)(p,null),(0,s.tZ)(f,null),(0,s.tZ)(m,null)))}},1588:(e,t,a)=>{a.d(t,{Z:()=>n});const n=a.p+"assets/images/design_kit-467c6267a207d874fbf05d833dede2fd.png"},2274:(e,t,a)=>{a.d(t,{Z:()=>n});const n=a.p+"assets/images/development-c2d0698583ce765679267c269a198a61.png"},3238:(e,t,a)=>{a.d(t,{Z:()=>n});const n=a.p+"assets/images/dynamic-83abacfdbac2d883ec51913869e3a329.png"},2225:(e,t,a)=>{a.d(t,{Z:()=>n});const n=a.p+"assets/images/performance-35e9fa70fd237ca8210b929f53e2f84f.png"}}]);
