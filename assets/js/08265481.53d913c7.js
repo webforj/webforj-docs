@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdwcj_documentation=self.webpackChunkdwcj_documentation||[]).push([[6236],{7249:t=>{t.exports=JSON.parse('{"title":"Installation","slug":"/category/installation","permalink":"/docs/category/installation","navigation":{"previous":{"title":"Overview","permalink":"/docs/intro"},"next":{"title":"Start Here","permalink":"/docs/installation/"}}}')}}]);
