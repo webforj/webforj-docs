@@ -90,7 +90,7 @@
     @media screen and (max-width: 992px) {
       flex-direction: column;
     }
-  `;return(0,s.tZ)("div",{css:e},(0,s.tZ)("h1",{css:t},"The Dynamic Web Client for Java"),(0,s.tZ)("p",{css:a},"The DWCJ provides a robust and flexible framework that can help you deliver a modern and engaging web user interface with ease."),(0,s.tZ)("div",{css:r},(0,s.tZ)(i.Z,{css:n,className:"button button--primary button--lg",to:"docs/intro"},"Get Started"),(0,s.tZ)(i.Z,{className:"button button--secondary button--lg",to:"docs/intro"},"View Documentation")))}function f(){const e=s.iv`
+  `;return(0,s.tZ)("div",{css:e},(0,s.tZ)("h1",{css:t},"The Dynamic Web Client for Java"),(0,s.tZ)("p",{css:a},"The DWCJ provides a robust and flexible framework that can help you deliver a modern and engaging web user interface with ease. In Java."),(0,s.tZ)("div",{css:r},(0,s.tZ)(i.Z,{css:n,className:"button button--primary button--lg",to:"docs/intro"},"Get Started"),(0,s.tZ)(i.Z,{className:"button button--secondary button--lg",to:"docs/intro"},"View Documentation")))}function f(){const e=s.iv`
     display: flex;
     flex-direction: row;
     width: 60%;
