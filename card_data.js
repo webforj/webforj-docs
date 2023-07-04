@@ -79,6 +79,12 @@ export const componentData =
     "description": "The Progress Bar component is fully customizable with various themes, expanses, and options such as orientation and indetermination to provide information to the users of applications."
   },
   {
+    "image": require('./img/component_images/radiobutton.png'),
+    "title": "Radio Button",
+    "link" : "./radio-button",
+    "description": "A RadioButton component is a graphical user interface element that allows users to select a single option from a predefined set of mutually exclusive choices by clicking on a small circular button, indicating their selection with a filled dot inside the button."
+  },
+  {
     "image": require('./img/component_images/slider.png'),
     "title": "Slider",
     "link" : "./slider",
