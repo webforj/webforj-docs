@@ -3,7 +3,8 @@
         flex-direction: column;
         align-items: center;
         margin: 4rem 0;
-        width: 100%;
+        width: 110%;
+        margin-left: -5%;
     `,o=n.iv`
         position: relative;
         width : 100%;
