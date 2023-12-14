@@ -13,8 +13,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="The Dynamic Web Client for Java" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.e22affa1.css">
-<script src="/assets/js/runtime~main.41dc6745.js" defer="defer"></script>
-<script src="/assets/js/main.59a1124b.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.58c386d1.js" defer="defer"></script>
+<script src="/assets/js/main.f86f6086.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NB7VHG4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -27,7 +27,7 @@
 <p>At the heart of DWCj&#x27;s component architecture lies the DWCComponent base class. All DWCj components inherit from this class. This inheritance grants each DWCj component access to its underlying BBj control, providing a direct link between the Java component and the BBj control it represents.</p>
 <p>However, it&#x27;s important to note that developers are restricted from extending the DWCComponent class further. Attempting to do so will result in a runtime exception that disallows such extensions. This restriction is in place to maintain the integrity of the underlying BBj control and ensure that developers do not inadvertently manipulate it in ways that could lead to unintended consequences.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="final-classes-and-extension-restrictions">Final Classes and Extension Restrictions<a href="#final-classes-and-extension-restrictions" class="hash-link" aria-label="Direct link to Final Classes and Extension Restrictions" title="Direct link to Final Classes and Extension Restrictions">​</a></h3>
-<p>In the DWCj, most component classes, with the exception of the built-in HTML Elements are declared as <code>final</code>. This means that they are not available for extension or subclassing. This design choice is deliberate and serves multiple purposes:</p>
+<p>In the DWCj, most component classes, with the exception of the built-in HTML Elements and any classes extending these, are declared as <code>final</code>. This means that they are not available for extension or subclassing. This design choice is deliberate and serves multiple purposes:</p>
 <ol>
 <li>
 <p><strong>Control Over Underlying BBj Control</strong>: As mentioned earlier, extending DWCj component classes would grant developers control over the underlying BBj control. To maintain the consistency and predictability of component behavior, this level of control is restricted.</p>
