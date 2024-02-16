@@ -34,12 +34,12 @@
 
       
     `,r=n.iv`
-      /* filter: invert(var(--inversion-percentage)); */ //UNCOMMENT WHEN DMEOS CHANGE COLOR
+      filter: invert(var(--inversion-percentage));
       ::before{
-        mix-blend-mode: lighten; /* The blend mode determines how the overlay interacts with the image */
+        mix-blend-mode: lighten;
         opacity: 0.5;
       }
-    `;return(0,b.tZ)("button",{css:a,onClick:()=>{window.open(t,"_blank")},children:(0,b.tZ)("img",{css:r,src:u})})}function x(e){let{path:t,javaC:a,javaE:c,cssURL:d,javaHighlight:u,height:x,frame:v,tabs:g}=e;const[w,f]=(0,r.useState)(""),[j,y]=(0,r.useState)(""),[D,S]=(0,r.useState)(""),[Z,k]=(0,r.useState)(!(!a||!c)),[B,C]=(0,r.useState)(!1),[E,L]=(0,r.useState)({}),[M,T]=(0,r.useState)(!1),[J,N]=(0,r.useState)(0),[H,V]=(0,r.useState)(0),[O,z]=(0,r.useState)(25),[X,F]=(0,r.useState)(25),[G,Y]=(0,r.useState)(0),[P,I]=(0,r.useState)(!1),R=(0,r.useRef)(null),W=(0,r.useRef)(null);(0,r.useEffect)((()=>{c&&fetch(c).then((e=>e.text())).then((e=>{y(e);const t=new URL(c).pathname.split("/"),a=t[t.length-1];L((e=>({...e,javaFile:a})))})),a&&fetch(a).then((e=>e.text())).then((e=>{f(e)})),d&&fetch(d).then((e=>e.text())).then((e=>{S(e);const t=new URL(d).pathname.split("/"),a=t[t.length-1];L((e=>({...e,cssFile:a})))})),Y(R.current?R.current.offsetWidth:0)}),[]);const U=()=>{T(!1)},q=e=>{if(M){const t=e.clientX-J;H+t>G/3&&(R.current.style.width=`${H+t}px`,W.current.style.right=(O-t<25?25:O-t)+"px",F(O-t<25?25:O-t))}},K=n.iv`
+    `;return(0,b.tZ)("button",{css:a,onClick:()=>{window.open(t,"_blank")},children:(0,b.tZ)("img",{css:r,src:u})})}function x(e){let{path:t,javaC:a,javaE:c,cssURL:d,javaHighlight:u,height:x,frame:v,tabs:g}=e;const[w,f]=(0,r.useState)(""),[j,y]=(0,r.useState)(""),[D,S]=(0,r.useState)(""),[Z,k]=(0,r.useState)(!(!a||!c)),[B,C]=(0,r.useState)(!1),[E,L]=(0,r.useState)({}),[J,M]=(0,r.useState)(!1),[T,V]=(0,r.useState)(0),[H,N]=(0,r.useState)(0),[z,X]=(0,r.useState)(25),[O,F]=(0,r.useState)(25),[G,Y]=(0,r.useState)(0),[P,I]=(0,r.useState)(!1),R=(0,r.useRef)(null),W=(0,r.useRef)(null);(0,r.useEffect)((()=>{c&&fetch(c).then((e=>e.text())).then((e=>{y(e);const t=new URL(c).pathname.split("/"),a=t[t.length-1];L((e=>({...e,javaFile:a})))})),a&&fetch(a).then((e=>e.text())).then((e=>{f(e)})),d&&fetch(d).then((e=>e.text())).then((e=>{S(e);const t=new URL(d).pathname.split("/"),a=t[t.length-1];L((e=>({...e,cssFile:a})))})),Y(R.current?R.current.offsetWidth:0)}),[]);const U=()=>{M(!1)},q=e=>{if(J){const t=e.clientX-T;H+t>G/3&&(R.current.style.width=`${H+t}px`,W.current.style.right=(z-t<25?25:z-t)+"px",F(z-t<25?25:z-t))}},K=n.iv`
 		display: flex;
     flex-direction: column;
 		width: 100%;
@@ -60,7 +60,7 @@
     height: 100%;
     width: 100%;
     height: ${x||"100%"};
-    pointer-events: ${M?"none":"auto"};
+    pointer-events: ${J?"none":"auto"};
   `,$=n.iv`
     display: flex;
     justify-content: flex-end;
@@ -132,7 +132,7 @@
   `,re=n.iv`
     border-radius: 0px;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-  `;return(0,b.BX)("div",{css:K,onMouseUp:U,onMouseLeave:U,onMouseMove:q,children:["hidden"!=v?(0,b.BX)("div",{onMouseEnter:()=>{C(!0)},onMouseLeave:()=>C(!1),css:Q,children:[(0,b.tZ)("iframe",{onMouseUp:U,loading:"lazy",src:t+"&__theme__="+(0,p.I)().colorMode,css:_,ref:R,onMouseMove:q}),(0,b.tZ)("div",{css:$,ref:W,children:(0,b.tZ)(A,{url:t})}),(0,b.tZ)("div",{css:ee,onMouseDown:e=>{e.preventDefault(),T(!0),N(e.clientX),V(R.current?R.current.offsetWidth:0),z(X)},children:(0,b.tZ)(h.Z,{})})]}):null,(0,b.BX)(i.Z,{css:te,summary:(0,b.tZ)("summary",{onClick:()=>I(!P),children:P?"Hide Code":"Show Code"}),children:[a&&c?(0,b.tZ)(m,{collapse:Z,setCollapse:k}):null,d?(0,b.BX)(s.Z,{css:ae,children:[(0,b.tZ)(o.Z,{value:g?g[0]:"Java",label:g?g[0]:E.javaFile,default:!0,children:(0,b.tZ)(l.Z,{css:re,className:"codeDemoBlock",language:"java",showLineNumbers:!0,metastring:u,children:Z?w:j})}),(0,b.tZ)(o.Z,{value:g?g[1]:"CSS",label:g?g[1]:E.cssFile,children:(0,b.tZ)(l.Z,{css:re,className:"codeDemoBlock",language:"css",showLineNumbers:!0,children:D})})]}):(0,b.tZ)(s.Z,{css:ae,children:(0,b.tZ)(o.Z,{value:g?g[0]:"Java",label:g?g[0]:E.javaFile,default:!0,children:(0,b.tZ)(l.Z,{css:re,className:"codeDemoBlock",language:"java",showLineNumbers:!0,metastring:u,children:Z?w:j})})})]})]})}},3273:(e,t,a)=>{a.d(t,{Z:()=>c});var r=a(7294),n=a(917),s=a(8230),o=a(4387),i=a(6031);var l=a(5944);function c(e){let{type:t,location:a,top:c,children:d,code:u,suffix:p}=e;const[h,b]=(0,r.useState)("");(0,r.useEffect)((()=>{p||(p=""),b("https://javadoc.io/doc/org.dwcj/dwcj-"+t+"/latest/"+a+".html"+p)}),[]);const m=n.iv`
+  `;return(0,b.BX)("div",{css:K,onMouseUp:U,onMouseLeave:U,onMouseMove:q,children:["hidden"!=v?(0,b.BX)("div",{onMouseEnter:()=>{C(!0)},onMouseLeave:()=>C(!1),css:Q,children:[(0,b.tZ)("iframe",{onMouseUp:U,loading:"lazy",src:t+"&__theme__="+(0,p.I)().colorMode,css:_,ref:R,onMouseMove:q}),(0,b.tZ)("div",{css:$,ref:W,children:(0,b.tZ)(A,{url:t})}),(0,b.tZ)("div",{css:ee,onMouseDown:e=>{e.preventDefault(),M(!0),V(e.clientX),N(R.current?R.current.offsetWidth:0),X(O)},children:(0,b.tZ)(h.Z,{})})]}):null,(0,b.BX)(i.Z,{css:te,summary:(0,b.tZ)("summary",{onClick:()=>I(!P),children:P?"Hide Code":"Show Code"}),children:[a&&c?(0,b.tZ)(m,{collapse:Z,setCollapse:k}):null,d?(0,b.BX)(s.Z,{css:ae,children:[(0,b.tZ)(o.Z,{value:g?g[0]:"Java",label:g?g[0]:E.javaFile,default:!0,children:(0,b.tZ)(l.Z,{css:re,className:"codeDemoBlock",language:"java",showLineNumbers:!0,metastring:u,children:Z?w:j})}),(0,b.tZ)(o.Z,{value:g?g[1]:"CSS",label:g?g[1]:E.cssFile,children:(0,b.tZ)(l.Z,{css:re,className:"codeDemoBlock",language:"css",showLineNumbers:!0,children:D})})]}):(0,b.tZ)(s.Z,{css:ae,children:(0,b.tZ)(o.Z,{value:g?g[0]:"Java",label:g?g[0]:E.javaFile,default:!0,children:(0,b.tZ)(l.Z,{css:re,className:"codeDemoBlock",language:"java",showLineNumbers:!0,metastring:u,children:Z?w:j})})})]})]})}},3273:(e,t,a)=>{a.d(t,{Z:()=>c});var r=a(7294),n=a(917),s=a(8230),o=a(4387),i=a(6031);var l=a(5944);function c(e){let{type:t,location:a,top:c,children:d,code:u,suffix:p}=e;const[h,b]=(0,r.useState)("");(0,r.useEffect)((()=>{p||(p=""),b("https://javadoc.io/doc/org.dwcj/dwcj-"+t+"/latest/"+a+".html"+p)}),[]);const m=n.iv`
     display: inline;
 
     ${c&&n.iv`
