@@ -4,8 +4,8 @@
   <ShortName>The Dynamic Web Client for Java</ShortName>
   <Description>Search The Dynamic Web Client for Java</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://dwcjava.github.io/img/logo.png</Image>
-  <Url type="text/html" method="get" template="https://dwcjava.github.io/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://dwcjava.github.io/opensearch.xml" />
-  <moz:SearchForm>https://dwcjava.github.io/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://webforj.github.io/img/logo.png</Image>
+  <Url type="text/html" method="get" template="https://webforj.github.io/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://webforj.github.io/opensearch.xml" />
+  <moz:SearchForm>https://webforj.github.io/</moz:SearchForm>
 </OpenSearchDescription>
