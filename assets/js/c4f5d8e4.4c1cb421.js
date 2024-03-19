@@ -98,7 +98,7 @@
       display: flex;
       width: unset;
     }
-  `;return(0,c.BX)("div",{css:l,children:[(0,c.tZ)("h2",{css:o,children:"Webforj"}),(0,c.tZ)("p",{css:d,children:"A robust and flexible framework that can help you deliver a modern and engaging web user interface with ease. In Java."}),(0,c.BX)("div",{css:p,children:[(0,c.tZ)(i.Z,{css:m,className:"button button--primary button--lg",to:"docs/category/getting-started",children:"Get Started"}),(0,c.tZ)(i.Z,{onClick:()=>{t(!0)},className:"button button--secondary button--lg",to:"#script-container",children:"Contact Us"})]}),(0,c.BX)(f.Z,{open:e,onClose:()=>{t(!1)},children:[(0,c.tZ)(u.Z,{css:b,children:(0,c.tZ)(g.Z,{children:a?(0,c.tZ)(v.Z,{}):(0,c.tZ)("div",{id:"script-container"})})}),(0,c.tZ)(h.Z,{})]})]})}function y(){const e=s.iv`
+  `;return(0,c.BX)("div",{css:l,children:[(0,c.tZ)("h2",{css:o,children:"Webforj"}),(0,c.tZ)("p",{css:d,children:"A robust and flexible framework that can help you deliver a modern and engaging web user interface with ease. In Java."}),(0,c.BX)("div",{css:p,children:[(0,c.tZ)(i.Z,{css:m,className:"button button--primary button--lg",to:"docs/category/getting-started",children:"Get Started"}),(0,c.tZ)(i.Z,{onClick:()=>{t(!0)},className:"button button--secondary button--lg",to:"#script-container",children:"Contact Us"}),(0,c.tZ)(i.Z,{className:"button button--secondary button--lg",href:"https://calendly.com/webforj",children:"Schedule Demo"})]}),(0,c.BX)(f.Z,{open:e,onClose:()=>{t(!1)},children:[(0,c.tZ)(u.Z,{css:b,children:(0,c.tZ)(g.Z,{children:a?(0,c.tZ)(v.Z,{}):(0,c.tZ)("div",{id:"script-container"})})}),(0,c.tZ)(h.Z,{})]})]})}function y(){const e=s.iv`
     display: flex;
     flex-direction: row;
     width: 60%;
