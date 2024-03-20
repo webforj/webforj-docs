@@ -122,3 +122,7 @@
   margin: 0% 10% 5%;
   /* align-self: center; */
 }
+
+img{
+  border-radius: 5px;
+}
