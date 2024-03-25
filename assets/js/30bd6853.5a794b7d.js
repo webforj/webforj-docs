@@ -4,7 +4,7 @@
         align-items: center;
         margin: 4rem 0;
         /* width: 110%; */
-        margin-left: -5%;
+        /* margin-left: -5%; */
     `,r=i.iv`
         position: relative;
         width : 100%;
