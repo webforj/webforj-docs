@@ -148,10 +148,7 @@
     transition-property: border,box-shadow;
     border-radius: var(--ifm-card-border-radius);
     text-decoration: none;
-    color: var(--ifm-font-color-base);
-
-    
-    
+    color: var(--ifm-font-color-base);    
     
     &:hover{
       border: 1px var(--ifm-color-primary) solid;
