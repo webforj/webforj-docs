@@ -20,7 +20,7 @@ String value = storage.get("myCookie");
 ```
 
 ### Local
-The `LocalStorage` class provides an interface for interacting with the local storage of the browser 
+The `LocalStorage` class provides an interface for interacting with the local storage of the browser, persists even when the browser is closed and reopened
 ```java
 WebStorage localStorage = LocalStorage.getStorage();
 //alias to add("", "")
