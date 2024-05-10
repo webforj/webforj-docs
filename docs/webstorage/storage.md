@@ -30,7 +30,7 @@ public Map<String, String> get(List<String> keys)
 ### CookieStorage
 
 The `CookieStorage` class provides an interface to interact with cookies 
-similar to how you would with browser APIs. They come with an expiration date(default 30days) and can hold data accessible over several browsing sessions. This data might include login details, language preferences, and other personalized settings.
+similar to how you would with browser APIs. They come with an expiration date(default 30 days) and can hold data accessible over several browsing sessions. This data might include login details, language preferences, and other personalized settings.
 
 ```java
 WebStorage cookieStorage = CookieStorage.getStorage();
