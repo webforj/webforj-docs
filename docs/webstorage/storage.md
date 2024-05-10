@@ -10,16 +10,19 @@ All `Storage` classes are subclasses of `WebStorage` in `org.dwcj.webstorage` wh
 ``` java 
 //add single value
 add(String key, String value);
+
 //or use alias method
 setItem(String key, String value)
-//add one one or more values
+
+//add one one or more values 
 add(Map<String, String> values);
-add(String key, String value, String attributes);
+
 //get a single value  
 String get(String key)
 
 //get multiple values
 public Map<String, String> get(List<String> keys)
+
 ```
 
 
@@ -53,7 +56,7 @@ localStorage.remove("fullname");
 ```
 **Advantages of LocalStorage**
 
->- ***No Server Load:*** Since the data is stored on the user's machine, it does not add any load to the server beyond the initial download.
+>- ***No Server Load:*** Since the data is stored on the user's device, it does not add any load to the server beyond the initial download.
 >- ***Persistent Storage:*** Data does not expire and is available across multiple sessions, which is especially useful for long-term storage.
 
 **Limitations of LocalStorage**
