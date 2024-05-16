@@ -35,6 +35,7 @@ String get(String key)
 //get multiple values
 public Map<String, String> get(List<String> keys)
 
+
 ```
 - Remove a value for a give key
 ``` java 
@@ -56,13 +57,29 @@ String value = cookieStorage.get("cookie.webforJ");
 
 //clear cookie value 
 cookieStrorage.remove("cookie.webforJ");
+
+//update the cookie, use the same key used to set the value. e.g.
+cookieStorage.setItem("cookie.webforJ", "cookie_update");
+
+//Add multiple values
+Map<String, String> cookies = Map.of("cookie1","value1" ,"cookie2","value2");
+cookieStorage.add(cookies);
+
+//get multiple values for a list of keys 
+List<String> keys = List.of("cookie1","cookie2");
+cookies =cookieStrorage.get(keys);
+
+//clear all Cookie-Storage
+cookieStrorage.clear();
+
+
 ```
 
 `CookieStorage` should not be used to store sensitive data, which can be a security risk if the cookie is accessed by an unauthorized party
 
 
 ### LocalStorage
-`LocalStorage` allows the application to store data in the form of key-value pairs on a user's device. This data persists even after the browser window is closed, making LocalStorage a useful tool for saving information across browser sessions.
+`LocalStorage` data persists even after the browser window is closed, making LocalStorage a useful tool for saving information across browser sessions.
 
 ```java
 WebStorage localStorage = LocalStorage.getStorage();
@@ -70,6 +87,7 @@ WebStorage localStorage = LocalStorage.getStorage();
 localStorage.setItem("fullname", "John Smith");
 String username = localStorage.getItem("fullname");
 localStorage.remove("fullname");
+//use same methods as demostrated in cookie-storage to update ,clear,  create multiple values, 
 ```
 **Advantages of LocalStorage**
 
@@ -105,5 +123,5 @@ loginstate.remove("login");
 >- ***Security Considerations::*** While data is cleared at session end, it's still vulnerable to cross-site scripting (XSS) attacks during the session, similar to localStorage.
 
 :::success **Important**
-Also note laws e.g. GDPR Cookie Consent - GDPR Compliance laws when storing / reading key values from the storage
+Also note laws governing usage of webstorage e.g. GDPR Cookie Consent - GDPR Compliance , these may affect application usage if user decides to deny access
 :::
