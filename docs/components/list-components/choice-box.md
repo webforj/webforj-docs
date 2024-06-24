@@ -93,6 +93,30 @@ Passing a `String` value to either of these methods will allow for [any valid CS
 :::
 
 ## Styling
+
+### Themes
+
+The `ChoiceBox` component comes with 14 discrete themes built in for quick styling without the use of CSS. Theming is supported by use of a built-in <JavadocLink type="foundation" location="com/webforj/component/button/ButtonTheme">enum class</JavadocLink>.
+
+While there are many use cases for each of the various themes, some examples uses are:
+
+  - **Danger**: Actions with severe consequences, such as clearing filled-out information, or permanently deleting an account/data is represents a good use case for buttons with the Danger theme.
+  - **Default**: The default theme is appropriate for actions throughout an application that do not require special attention and that are generic, such as toggling a setting.
+  - **Primary**: This theme is appropriate as a main "call-to-action" on a page, such as signing up, saving changes, or continuing to another page.
+  - **Success**: Success themed buttons are excellent for visualizing successful completion of an element in an application, such as the submission of a form or completion of a sign-up process. The success theme can by programmatically applied once a successful action has been completed.
+  - **Warning**: Warning buttons are useful to indicate users they are about to perform a potentially risky action, such as when navigating away from a page with unsaved changes. These actions are often less impactful than those that would use the Danger theme.
+  - **Gray**: Good for subtle actions, such as minor settings or actions that are more supplementary to a page, and not part of the main functionality.
+  - **Info**: The Info theme is a good choice to provide clarifying, additional information to a user when pushed.
+
+Shown below are example buttons with each of the supported Themes applied: <br/>
+
+<ComponentDemo 
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.choiceboxdemos.ComboboxThemeDemo' 
+javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/choiceboxdemos/ComboboxThemeDemo.java'
+cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/comboboxstyles/theme_styles.css' 
+height="170px"
+/> 
+
 <!-- 
 ### Expanses
 There are five `ChoiceBox` expanses that are supported which allow for quick styling without using CSS. Expanses are supported by use of a built-in enum class. <br/>
@@ -103,18 +127,7 @@ javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/ja
 javaC='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/code_snippets/combobox/Expanse.txt'
 cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/comboboxstyles/expanse_styles.css' 
 height="150px"
-/>
-
-### Themes
-
-The `ChoiceBox` component comes with 14 themes built in for quick styling without the use of CSS. Theming is supported by use of a built-in enum class.
-
-<ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.choiceboxdemos.ComboboxThemeDemo' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/choiceboxdemos/ComboboxThemeDemo.java'
-cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/comboboxstyles/theme_styles.css' 
-height="170px"
-/> -->
+/>-->
 
 ### Shadow Parts
 
