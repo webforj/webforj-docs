@@ -54,6 +54,7 @@ An Interval won't start on its own, it only starts with the <code>start()</code>
 <!-- <ComponentDemo
 path='https://demo.webforj.com/webapp/controlsamples?class=demos.IntervalDemos.IntervalStartStopRestartDemo' 
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/IntervalDemos/IntervalStartStopRestartDemo.java'
+javaC='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/code_snippets/interval/StartStopRestart.txt'
 height='100px'
 /> -->
 
@@ -63,6 +64,7 @@ To change the delay of the Interval, use the <code>setDelay(float delay)</code> 
 <!-- <ComponentDemo
 path='https://demo.webforj.com/webapp/controlsamples?class=demos.IntervalDemos.IntervalChangeDelayDemo' 
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/IntervalDemos/IntervalChangeDelayDemo.java'
+javaC='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/code_snippets/interval/SetDelay.txt'
 height='200px'
 /> -->
 
@@ -73,5 +75,6 @@ Listeners are automically added to the Interval, so if an Interval has already s
 <!-- <ComponentDemo
 path='https://demo.webforj.com/webapp/controlsamples?class=demos.IntervalDemos.IntervalDemo' 
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/IntervalDemos/IntervalDemo.java'
+javaC='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/code_snippets/interval/AddListener.txt'
 height='100px'
 /> -->
