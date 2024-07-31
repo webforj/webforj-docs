@@ -8,9 +8,9 @@ import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
 
 Using the browser's console to print valuable program information is an integral part of the development process. The <JavadocLink type="foundation" location="com/webforj/BrowserConsole" code='true'>BrowserConsole</JavadocLink> utility class comes with a slew of features to enhance logging capabilities.
 
-:::info
+<!-- :::info
 Before `24.10`, the `App.consoleLog()` and `App.consoleErr()` methods enabled this behavior, but they have since been marked for deprecation.
-:::
+::: -->
 
 ## Instance
 
@@ -28,7 +28,7 @@ console().debug("Debug message");
 ## Styling
 
 Use the builder methods to set the appearance of the log message. Each builder has options to change a specific property. It's also possible to [mix multiple styles](#mixing-styles).
-Once a console message prints, any styling applied won't carry over to subsequent messages unless explicitly redefined.
+Once a console message prints, any styling applied won't carry over to subsequent messages unless *explicitly* redefined.
 
 - [`background()`](#background-color)
 - [`color()`](#text-color)
@@ -80,6 +80,7 @@ The `from(String value)` method can take other font size values, such as rem and
 ### Font Style
 
 Set the font style with the `style()` method, which returns the <JavadocLink type="foundation" location="com/webforj/BrowserConsole.FontStyleBuilder" code='true'>FontStyleBuilder</JavadocLink>.
+For example, use the `italic()` method to make the console log italicized.
 
 ```java
 // Style Examples
@@ -89,17 +90,21 @@ console().style().normal().log("Normal font");
 
 ### Text Transformation
 
-Transform the text with the `transform()` method, which returns the <JavadocLink type="foundation" location="com/webforj/BrowserConsole.TextTransformBuilder" code='true'>TextTransformBuilder</JavadocLink>.
+Control the capitalization of the characters in a message with the `transform()` method, which returns the <JavadocLink type="foundation" location="com/webforj/BrowserConsole.TextTransformBuilder" code='true'>TextTransformBuilder</JavadocLink>.
+For example, use the `capitalize()` method to transform the first letter of each word to uppercase.
 
 ```java
 // Transform Examples
+// Capitalize Text Transformation
 console().transform().capitalize().log("Capitalize text transformation");
+// UPPERCASE TEXT TRANSFORMATION 
 console().transform().uppercase().log("Uppercase text transformation");
 ```
 
 ### Font Weight
 
-Set the font weight with the `weight()` method, which returns the <JavadocLink type="foundation" location="com/webforj/BrowserConsole.FontWeightBuilder" code='true'>FontWeightBuilder</JavadocLink>.
+Set how thick the text is with the `weight()` method, which returns the <JavadocLink type="foundation" location="com/webforj/BrowserConsole.FontWeightBuilder" code='true'>FontWeightBuilder</JavadocLink>.
+For example, use the `ligther()` method to make the font lighter than normal.
 
 ```java
 // Weight Examples
