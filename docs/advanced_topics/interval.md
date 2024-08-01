@@ -27,12 +27,6 @@ The `Interval` class triggers event(s) at a fixed time delay. Leveraging Interva
 
 1. **Image Carousel**: Have a set of images in automatic rotation while the end-user is browsing.
 
-    <!-- <ComponentDemo
-    path='https://demo.webforj.com/webapp/controlsamples?class=demos.IntervalDemos.IntervalImageUsage' 
-    javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/IntervalDemos/IntervalImageUsage.java'
-    height='200px'
-    /> -->
-
 2. **Check for Inactivity**: Display a [`Dialog`](../components/dialog) component if there hasn't been any interaction on a form within a given time.
 
 3. **Featured Content**: Rotate through featured articles, products, or promotions on your homepage on each Interval. This keeps the content dynamic and engaging.
@@ -75,14 +69,16 @@ Below is a snippet from the demo at the top of the page using the `start()`, `st
 ```
 
 ## Changing the Delay
-To change the delay of the Interval, use the `setDelay(float delay)` method. The new float value takes effect once the Interval has stopped or restarted.
+To change the delay of the Interval, use the `setDelay(float delay)` method. The new float value takes effect once the Interval has stopped or restarted. Here's how it was set up for the demo at the top of the page:
 
-<!-- <ComponentDemo
-path='https://demo.webforj.com/webapp/controlsamples?class=demos.IntervalDemos.IntervalChangeDelayDemo' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/IntervalDemos/IntervalChangeDelayDemo.java'
-javaC='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/code_snippets/interval/SetDelay.txt'
-height='200px'
-/> -->
+```java
+//Changing the Delay
+  restartInterval.addClickListener(e -> {
+    //... Grab 'pickedSpeed', the number from the NumberField as float value
+    interval.setDelay(pickedSpeed);
+    interval.restart();
+  });
+```
 
 ## Adding Listeners
 Add other listeners to the Interval using the `addElapsedListener(EventListener\<Interval.ElapsedEvent\> listener)` method.
