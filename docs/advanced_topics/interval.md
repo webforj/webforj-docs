@@ -41,10 +41,6 @@ The `Interval` class triggers event(s) at a fixed time delay. Leveraging Interva
 ## Constructor
 <JavadocLink type="foundation" location="com/webforj/Interval" code='true' suffix='#<init>(float,com.webforj.dispatcher.EventListener)'>Interval(float delay, EventListener\<Interval.ElapsedEvent\> listener)</JavadocLink>: Creates an `Interval` that triggers the given [event](../ui/events) with the specified delay as a float value.
 
-:::tip
-The delay can be fractional seconds to millisecond in resolution, but a very small timeout value causes a flood of events faster than the program can respond to them.
-:::
-
 ## Starting, Stopping, and Restarting
 An Interval won't start on its own, so use the `start()` method. To stop an Interval, use the `stop()` method. An Interval can restart with the `restart()` method, even when the Interval isn't running.
 
@@ -79,6 +75,10 @@ To change the delay of the Interval, use the `setDelay(float delay)` method. The
     interval.restart();
   });
 ```
+
+:::tip
+The delay can be fractional seconds to millisecond in resolution, but a very small timeout value causes a flood of events faster than the program can respond to them.
+:::
 
 ## Adding Listeners
 Add other listeners to the Interval using the `addElapsedListener(EventListener\<Interval.ElapsedEvent\> listener)` method.
