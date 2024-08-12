@@ -9,7 +9,7 @@ import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
 Using the browser's console to print valuable program information is an integral part of the development process. The <JavadocLink type="foundation" location="com/webforj/BrowserConsole" code='true'>BrowserConsole</JavadocLink> utility class comes with a slew of features to enhance logging capabilities.
 
 <!-- :::info
-Before `24.10`, the `App.consoleLog()` and `App.consoleErr()` methods enabled this behavior, but they have since been marked for deprecation.
+Before `24.10`, the `App.consoleLog()` and `App.consoleError()` methods enabled this behavior, but they have since been marked for deprecation.
 ::: -->
 
 ## Instance
