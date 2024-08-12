@@ -1,6 +1,6 @@
 ---
 sidebar_position: 15
-title: Console Logging
+title: Browser Console
 ---
 
 import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
@@ -17,6 +17,7 @@ Before `24.10`, the `App.consoleLog()` and `App.consoleErr()` methods enabled th
 Get an instance of `BrowserConsole` using the `App.console()` method. Print any `Object` desired as one of the five log types: log, info, warn, error, or debug.
 
 ```java
+import static com.webforj.App.console;
 // Types
 console().log("Log message");
 console().info("Info message");
@@ -126,15 +127,3 @@ console()
     .background().blue()
     .warn("Mixing styles");
 ```
-
-:::note
-Adding multiple styles to an exisitng builder is possible, but it's not possible to chain multiple builders.
-```java
-FontWeightBuilder Weight = console().weight();
-FontSizeBuilder Size = console().size();
-Weight.bold().size().small().log("bold and small message");
-Size.small().weight().bold().log("small and bold message");
-// The following will not work.
-// Weight.bold().Size.small().log("Cannot chain builders")
-```
-:::
