@@ -1,5 +1,4 @@
 ---
-sidebar_position: 110
 title: Slider
 ---
 
@@ -7,7 +6,7 @@ import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
 import TableBuilder from '@site/src/components/DocsTools/TableBuilder';
 import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
 
-<JavadocLink type="engine" location="org/dwcj/component/slider/Slider" top='true'/>
+<JavadocLink type="foundation" location="com/webforj/component/slider/Slider" top='true'/>
 
 ### Upper and Lower Limit
 
@@ -81,7 +80,7 @@ javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/ja
 javaC='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/code_snippets/slider/Inversion.txt'
 cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/sliderstyles/inversion_styles.css' 
 javaHighlight='{42}'
-height = '200px'
+height = '300px'
 />
 
 <br />

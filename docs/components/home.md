@@ -2,8 +2,10 @@
 title: Components
 ---
 
-import componentData from '@site/static/card_data.js'
-import ComponentViewer from '@site/src/components/PageTools/ComponentViewer'
+<!-- vale off -->
 
+import DocCardList from '@theme/DocCardList';
 
-<ComponentViewer componentData={componentData} />
+<!-- vale on -->
+
+<DocCardList className="topics-section" />

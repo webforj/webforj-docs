@@ -49,32 +49,31 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
         gtag: {
-          trackingID: 'G-84THEWQM3G',
+          trackingID: 'G-47SBJTFG20',
           anonymizeIP: true
         },
         googleTagManager: {
-          containerId: 'GTM-NB7VHG4',
+          containerId: 'GTM-T9Q2WZ5J',
         },
       }),
     ],
   ],
   plugins: [],
-  themeConfig:
-    ({
+  themeConfig: {
       algolia: {
         // The application ID provided by Algolia
-        appId: 'RSLUBH6I28',
+        appId: '826LUKOV8E',
   
         // Public API key: it is safe to commit it
-        apiKey: '9d34325b39e4c9380cd2396f98f772b6',
+        apiKey: 'a69d79113b838bfc8490ffb56cef78f2',
   
-        indexName: 'dwcj',
+        indexName: 'umentation-webforj',
   
         // Optional: see doc section below
-        contextualSearch: true,
+        contextualSearch: false,
   
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        externalUrlRegex: 'external\\.com|domain\\.com',
+        // // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        // externalUrlRegex: 'external\\.com|domain\\.com',
   
         // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
         // replaceSearchResultPathname: {
@@ -90,11 +89,21 @@ const config = {
   
         //... other Algolia params
       },
+      announcementBar: {
+        id: '24.10',
+        content:
+          'We are excited to announce webforJ version 24.10 is live! Read more about the changes and features <a href=/blog/whats-new-24.10>here.</a> ',
+        // backgroundColor: 'var(--announcement-background)',
+        // textColor: '#ebedf0',
+        // backgroundColor: 'var(--chip-background)',
+        // textColor: 'var(--chip-text)',
+        isCloseable: true,
+      },
       image: '/img/webforj.svg',
       navbar: {
         title: '',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'webforJ Logo',
           src: 'img/webforj.svg',
         },
         items: [
@@ -127,10 +136,21 @@ const config = {
           },
           // {to: '/live_demo', label: 'Live Demo', position: 'left'},
           // {to: '/tutorials/intro', label: 'Tutorials', position: 'left'},
+          {to: 'blog', label: 'Blog', position: 'left'}, // or position: 'right'
+          {
+            label: "Report Issue",
+            href: 'https://github.com/webforj/webforj/issues/new/choose',
+            position: 'right',
+          },
+          {
+            label: "Javadocs",
+            href: 'https://javadoc.io/doc/com.webforj',
+            position: 'right',
+          },
           {
             href: 'https://github.com/webforj',
-            label: 'GitHub',
             position: 'right',
+            className: "header-github-link"
           },
         ],
       },
@@ -202,7 +222,7 @@ const config = {
         darkTheme: darkCodeTheme,
         additionalLanguages: ['java']
       },
-    })
+    }
 };
 
 module.exports = config;

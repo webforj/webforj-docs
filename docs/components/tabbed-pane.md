@@ -1,5 +1,4 @@
 ---
-sidebar_position: 130
 title: TabbedPane
 slug: tabbedpane
 ---
@@ -14,10 +13,10 @@ import Chip from '@mui/material/Chip';
 
 <DocChip tooltipText="This component will render with a shadow DOM, an API built into the browser that facilitates encapsulation." label="Shadow" component="a" href="../glossary#shadow-dom" target="_blank" clickable={true} iconName="shadow" />
 
-<DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-tabbed-pane" href="https://basishub.github.io/basis-next/#/web-components/dwc-button" clickable={false} iconName='code'/>
+<DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-tabbed-pane" clickable={false} iconName='code'/>
 
 
-<JavadocLink type="engine" location="org/dwcj/component/tabbedpane/TabbedPane" top='true'/>
+<JavadocLink type="foundation" location="com/webforj/component/tabbedpane/TabbedPane" top='true'/>
 
 The `TabbedPane` class provides a compact and organized way of displaying content that is divided into multiple sections, each associated with a `Tab`. Users can switch between these sections by clicking on the respective tabs, often labeled with text and/or icons. This class simplifies the creation of multifaceted interfaces where different content or forms need to be accessible but not simultaneously visible.
 
@@ -37,7 +36,7 @@ The `TabbedPane` class is a gives developers a powerful tool for organizing and 
 4. **Task Management**: Task management applications can use a `TabbedPane` to represent various projects or tasks. Each tab could correspond to a specific project, allowing users to manage and track tasks separately.
 
 5. **Program Navigation**: Within an application that needs to run various programs, a `TabbedPane` could:
-    >- Serve as a sidebar which allows for different applications or programs to be run within a single application, such as what is shown in the [`AppLayout`](../layouts/app-layout.md) template
+    >- Serve as a sidebar which allows for different applications or programs to be run within a single application, such as what is shown in the [`AppLayout`](./app-layout.md) template
     >- Create a top bar which can serve a similar purpose, or represent sub-applications within an already selected application.
   
 ## Tabs

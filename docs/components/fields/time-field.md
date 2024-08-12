@@ -12,13 +12,19 @@ import DocChip from '@site/src/components/DocsTools/DocChip';
 
 <DocChip tooltipText="This component will render with a shadow DOM, an API built into the browser that facilitates encapsulation." label="Shadow" component="a" href="../../glossary#shadow-dom" target="_blank" clickable={true} iconName="shadow" />
 
-<DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-field" href="https://basishub.github.io/basis-next/#/web-components/dwc-field" clickable={false} iconName='code'/>
+<DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-field" clickable={false} iconName='code'/>
 
-<JavadocLink type="engine" location="org/dwcj/component/field/TimeField" top='true'/>
+<JavadocLink type="foundation" location="com/webforj/component/field/TimeField" top='true'/>
 
 :::success **Important**
 The `TimeField` class is a Field component, and as such shares all of the commonalities belonging to a Field. Please refer to the **[Field documentation page](/docs/components/fields)** for an overview of Field properties, events, and other important information.
 :::
+
+<ComponentDemo 
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.fielddemos.TimeFieldDemo' 
+javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/fielddemos/TimeFieldDemo.java'
+height='300px'
+/>
 
 ### Usages
 
@@ -32,7 +38,7 @@ The `TimeField` is best used in scenarios where capturing or manipulating time v
 
 4. **Meeting or Event Invitations**: When designing applications that involve meeting or event invitations, a `TimeField` enables users to specify event start times or deadlines accurately.
 
-The `TimeField` class provides a user interface component that allows the user to enter both a time; hours, minutes, and optionally seconds. The value of the time field is always in 24-hour format that includes leading zeros: HH:mm, regardless of the field format, which is likely to be selected based on the user's locale (or by the user agent). If the time includes seconds, the format is always HH:mm:ss
+The `TimeField` class provides a user interface component that allows the user to enter both a time; hours, minutes, and optionally seconds. The value of the time field is always in 24-hour format that includes leading zeros: HH:mm, regardless of the UI field format, which is likely to be selected based on the user's locale (or by the user agent). If the time includes seconds, the format is always HH:mm:ss
 
 ### Constructors
 
@@ -46,6 +52,12 @@ The `TimeField` class has four constructors:
 ### Maximum and Minimum
 
 You can use the `setMax()` and `setMin()` methods to specify the acceptable time range. If the value entered into the component is outside of the specified value, the component fails constraint validation. Also, if there is already a maximum or minimum set, the value given to the other method must be lower or higher respectively.
+
+<ComponentDemo 
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.fielddemos.TimeFieldMinMax' 
+javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/fielddemos/TimeFieldMinMax.java'
+height='300px'
+/>
 
 ### Display
 
