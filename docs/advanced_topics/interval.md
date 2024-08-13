@@ -4,12 +4,9 @@ title: Interval
 ---
 import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
 import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
-import DocChip from '@site/src/components/DocsTools/DocChip';
-
-<JavadocLink type="foundation" location="com/webforj/Interval" top='true'/>
 
 ## Overview
-The `Interval` class represents a timer that triggers an [event](../ui/events) with a fixed time delay between each triggering.
+The <JavadocLink type="foundation" location="com/webforj/Interval" code='true' >Interval</JavadocLink> class represents a timer that triggers an [event](../ui/events) with a fixed time delay between each triggering.
 
 The `Interval` class provides a straightforward way to trigger events after a specified delay. It's possible to start, stop, and restart an `Interval` as needed. Additionally, Intervals can support multiple listeners for the elapsed event.
 Optimized for the webforJ framework, it offers better performance compared to the standard Java timer or the Swing timer.
@@ -24,8 +21,6 @@ The `Interval` class triggers event(s) at a fixed time delay. Leveraging Interva
 3. **Live Data**: Refresh data on your app, such as stock prices, news feeds, or weather updates, on each Interval to keep the data current.
 
 ## Managing Interval States: Starting, Stopping, and Restart
- use the start() method to initiate it. To halt the Interval, employ the stop() method. The restart() method can be used to restart the Interval.
-
 An Interval requires manual activation; use the `start()` method to initiate it. To stop an Interval, use the `stop()` method. The `restart()` method can be used to restart the Interval.
 
 ## Adjusting the Interval Delay
