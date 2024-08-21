@@ -25,6 +25,7 @@ javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/ja
 height='200px'
 /> -->
 
+<!-- Todo: replace with URL of published demo -->
 <ComponentDemo 
 path='http://localhost:55002/webapp/controlsamples?class=componentdemos.toastdemos.ToastDemo' 
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/webcomponents/toast/ToastDemo.java'
@@ -39,7 +40,6 @@ As you can see in the example above, when multiple Toast notifications are displ
 
 Toast notifications disappear automatically after a specified duration, which defaults to 3000 milliseconds. You can set the duration in milliseconds with the `setDuration()` method or by supplying a duration parameter to the constructor or the `show()` method. If the duration is negative, the toast won't hide automatically. You can hide a Toast before its duration time ellapses with the `close()` method.
 
-<!-- Duration Example -->
 ```java
 Toast toast = new Toast("Sample Notification");
 toast.setDuration(5000);
@@ -50,13 +50,12 @@ toast.open();
 
 By default, Toast notifications appear at the bottom center of the screen. You can set the placement of a Toast notification with the `setPlacement` method using the `Toast.Placement` enum with one of the following values: `BOTTOM`, `BOTTOM_LEFT`, `BOTTOM_RIGHT`, `TOP`, `TOP_LEFT`, `TOP_RIGHT`.
 
-<!-- Placement example -->
 ```java
 Toast toast = new Toast("Sample Notification");
 toast.setPlacement(Toast.Placement.TOP_LEFT);
 toast.open();
 ```
-
+<!-- Todo: Replace with URL of published demo -->
 <ComponentDemo 
 path='http://localhost:55002/webapp/controlsamples?class=componentdemos.toastdemos.ToastPlacement' 
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/webcomponents/toast/ToastPlacement.java'
@@ -73,6 +72,7 @@ By default, Toast notifications don't require user interaction and disappear aft
 
 You can style Toast notifications with themes just like other webforJ components. You can either set the theme when you create the Toast or use the `setTheme` method. The example below sets the theme of each toast using the `Toast.show()` method:
 
+<!-- Todo: Replace with URL of published demo -->
 <ComponentDemo 
 path='http://localhost:55002/webapp/controlsamples?class=componentdemos.toastdemos.ToastTheme' 
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/webcomponents/toast/ToastTheme.java'
