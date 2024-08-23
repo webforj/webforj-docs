@@ -4,8 +4,15 @@ title: ColumnsLayout
 
 import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
 import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
+import DocChip from '@site/src/components/DocsTools/DocChip';
 
-The <JavadocLink type="foundation" location="com/webforj/component/layout/columnslayout" code='true'>ColumnsLayout</JavadocLink> component provides a responsive layout with dynamic columns based on the width of the layout. It adjusts the number of columns automatically according to the specified breakpoints.
+<DocChip tooltipText="This component will render with a shadow DOM, an API built into the browser that facilitates encapsulation." label="Shadow" component="a" href="../glossary#shadow-dom" target="_blank" clickable={true} iconName="shadow" />
+
+<DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-columns-layout" clickable={false} iconName='code'/>
+
+<JavadocLink type="foundation" location="com/webforj/component/layout/columnslayout" top='true'/>
+
+The `ColumnsLayout` component provides a responsive layout with dynamic columns based on the width of the layout. It adjusts the number of columns automatically according to the specified breakpoints.
 
 <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.columnslayoutdemos.ColumnsLayoutDemo' 
