@@ -56,7 +56,7 @@ Components which extend the `AbstractDwcComponent`, including those shipped with
 
 ```java
 Button exampleButton = new Button();
-exampleButton.setStyle("width","50px");
+exampleButton.setStyle("opacity","0.75");
 ```
 
 ### Using the `App` class's methods
@@ -75,7 +75,7 @@ This annotation also supports the `webserver://` protocol, and will by default p
 addStyleSheet("webserver://static/css/style.css");
 ```
 
-The `addInlineStyleSheet()` method is used when a developer wants to include a local stylesheet. By default, the resources directory of a project will be used. For example, a file called `styles.css` located in `src/resources/css` would by loaded by the following code:
+The `addInlineStyleSheet()` method is used when a developer wants to include a local stylesheet. By default, the resources directory of a project will be used. For example, a file called `styles.css` located in `src/main/resources/css` would by loaded by the following code:
 
 ```java
 App.getPage().addInlineStyleSheet("context://css/styles.css");
@@ -147,7 +147,7 @@ public class Demo extends App{
 
 If you're using VS code, an extension that provides syntax highlighting [can be found here](https://marketplace.visualstudio.com/items?itemName=BEU.vscode-java-html):
 
-<img src='https://github.com/webforj/vscode-java-html/raw/HEAD/docs/demo.png'/>
+![VS Code Syntax](https://github.com/webforj/vscode-java-html/raw/HEAD/docs/demo.png#rounded-border)
 
 :::
 
