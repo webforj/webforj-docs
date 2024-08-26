@@ -57,11 +57,13 @@ The `Button` class is a versatile component that is commonly used in various sit
 
 ## Constructors
 
-The `Button` class has three constructors:
+The `Button` class has five constructors:
 
 1. <JavadocLink type="foundation" location="com/webforj/component/button/Button" code='true' suffix='#<init>()'>Button()</JavadocLink>: Creates an empty <code>Button</code> without any text inside the component.
 2. <JavadocLink type="foundation" location="com/webforj/component/button/Button" code='true' suffix='#<init>(java.lang.String)'>Button(String text)</JavadocLink>: Creates a <code>Button</code> with text inside the component.
-3. <JavadocLink type="foundation" location="com/webforj/component/button/Button" code='true' suffix='#<init>(java.lang.String,org.dwcj.component.event.EventListener)'>Button(String text, EventListener{"<ButtonClickEvent>"} onClickListener)</JavadocLink>: Creates a <code>Button</code> with text inside the component, and an <JavadocLink type="foundation" location="com/webforj/component/event/EventListener" code='true'>EventListener</JavadocLink> for a <JavadocLink type="foundation" location="com/webforj/component/button/event/ButtonClickEvent" code='true'>ButtonClickEvent</JavadocLink> which fires when a user clicks on the <code>Button</code>.
+3. <JavadocLink type="foundation" location="com/webforj/component/button/Button" code='true' suffix='#<init>(java.lang.String,com.webforj.component.button.ButtonTheme)'>Button(String text, ButtonTheme theme)</JavadocLink>: Creates a <code>Button</code> with text inside the component and applies a [theme](#themes).
+4. <JavadocLink type="foundation" location="com/webforj/component/button/Button" code='true' suffix='#<init>(java.lang.String,com.webforj.component.button.ButtonTheme,com.webforj.dispatcher.EventListener)'>Button(String text, EventListener{"<ButtonClickEvent>"} onClickListener)</JavadocLink>: Creates a <code>Button</code> with text inside the component, applies a [theme](#themes), and an <JavadocLink type="foundation" location="com/webforj/component/event/EventListener" code='true'>EventListener</JavadocLink> for a <JavadocLink type="foundation" location="com/webforj/component/button/event/ButtonClickEvent" code='true'>ButtonClickEvent</JavadocLink> which fires when a user clicks on the <code>Button</code>.
+5. <JavadocLink type="foundation" location="com/webforj/component/button/Button" code='true' suffix='#<init>(java.lang.String,com.webforj.dispatcher.EventListener)'>Button(String text, EventListener{"<ButtonClickEvent>"} onClickListener)</JavadocLink>: Creates a <code>Button</code> with text inside the component, and an <JavadocLink type="foundation" location="com/webforj/component/event/EventListener" code='true'>EventListener</JavadocLink> for a <JavadocLink type="foundation" location="com/webforj/component/button/event/ButtonClickEvent" code='true'>ButtonClickEvent</JavadocLink> which fires when a user clicks on the <code>Button</code>.
 
 Here is an example of how to create a `Button` object:
 
