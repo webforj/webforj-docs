@@ -29,9 +29,8 @@ cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/r
 `ChoiceBox` components are used for various purposes, such as selecting items from a menu, choosing from a list of categories, or picking options from predefined sets. They provide an organized and visually pleasing way for users to make selections, particularly when there are multiple options available. Common usages include:
 
 1. **User Selection of Options**: The primary purpose of a `ChoiceBox` is to allow users to select a single option from a list. This is valuable in applications that require users to make choices, such as:
-  >- Selecting items from a list
-  >- Choosing from a list of categories
-  >- Picking options from predefined sets
+    - Choosing from a list of categories
+    - Picking options from predefined sets
 
 2. **Form Inputs**: When designing forms that require users to input specific options, the `ChoiceBox` simplifies the selection process. Whether it's selecting a country, state, or any other option from a predefined list, the `ChoiceBox` streamlines the input process.
 
