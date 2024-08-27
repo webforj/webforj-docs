@@ -15,9 +15,9 @@ import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
 
 The webforJ `Toast` component creates a subtle [pop-up notification](https://en.wikipedia.org/wiki/Pop-up_notification). Toast notifications disappear after a set amount of time and don't require a user response. They are typically used to provide feedback about operations or to display system messages.
 
-## Usage
+## Creating a toast notification
 
-The easiest way to generate a Toast notification is the `Toast.show()` method. This method creates a Toast, adds it to the application's Frame, and displays it. The example below uses the `show()` method to create a toast notification when the user presses a button:
+The easiest way to generate a Toast notification is the `Toast.show()` method. This method creates a Toast, adds it to the application's Frame, and displays it. However, you can also create a toast with a standard constructor and use the `open()` method to display it. The example below uses the `show()` method to create a toast notification when the user presses a button:
 
 <!-- <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.toastdemos.ToastDemo' 
