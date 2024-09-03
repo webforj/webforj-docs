@@ -16,7 +16,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="webforJ" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.dc4dd446.css">
-<script src="/assets/js/runtime~main.e7d5045a.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.8130f301.js" defer="defer"></script>
 <script src="/assets/js/main.d94d2a02.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -29,16 +29,13 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="usages">Usages<a href="#usages" class="hash-link" aria-label="Direct link to Usages" title="Direct link to Usages">​</a></h2>
 <p><code>ChoiceBox</code> components are used for various purposes, such as selecting items from a menu, choosing from a list of categories, or picking options from predefined sets. They provide an organized and visually pleasing way for users to make selections, particularly when there are multiple options available. Common usages include:</p>
 <ol>
-<li><strong>User Selection of Options</strong>: The primary purpose of a <code>ChoiceBox</code> is to allow users to select a single option from a list. This is valuable in applications that require users to make choices, such as:</li>
-</ol>
-<blockquote>
+<li>
+<p><strong>User Selection of Options</strong>: The primary purpose of a <code>ChoiceBox</code> is to allow users to select a single option from a list. This is valuable in applications that require users to make choices, such as:</p>
 <ul>
-<li>Selecting items from a list</li>
 <li>Choosing from a list of categories</li>
 <li>Picking options from predefined sets</li>
 </ul>
-</blockquote>
-<ol start="2">
+</li>
 <li>
 <p><strong>Form Inputs</strong>: When designing forms that require users to input specific options, the <code>ChoiceBox</code> simplifies the selection process. Whether it&#x27;s selecting a country, state, or any other option from a predefined list, the <code>ChoiceBox</code> streamlines the input process.</p>
 </li>
@@ -95,15 +92,13 @@ dropdown using CSS or shadow part selectors from the parent component becomes ch
 <p><strong>Default Selection</strong>: Set a default selection when the ChoiceBox is initially displayed. This ensures a pre-selected option, reducing the number of interactions required to make a choice.</p>
 </li>
 <li>
-<p><strong>ChoiceBox vs. Other List Components</strong>: A <code>ChoiceBox</code> should be used over other List components in the following situations:</p>
-</li>
-</ol>
-<blockquote>
+<p><strong>ChoiceBox vs. Other List Components</strong>: A <code>ChoiceBox</code> is the best choice if you need to restrict user input to a single choice from a list of predetermined options. Another list component may be better if you need the following behaviors:</p>
 <ul>
-<li>Multiple Selection is not needed or required, and all items do not need to be displayed at once.</li>
-<li>A selection of predefined choices is desired, preventing users from entering custom or unexpected data.</li>
+<li>Multiple Selection and display all items at once: <a href="/docs/components/list-components/listbox"><code>ListBox</code></a></li>
+<li>Allow custom input: <a href="/docs/components/list-components/combobox"><code>ComboBox</code></a></li>
 </ul>
-</blockquote></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/webforj/webforj-docs/tree/website/docs/components/list-components/choice-box.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/components/list-components/lists"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Lists</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/components/list-components/combobox"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">ComboBox</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#usages" class="table-of-contents__link toc-highlight">Usages</a></li><li><a href="#constructors" class="table-of-contents__link toc-highlight">Constructors</a></li><li><a href="#dropdown-type" class="table-of-contents__link toc-highlight">Dropdown Type</a></li><li><a href="#max-row-count" class="table-of-contents__link toc-highlight">Max Row Count</a></li><li><a href="#opening-dimensions" class="table-of-contents__link toc-highlight">Opening Dimensions</a></li><li><a href="#styling" class="table-of-contents__link toc-highlight">Styling</a><ul><li><a href="#shadow-parts" class="table-of-contents__link toc-highlight">Shadow Parts</a></li><li><a href="#css-properties" class="table-of-contents__link toc-highlight">CSS Properties</a></li><li><a href="#reflected-attributes" class="table-of-contents__link toc-highlight">Reflected Attributes</a></li><li><a href="#dependencies" class="table-of-contents__link toc-highlight">Dependencies</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__links text--center"><div class="footer__links"><span class="footer__link-item">
+</li>
+</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/webforj/webforj-docs/tree/website/docs/components/list-components/choice-box.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/components/list-components/lists"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Lists</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/components/list-components/combobox"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">ComboBox</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#usages" class="table-of-contents__link toc-highlight">Usages</a></li><li><a href="#constructors" class="table-of-contents__link toc-highlight">Constructors</a></li><li><a href="#dropdown-type" class="table-of-contents__link toc-highlight">Dropdown Type</a></li><li><a href="#max-row-count" class="table-of-contents__link toc-highlight">Max Row Count</a></li><li><a href="#opening-dimensions" class="table-of-contents__link toc-highlight">Opening Dimensions</a></li><li><a href="#styling" class="table-of-contents__link toc-highlight">Styling</a><ul><li><a href="#shadow-parts" class="table-of-contents__link toc-highlight">Shadow Parts</a></li><li><a href="#css-properties" class="table-of-contents__link toc-highlight">CSS Properties</a></li><li><a href="#reflected-attributes" class="table-of-contents__link toc-highlight">Reflected Attributes</a></li><li><a href="#dependencies" class="table-of-contents__link toc-highlight">Dependencies</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__links text--center"><div class="footer__links"><span class="footer__link-item">
                 <p>Copyright © <script>document.write(/d{4}/.exec(Date())[0])</script> <a href="https://basis.cloud/contact/"> BASIS International Ltd.</a> All rights reserved.</p>
                 </span></div></div></div></footer></div>
 </body>
