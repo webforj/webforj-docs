@@ -25,7 +25,17 @@ WebforJ provides a quick and easy way to create a Toast component in a single li
 Toast.show("Operation completed successfully!", Theme.SUCCESS);
 ```
 
+
 If you want more fine-grained control over the component, you can also create a `Toast` with a standard constructor and use the `open()` method to display it.
+
+```java
+Toast toast = new Toast("Operation completed successfully!", Theme.SUCCESS);
+if (operationFailed) {
+  toast.setText("Warning: Operation failed.");
+  toast.setTheme(Theme.DANGER);
+}
+toast.open();
+```
 
 <!-- <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.toastdemos.ToastDemo' 
