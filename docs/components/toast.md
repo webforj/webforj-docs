@@ -4,6 +4,7 @@ title: "Toast"
 import DocChip from '@site/src/components/DocsTools/DocChip';
 import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
 import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
+import TableBuilder from '@site/src/components/DocsTools/TableBuilder';
 
 <DocChip tooltipText="This component renders with a shadow DOM, an API built into the browser that facilitates encapsulation." label="Shadow" component="a" href="../glossary#shadow-dom" target="_blank" clickable={true} iconName="shadow" />
 <DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-toast" clickable={false} iconName='code'/>
@@ -107,3 +108,15 @@ path='http://localhost:55002/webapp/controlsamples?class=componentdemos.toastdem
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/webcomponents/toast/ToastTheme.java'
 height='200px'
 />
+
+### Shadow Parts
+
+These are the various parts of the [shadow DOM](../glossary#shadow-dom) for the component, which will be required when styling via CSS is desired.
+
+<TableBuilder tag={require('@site/docs/components/_dwc_control_map.json').Toast} table='parts'/>
+
+### Reflected Attributes
+
+The reflected attributes of a component will be shown as attributes in the rendered HTML element for the component in the DOM. This means that styling can be applied using these attributes.
+
+<TableBuilder tag={require('@site/docs/components/_dwc_control_map.json').Toast} table="reflects" />

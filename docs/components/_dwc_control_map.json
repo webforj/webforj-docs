@@ -24,6 +24,7 @@
 "ProgressBar" :"dwc-progressbar",
 "RadioButton" :"dwc-radio",
 "TabbedPane" :"dwc-tabbed-pane",
+"Toast":"dwc-toast",
 "Tree" :"dwc-tree",
 "PopupMenu" :"dwc-popupmenu",
 "Menu" :"dwc-menu",
