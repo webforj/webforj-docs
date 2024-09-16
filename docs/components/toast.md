@@ -10,8 +10,8 @@ import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
 
 <!-- Todo: Is it necessary to mention the dwc-toast-group that the dwc-toast is nested under? -->
 
-<!-- Todo: Where are the Javadocs for Toast? -->
-<!-- <JavadocLink type="foundation" location="com/webforj/component/toast/Toast" top='true'/> -->
+<JavadocLink type="toast" location="com/webforj/component/toast/Toast" top='true'/>
+
 
 A `Toast` notification is a subtle and unobtrusive [pop-up notification](https://en.wikipedia.org/wiki/Pop-up_notification) designed to provide users with real-time feedback and information. These notifications are typically used to inform users about operations such as successful actions, warnings, or errors without interrupting their workflow. `Toast` notifications typically disappear after a set amount of time and don't require a user response.
 
