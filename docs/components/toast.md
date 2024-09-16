@@ -16,7 +16,7 @@ A `Toast` notification is a subtle and unobtrusive pop-up notification designed 
 
 With webforJ's `Toast` component, you can easily implement these notifications to enhance user experience by providing relevant information in a familiar, non-intrusive, and seamless manner. 
 
-## Creating a toast notification
+## Creating a `Toast` notification
 
 WebforJ provides a quick and easy way to create a Toast component in a single line of code with the `Toast.show()` method, which creates a `Toast` component, adds it to the `Frame`, and displays it. You can pass parameters to the `show` method to configure the displayed `Toast`:
 
