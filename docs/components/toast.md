@@ -29,24 +29,13 @@ Toast.show("Operation completed successfully!", Theme.SUCCESS);
 If you want more fine-grained control over the component, you can also create a `Toast` with a standard constructor and use the `open()` method to display it.
 
 ```java
-Toast toast = new Toast("Operation completed successfully!", Theme.SUCCESS);
-if (operationFailed) {
-  toast.setText("Warning: Operation failed.");
-  toast.setTheme(Theme.DANGER);
-}
+Toast toast = new Toast("Operation completed successfully!", 3000, Theme.SUCCESS, Placement.TOP);
 toast.open();
 ```
 
-<!-- <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.toastdemos.ToastDemo' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/webcomponents/toast/ToastDemo.java'
-height='200px'
-/> -->
-
-<!-- Todo: replace with URL of published demo -->
 <ComponentDemo 
-path='http://localhost:55002/webapp/controlsamples?class=componentdemos.toastdemos.ToastDemo' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/webcomponents/toast/ToastDemo.java'
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.toastdemos.ToastDemo' 
+javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/componentdemos/toastdemos/ToastDemo.java'
 height='200px'
 />
 
@@ -83,11 +72,11 @@ Toast toast = new Toast("Sample Notification");
 toast.setPlacement(Toast.Placement.TOP_LEFT);
 toast.open();
 ```
-<!-- Todo: Replace with URL of published demo -->
+
 <ComponentDemo 
-path='http://localhost:55002/webapp/controlsamples?class=componentdemos.toastdemos.ToastPlacement' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/webcomponents/toast/ToastPlacement.java'
-height='200px'
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.toastdemos.ToastPlacementDemo' 
+javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/componentdemos/toastdemos/ToastPlacementDemo.java'
+height='300px'
 />
 
 By customizing the placement of your `Toast` notifications, you can ensure that users receive information in a way that is appropriate for any given app, screen layout, and context.
@@ -96,16 +85,36 @@ By customizing the placement of your `Toast` notifications, you can ensure that 
 
 Although `Toast` notifications don't require user interaction by default, webforJ allows you to add buttons or other interactive elements to make them more useful than simple notifications. By adding this kind of interactivity, you can give users the ability to handle tasks and perform actions without navigating away from their current screen, transforming a `Toast` notification into a valuable channel of interaction and engagement. 
 
-<!-- Actions and Interactivity Example -->
+<ComponentDemo 
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.toastdemos.ToastInteractiveDemo' 
+javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/componentdemos/toastdemos/ToastInteractiveDemo.java'
+cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/toaststyles/toastinteractivedemo_styles.css'
+height='300px'
+/>
 
 ## Styling
 
 You can style `Toast` notifications with themes just like other webforJ components, providing users with valuable context about the type of information being shown, and creating a consistent style throughout your app. You can either set the theme when you create the Toast or use the `setTheme()` method.
 
-<!-- Todo: Replace with URL of published demo -->
+```java
+Toast toast = new Toast("Sample Notification", Theme.INFO);
+```
+
+```java
+Toast toast = new Toast("Sample Notification");
+toast.setTheme(Theme.INFO);
+```
+
+### Custom Themes
+
+In addition to using built-in themes, you can create your own custom themes for Toast notifications. This allows for a more personalized and branded user experience, giving you full control over the overall styling of the Toast.
+
+To add a custom theme to a Toast, you can define custom CSS variables, which modify the appearance of the component. The following example demonstrates how to create a Toast with a custom theme using WebforJ.
+
 <ComponentDemo 
-path='http://localhost:55002/webapp/controlsamples?class=componentdemos.toastdemos.ToastTheme' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/webcomponents/toast/ToastTheme.java'
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.toastdemos.ToastThemeDemo' 
+javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/componentdemos/toastdemos/ToastThemeDemo.java'
+cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/toaststyles/toastthemedemo_styles.css'
 height='200px'
 />
 
