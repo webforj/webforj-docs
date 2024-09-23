@@ -39,6 +39,23 @@ javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/ja
 height='200px'
 />
 
+## Usages
+
+The `Toast` component provides a subtle, non-intrusive notification to inform users of various system states or actions. It enhances the user experience by offering:
+
+- **Real-time feedback** for actions like form submissions, data saves, or errors.
+- **Customizable themes** for differentiating between success, error, warning, or informational messages.
+- **Flexible placement** options to show notifications in different areas of the screen without interrupting the user’s workflow.
+
+One common use case is a **Cookies Consent Notification**, where users can interact with the notification to accept or customize their cookie preferences.
+
+<ComponentDemo 
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.toastdemos.ToastCookiesDemo' 
+javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/componentdemos/toastdemos/ToastCookiesDemo.java'
+cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/toaststyles/toastcookiesdemo_styles.css'
+height='350px'
+/>
+
 ## Stacking
 
 The `Toast` component can display multiple notifications simultaneously, stacking them vertically based on their placement. Newer notifications appear closer to the placement edge, pushing older notifications farther away. This ensures that users don't miss important information, even when there is a lot going on.
@@ -116,10 +133,10 @@ Since the Toast isn't located in a specific position in the DOM, you can target 
 :::
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.toastdemos.ToastCookiesDemo' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/componentdemos/toastdemos/ToastCookiesDemo.java'
-cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/toaststyles/toastcookiesdemo_styles.css'
-height='350px'
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.toastdemos.ToastThemeDemo' 
+javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/componentdemos/toastdemos/ToastThemeDemo.java'
+cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/toaststyles/toastthemedemo_styles.css'
+height='200px'
 />
 
 ### Shadow Parts
