@@ -71,12 +71,14 @@ Button submit = new Button("Submit");
 
 ## Adding Icons to Buttons
 
-In addition to, or instead of having text on a `Button`, it is possible to add an icon to a button as well. To add these icons, set the button's text to have an `<html>` tag, with a `<dwc-icon>` tag inside with the name attribute set accordingly. In addition to an icon, include text to the left or right of the `<dwc-icon>` tag to include a label as well. Icons added to the left and/or right of the button should be done using the `prefix` and `suffix` slots.
+Incorporating an icon into a button can greatly improve your app's design, allowing users to quickly identify actionable items on the screen. The `Icon` component provides a wide selection of icons to choose from.
 
-To read more about customizing, configuring and styling icons, read [**this page**](../components/dwc-icon).
+By utilizing the `setPrefixComponent` and `setSuffixComponent` methods, you have the flexibility to determine whether an `Icon` should appear before or after the text on a button. Alternatively, the `setIcon` method can be used to add an `Icon` after the text, but before the button's `suffix` slot.
+
+Refer to the [Icon component](../components/icon) page for more information on configuring and customizing icons.
 
 :::tip
-Icons added in this way will automatically be configured to match the theme of the Button, but need to be manually configured if a different sized icon is desired when changing `Button` expanse.
+By default, an `Icon` inherits the button's theme and expanse.
 :::
 
 Below are examples of buttons with text to the left and right, as well as a button with only an icon:
@@ -88,7 +90,7 @@ javaC='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/co
 height="200px"
 />
 
-### Names
+## Names
 
 The `Button` component utilizes naming, which is used for accessibility. When a name is not explicitly set, the label of the `Button` will be used instead. However, some icons do not have labels, and only display non-text elements, such as icons. In this case, it is expedient to use the `setName()` method to ensure that the `Button` component created complies with accessibility standards.
 
