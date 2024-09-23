@@ -111,11 +111,15 @@ In addition to using built-in themes, you can create your own custom themes for 
 
 To add a custom theme to a Toast, you can define custom CSS variables, which modify the appearance of the component. The following example demonstrates how to create a Toast with a custom theme using WebforJ.
 
+:::info Toast Targeting
+Since the Toast isn't located in a specific position in the DOM, you can target it using CSS variables. These variables make it easy to apply consistent custom styles across all Toast notifications.
+:::
+
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.toastdemos.ToastThemeDemo' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/componentdemos/toastdemos/ToastThemeDemo.java'
-cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/toaststyles/toastthemedemo_styles.css'
-height='200px'
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.toastdemos.ToastCookiesDemo' 
+javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/componentdemos/toastdemos/ToastCookiesDemo.java'
+cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/toaststyles/toastcookiesdemo_styles.css'
+height='350px'
 />
 
 ### Shadow Parts
