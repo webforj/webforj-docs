@@ -4,7 +4,7 @@ import { jsx, css } from '@emotion/react';
 import Admonition from '@theme/Admonition';
 
 export default function ComponentBasics(){
-  let url = "https://documentation.webforj.com/docs/ui/basics"
+  let url = "https://documentation.webforj.com/docs/building-ui/basics"
 
   return (
     <div>
