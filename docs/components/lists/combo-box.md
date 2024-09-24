@@ -135,6 +135,17 @@ Contents of the component are never automatically highlighted when the component
 If content was highlighted upon losing focus, it will be highlighted again upon regaining focus, regardless of the set behavior.
 :::
 
+## Slots
+
+Slots provide flexible options for improving the functionality of a `ComboBox`. You can have icons, labels, loading spinners, clear/reset capability, avatar/profile pictures, and other beneficial components nested within a `ComboBox`.
+The `ComboBox` has two slots: the `prefix` and `suffix` slots. By employing the `setPrefixComponent()` and `setSuffixComponent()` methods, you can effortlessly insert various components before and after the `ComboBox`, further improving its user interaction.
+
+```java
+ComboBox comboBox = new ComboBox());
+  comboBox.setPrefixComponent(new Img("http://localhost:8888/joystick.png"));
+  comboBox.setSuffixComponent(new Img("http://localhost:8888/joystick.png"));
+```
+
 ## Styling
 
 <!-- ### Expanses -->

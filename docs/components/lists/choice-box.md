@@ -91,6 +91,17 @@ The `ChoiceBox` component has methods that allow manipulation of the dropdown di
 Passing a `String` value to either of these methods will allow for [any valid CSS unit](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units) to be applied, such as pixels, viewport dimensions, or other valid rules. Passing an `int` will set the value passed in pixels.
 :::
 
+## Slots
+
+Slots provide flexible options for improving the functionality of a `ChoiceBox`. You can have icons, labels, loading spinners, clear/reset capability, avatar/profile pictures, and other beneficial components nested within a `ChoiceBox`.
+The `ChoiceBox` has two slots: the `prefix` and `suffix` slots. By employing the `setPrefixComponent()` and `setSuffixComponent()` methods, you can effortlessly insert various components before and after the displayed option within a `ChoiceBox`, further improving its user interaction.
+
+```java
+ComboBox choiceBox = new ChoiceBox());
+  choiceBox.setPrefixComponent(new Img("http://localhost:8888/joystick.png"));
+  choiceBox.setSuffixComponent(new Img("http://localhost:8888/joystick.png"));
+```
+
 ## Styling
 <!-- 
 ### Expanses
