@@ -110,6 +110,17 @@ The `ComboBox` component has methods that allow manipulation of the dropdown dim
 Passing a `String` value to either of these methods will allow for [any valid CSS unit](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units) to be applied, such as pixels, viewport dimensions, or other valid rules. Passing an `int` will set the value passed in pixels.
 :::
 
+## Slots
+
+Slots provide flexible options for improving the functionality of a `ComboBox`. You can have icons, labels, loading spinners, clear/reset capability, avatar/profile pictures, and other beneficial components nested within a `ComboBox`.
+The `ComboBox` has two slots: the `prefix` and `suffix` slots. By employing the `setPrefixComponent()` and `setSuffixComponent()` methods, you can effortlessly insert various components before and after the `ComboBox`, further improving its user interaction.
+
+```java
+ComboBox comboBox = new ComboBox());
+  comboBox.setPrefixComponent(new Img("http://localhost:8888/joystick.png"));
+  comboBox.setSuffixComponent(new Img("http://localhost:8888/joystick.png"));
+```
+
 ## Styling
 
 <!-- ### Expanses -->
