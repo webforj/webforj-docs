@@ -5,9 +5,6 @@ slug: composite
 draft: false
 ---
 
-import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
-import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
-
 <JavadocLink type="foundation" location="com/webforj/component/Composite" top='true'/>
 
 # Composite Components in webforJ

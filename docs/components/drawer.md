@@ -2,11 +2,6 @@
 title: Drawer
 ---
 
-import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
-import TableBuilder from '@site/src/components/DocsTools/TableBuilder';
-import AppLayoutViewer from '@site/src/components/DocsTools/AppLayoutViewer';
-import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
-
 <JavadocLink type="drawer" location="com/webforj/component/drawer/Drawer" top='true'/>
 
 <ComponentBasics />
