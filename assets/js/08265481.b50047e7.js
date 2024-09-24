@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdwcj_documentation=self.webpackChunkdwcj_documentation||[]).push([[8673],{3893:t=>{t.exports=JSON.parse('{"title":"Installation","slug":"/category/installation","permalink":"/docs/category/installation","navigation":{"next":{"title":"Docker","permalink":"/docs/installation/docker-user"}}}')}}]);
