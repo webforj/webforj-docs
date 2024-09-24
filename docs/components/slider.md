@@ -8,6 +8,8 @@ import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
 
 <JavadocLink type="foundation" location="com/webforj/component/slider/Slider" top='true'/>
 
+<ComponentBasics />
+
 ### Upper and Lower Limit
 
 Use the `setMinimum()` and `setMaximum()` methods to determine the upper and lower bound of the slider. Each interval on the slider has a distance of 1, meaning that a slider with maximum 10 and minimum of 0 will have 10 intervals on the slider, whereas a maximum of 100 and minimum of 0 will have 100 intervals. These intervals will evenly distribute on the slider, depending on the height and width dimensions that it has been given by the developer. 

@@ -14,8 +14,9 @@ import Chip from '@mui/material/Chip';
 
 <DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-button" clickable={false} iconName='code'/>
 
-
 <JavadocLink type="foundation" location="com/webforj/component/button/Button" top='true'/>
+
+<ComponentBasics />
 
 A `Button` component is a fundamental user interface element used in application development to create interactive elements that trigger actions or events when clicked or activated. It serves as a clickable element that users can interact with to perform various actions within an application or website. 
 

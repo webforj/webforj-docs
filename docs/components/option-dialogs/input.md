@@ -18,6 +18,8 @@ import DocChip from '@site/src/components/DocsTools/DocChip';
 
 <JavadocLink type="foundation" location="com/webforj/component/optiondialog/InputDialog" top='true'/>
 
+<ComponentBasics />
+
 An `InputDialog` is a modal dialog designed to prompt the user for input. The dialog blocks app execution until the user provides the input or closes the dialog.
 
 

@@ -17,6 +17,8 @@ import Chip from '@mui/material/Chip';
 
 <JavadocLink type="table" location="com/webforj/component/table/Table" top='true'/>
 
+<ComponentBasics />
+
 The `Table` class is a versatile component designed for presenting tabular information in a structured and easily understandable manner. Optimized for handling large datasets with high performance, this component offers advanced visualization and a comprehensive suite of events for dynamic user engagement.
 
 <ComponentDemo 

@@ -10,6 +10,7 @@ import TableBuilder from '@site/src/components/DocsTools/TableBuilder';
 import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
 
 <JavadocLink type="applayout" location="com/webforj/component/layout/applayout/AppLayout" top='true'/>
+<ComponentBasics />
 
 The `AppLayout` is a comprehensive responsive layout component that provides a header, a footer, a drawer, and content section. The header and footer are fixed, the drawer slides in and out of the viewport, and the content is scrollable.
 

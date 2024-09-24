@@ -12,6 +12,8 @@ import DocChip from '@site/src/components/DocsTools/DocChip';
 
 <JavadocLink type="columnslayout" location="com/webforj/component/layout/columnslayout/ColumnsLayout" top='true'/>
 
+<ComponentBasics />
+
 The `ColumnsLayout` components in webforJ allows developers to create layouts using a flexible and responsive vertical layout, which provides dynamic columns that adjust based on the available width. This component simplifies the creation of multi-column layouts by automatically managing breakpoints and alignments.
 
 :::info Horizontal Layouts 

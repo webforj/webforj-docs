@@ -7,6 +7,7 @@ import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
 
 <JavadocLink type="flexlayout" location="com/webforj/component/layout/flexlayout/FlexLayout" top='true'/>
 
+<ComponentBasics />
 
 webforJ provides developers with an efficient and intuitive way to layout their various applications and components - the Flex Layout. This toolset allows for items to be displayed either vertically or horizontally. 
 
