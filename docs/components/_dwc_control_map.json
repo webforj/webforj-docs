@@ -33,5 +33,6 @@
 "Dialog" :"dwc-dialog",
 "Icon" :"dwc-icon",
 "Splitter":"dwc-splitter",
-"Login":"dwc-login"
+"Login":"dwc-login",
+"Spinner": "dwc-spinner"
 }
