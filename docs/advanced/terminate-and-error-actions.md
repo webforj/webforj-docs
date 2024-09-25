@@ -32,7 +32,7 @@ Starting from version `24.12`, webforJ defaults to `NoneAction` for both termina
 
 ## Customizing actions
 
-To change the default behavior, use the `setTerminateAction` and `setErrorAction` methods in your `App` subclass.
+To change the default behavior, use the `setTerminateAction()` and `setErrorAction()` methods in your `App` subclass.
 
 ### Setting a custom message action
 
@@ -85,7 +85,7 @@ public class MyApp extends App {
 }
 ```
 
-Upon calling `terminate()`, the action defined by `setTerminateAction` will execute.
+Upon calling `terminate()`, the action defined by `setTerminateAction()` executes.
 
 ## Hooks for termination
 
@@ -111,7 +111,7 @@ public class MyApp extends App {
 
 ### Custom termination page 
 
-In some cases, you might want to display a custom termination page when your app ends, providing users with a personalized message or additional resources. This can be achieved by overriding the `onDidTerminate()` method in your App subclass and injecting custom HTML into the page.
+In some cases, you might want to display a custom termination page when your app ends, providing users with a personalized message or additional resources. This can be achieved by overriding the `onDidTerminate()` method in your `App` subclass and injecting custom HTML into the page.
 
 Here's an example of how to create a custom termination page:
 
