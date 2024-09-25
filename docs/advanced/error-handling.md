@@ -2,15 +2,13 @@
 title: Error Handling
 ---
 
-Error handling is a crucial aspect of developing robust web applications. In webforJ, error handling is designed to be flexible and customizable. This allows developers to handle exceptions in a way that best suits their app's needs.
-
-This article provides a detailed overview of how error handling works in webforJ applications. Exploring the core components involved, how to implement custom error handlers, and how to register them so that the framework can discover and utilize them.
+Error handling is a crucial aspect of developing robust web apps. In webforJ, error handling is designed to be flexible and customizable, allowing developers to handle exceptions in a way that best suits their app's needs.
 
 ## Overview
 
 In webforJ, error handling revolves around the `ErrorHandler` interface. This interface allows developers to define how their app should respond when exceptions occur during execution. By default, webforJ provides a `GlobalErrorHandler` that handles all exceptions in a generic way. However, developers can create custom error handlers for specific exceptions to provide more tailored responses.
 
-## How error handlers are discovered and used
+## Discovering and using error handlers
 
 webforJ uses Java's Service Provider Interface (SPI) to discover and load error handlers.
 
@@ -45,9 +43,9 @@ The custom error handler must be registered in the `META-INF/services/com.webfor
 
 ## Implementing a custom error handler
 
-Let's walk through the steps to implement a custom error handler for a specific exception.
+The following steps detail the implementation of a custom error handler for a specific exception:
 
-### Step 1: create the error handler class
+### Step 1: Create the error handler class
 
 Create a new class that implements the `ErrorHandler` interface and is named after the exception it handles.
 
@@ -73,7 +71,7 @@ public class NullPointerExceptionErrorHandler implements ErrorHandler {
 The `showErrorPage` method is a utility method that utilizes the webforJ API to send the provided HTML content and page title to the browser, displaying an error page. When an exception occurs and the app is unable to recover, it becomes impossible to use webforJ components to build a custom error page. However, the `Page` API remains accessible, allowing the developer to redirect or display an error page as a final attempt.
 :::
 
-### Step 2: register the error handler
+### Step 2: Register the error handler
 
 Create a file named `com.webforj.error.ErrorHandler` inside the `META-INF/services` directory of your app. Add the fully qualified name of your error handler class to this file.
 
@@ -115,8 +113,8 @@ The `GlobalErrorHandler` is the default error handler provided by webforJ. It im
 
 ### Defining a custom global error handler
 
-To define a global error handler, you need to create a new error handler named `WebforjGlobalErrorHandler`. then follow [the steps to register error handlers](#step-2-register-the-error-handler) as explained previously. In this case, webforJ first look for any custom error handlers to manage exceptions. If none are found, it will fall back to the custom global error handler.
+To define a global error handler, you need to create a new error handler named `WebforjGlobalErrorHandler`. then follow [the steps to register error handlers](#step-2-register-the-error-handler) as explained previously. In this case, webforJ first look for any custom error handlers to manage exceptions. If none are found, webforJ falls back to the custom global error handler.
 
 :::info
-If mulitable `WebforjGlobalErrorHandler` are registerd then webforJ will pick the first one 
+If multiple `WebforjGlobalErrorHandler` are registerd then webforJ selects the first one 
 :::
