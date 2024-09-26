@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 title: Spinner
 ---
 
@@ -17,29 +18,41 @@ import Chip from '@mui/material/Chip';
 
 <JavadocLink type="spinner" location="com/webforj/component/spinner/Spinner" top='true'/>
 
-A `Spinner` component provides a visual indicator that something is being processed or loaded in the background. It is often used to indicate that data or content is being fetched or when a process takes time to complete. The spinner offers user feedback, signaling that the system is actively working.
+The `Spinner` component provides a visual indicator that something is being processed or loaded in the background. It is often used to indicate that data or content is being fetched or when a process takes time to complete. The spinner offers user feedback, signaling that the system is actively working.
 
-## Creating a Spinner
+A `Spinner` is commonly used when data is being loaded, forms are being submitted, or any process takes time to complete. It keeps users informed that the system is working in the background, improving the experience by preventing confusion or frustration during delays. 
+
+## Basics
 
 To create a `Spinner`, you can specify the theme and size (expanse). The basic syntax involves creating a `Spinner` instance and defining its appearance and behavior through methods such as `setTheme()` and `setExpanse()`.
 
 <ComponentDemo 
 path='http://localhost:8888/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerDemo' 
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/spinnerdemos/SpinnerDemo.java'
-height = '100px'
+height = '225px'
 />
 
 ## Managing Speed and Pausing
 
+webforJ allows you to set the speed in milliseconds for the `Spinner` and pause/resume the animation with ease. 
+
+Use cases for setting speeds include differentiating between loading processes (e.g., faster `Spinners` for smaller tasks and slower `Spinners` for larger tasks), while pausing is useful when user action or confirmation is required before continuing the process.
+
 ### Adjusting Speed
 
-You can control how fast the `Spinner` rotates by adjusting its speed using the `setSpeed()` method. A lower value will make the `Spinner` rotate faster, while higher values will slow it down.
+You can control how fast the `Spinner` rotates by adjusting its speed in milliseconds using the `setSpeed()` method. A lower value will make the `Spinner` rotate faster, while higher values will slow it down.
 
 ```java
 spinner.setSpeed(500); // Rotates faster
 ```
 
+:::info Default Speed
+By default, the `Spinner` will take 1000 milliseconds to complete one full rotation.
+:::
+
 ### Pausing and Resuming
+
+Pausing the `Spinner` is helpful when a process is temporarily halted or awaiting user input. It informs users that the system is on hold, rather than actively working, improving clarity during multi-step processes.
 
 To pause and resume the `Spinner`, use the `setPaused()` method. This is useful in situations where you might want to temporarily stop the spinning animation.
 
@@ -47,8 +60,6 @@ To pause and resume the `Spinner`, use the `setPaused()` method. This is useful 
 spinner.setPaused(true);  // Pause the spinner
 spinner.setPaused(false); // Resume the spinner
 ```
-
-By default, the `Spinner` will take 1000 milliseconds to complete one full rotation.
 
 This example shows how to go about setting the speed and how to pause/resume the `Spinner`:
 
@@ -67,7 +78,7 @@ spinner.setClockwise(false);  // Rotates counterclockwise
 spinner.setClockwise(true);   // Rotates clockwise
 ```
 
-This option can be used to visually indicate a special state or simply as a unique design choice.
+This option can be used to visually indicate a special state or simply as a unique design choice. Changing the spin direction might be useful for differentiating between types of processes, such as progress vs. reversal, or to provide a distinct visual cue in specific contexts.
 
 <ComponentDemo 
 path='http://localhost:8888/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerDirectionDemo' 
