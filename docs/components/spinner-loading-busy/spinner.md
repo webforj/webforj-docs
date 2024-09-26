@@ -27,7 +27,7 @@ A `Spinner` is commonly used when data is being loaded, forms are being submitte
 To create a `Spinner`, you can specify the theme and size (expanse). The basic syntax involves creating a `Spinner` instance and defining its appearance and behavior through methods such as `setTheme()` and `setExpanse()`.
 
 <ComponentDemo 
-path='http://localhost:8888/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerDemo' 
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerDemo'  
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/spinnerdemos/SpinnerDemo.java'
 height = '225px'
 />
@@ -64,7 +64,7 @@ spinner.setPaused(false); // Resume the spinner
 This example shows how to go about setting the speed and how to pause/resume the `Spinner`:
 
 <ComponentDemo 
-path='http://localhost:8888/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerSpeedDemo' 
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerSpeedDemo'  
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/spinnerdemos/SpinnerSpeedDemo.java'
 height = '150px'
 />
@@ -81,7 +81,7 @@ spinner.setClockwise(true);   // Rotates clockwise
 This option can be used to visually indicate a special state or simply as a unique design choice. Changing the spin direction might be useful for differentiating between types of processes, such as progress vs. reversal, or to provide a distinct visual cue in specific contexts.
 
 <ComponentDemo 
-path='http://localhost:8888/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerDirectionDemo' 
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerDirectionDemo'  
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/spinnerdemos/SpinnerDirectionDemo.java'
 height = '150px'
 />
@@ -111,7 +111,7 @@ These themes can be applied programmatically to the spinner, providing visual cu
 You can specify this behavior using the `setTheme()` method.
 
 <ComponentDemo 
-path='http://localhost:8888/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerThemeDemo' 
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerThemeDemo'  
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/spinnerdemos/SpinnerThemeDemo.java'
 height = '100px'
 />
@@ -121,7 +121,7 @@ height = '100px'
 The size of the spinner, known as **expanse**, can be adjusted to fit the visual space you need. The spinner supports various sizes including `Expanse.SMALL` , `Expanse.MEDIUM` , and `Expanse.LARGE`. 
 
 <ComponentDemo 
-path='http://localhost:8888/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerExpanseDemo' 
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerExpanseDemo'  
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/spinnerdemos/SpinnerExpanseDemo.java'
 height = '100px'
 />
