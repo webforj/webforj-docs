@@ -142,8 +142,8 @@ The `ComboBox` has two slots: the `prefix` and `suffix` slots. Use the `setPrefi
 
 ```java
 ComboBox comboBox = new ComboBox());
-  comboBox.setPrefixComponent(new Img("http://localhost:8888/joystick.png"));
-  comboBox.setSuffixComponent(new Img("http://localhost:8888/joystick.png"));
+  comboBox.setPrefixComponent(TablerIcon.create("box"));
+  comboBox.setSuffixComponent(TablerIcon.create("box"));
 ```
 
 ## Styling
