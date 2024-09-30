@@ -41,7 +41,7 @@ The `user/:id` is known as a route pattern. The router can handle both simple pa
 
 In some cases, you might want to allow multiple URLs to point to the same component. For instance, you might want users to be able to access their profile through either `/profile` or `/user/me`. webforJ allows this through the **`@RouteAlias`** annotation, enabling you to define multiple aliases for a single route.
 
-Here’s an example:
+Here’s an example in which the component is accessible though both `/profile` and `/user/me`:
 
 ```java
 @Route(value = "profile")
@@ -51,7 +51,5 @@ public class UserProfileView extends Composite<Div> {
 }
 ```
 
-In this example:
-- The `UserProfileView` component is accessible through both `/profile` and `/user/me`.
-- Defining route aliases increases flexibility in your navigation design, allowing users to access the same content through different URLs.
+Defining route aliases increases flexibility in your navigation design, allowing users to access the same content through different URLs.
 
