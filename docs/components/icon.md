@@ -1,5 +1,5 @@
 ---
-title: Icons
+title: Icon
 ---
 
 import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
@@ -14,8 +14,8 @@ import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
 
 <JavadocLink type="foundation" location="com/webforj/component/icons/Icon" top='true'/>
 
-Icons are a fundemental part of enhancing the design of the user interface, making it faster for users to scan the screen for actionable items.
-Using icons in your app creates visual cues for navigation and actions, making it aesthetically appealing.
+Icons are a fundamental part of enhancing the design of the user interface, making it faster for users to scan the screen for actionable items.
+Using icons in your app creates visual cues for navigation and actions, which can reduce the amount of text needed and ultimately simplifying the user interface.
 The `Icon` component allows you to choose from three icon pools and also gives you the option to create new ones from scratch.
 
 :::tip Did you know?
@@ -26,30 +26,25 @@ Some components, like `PasswordField` and `TimeField`, have built-in icons to he
 
 ## Basics
 
-Icons are designed as Scalable Vector Graphics (SVG) images, which means they can easily scale to any size without losing clarity or quality.
-Additionally, the icons are loaded on demand from a content delivery network (CDN), which helps reduce latency and improve overall performance.
+Every `Icon` is designed as Scalable Vector Graphics (SVG) images, which means they can easily scale to any size without losing clarity or quality.
+Additionally, `Icon` components are loaded on demand from a content delivery network (CDN), which helps reduce latency and improve overall performance.
 
-When creating an `Icon` component, you'll need to identify a specific pool and the name of the icon itself.
+When creating an `Icon`, you'll need to identify a specific pool and the name of the icon itself.
 Some icons also offer the choice between an outlined or a filled version via [variations](#variations).
 
 <!-- IconMenu.java -->
 
 ### Pools
 
-Explore a wide range of available and cost-free icons across mulitple pools.
-You have the flexibility when using webforJ to choose icons from the websites below to discover the icons that best suit your needs without the hassle of downloading any of the icons directly.
+Using webforJ allows you to choose from three pools, or implement a custom pool.
+Each pool has an extensive gallery of available and cost-free icons.
+Using webforJ lets you have the flexibility to choose from three pools and use them as unique classes, without the hassle of downloading any of the icons directly.
 
-
-- [Tabler](https://tabler-icons.io/)
-- [Feather](https://feathericons.com/)
-- [Font Awesome](https://fontawesome.com/search)
-
-These pools correlate to their own classes in webforJ:
-
-- `TablerIcon`
-- `FeatherIcon`
-- `FontAwesomeIcon`
-- `DwcIcon` (a subset of the Tabler icons)
+| Icon Pool                                         | webforJ Class |
+| --------                                          | ------- |
+| [Tabler](https://tabler-icons.io/)                | `TablerIcon` and `DwcIcon` (a subset of the Tabler icons)|    
+| [Feather](https://feathericons.com/)              | `FeatherIcon`    |
+| [Font Awesome](https://fontawesome.com/search)    | `FontAwesomeIcon`   |
 
 :::tip
 
@@ -94,7 +89,8 @@ Icon music = FontAwesomeIcon.create("user", FontAwesomeIcon.Variate.SOLID);
 
 ## Adding icons to components
 
-Integrate icons into your components using slots. Icons can be incorporated into various components to enhance the overall design and user experience. Here's a list of components you can add icons to:
+Integrate icons into your components using slots. Slots provide flexible options for improving the functionality of a component. It's beneficial to add an `Icon` to a component to further clarify intended meaning to users.
+Icons can be incorporated into various components to enhance the overall design and user experience. Here's a list of components you can add icons to:
 
 - [Button](../../docs/components/button)
 - [ChoiceBox](../../docs/components/list-components/choicebox)
@@ -102,12 +98,12 @@ Integrate icons into your components using slots. Icons can be incorporated into
 - [TabbedPane](../../docs/components/tabbedpane)
 - [All Field Types](../../docs/components/fields)
 
-Using prefix and suffix slots, you can determine if you want the icon before or after the text.
+Using `prefix` and `suffix` slots, you can determine if you want the icon before or after the text using the `setPrefixComponent()` and `setSuffixComponent()` methods.
 Deciding whether to place an icon before or after the text on a component largely depends on the purpose and design context.
 
 ### Icons before component text
 
-    This is the most common placement for icons. Placing icons before a component allows users to quickly understand the component's purpose, especially for more universally understood icons like the save icon.
+    Placing icons before a component allows users to quickly understand the component's purpose, especially for more universally understood icons like the save icon.
     Seeing the icon first helps users process the information in a logical flow.
     If the button's primary function is an action, putting the icon first signals the action more clearly, especially when users are scanning quickly.
 
@@ -118,7 +114,7 @@ Deciding whether to place an icon before or after the text on a component largel
 
 ### Icons after component text
 
-   This is a less common placement for icons, but still effective, especially for buttons that provide contextual cues or extra information.
+   Icons after components is effective place for buttons that provide contextual cues or extra information.
    Placing icons after text is most suitable for actions that provide extra information or options, as well as for components that guide directional flow.
 
    **Examples**
@@ -130,7 +126,7 @@ Ultimately, consistency is key. Once you choose a style, maintain it across your
 
 ## Creating custom pools
 
-If you want to create your own icons, like when you’re using a company's logo directly in the user interface, you can create a custom pool.
+Beyond utilizing existing icon collections, you have the option to create a custom pool that can be used for custom logos or avatars.
 A custom pool of icons can be stored in a centralized directory or in the resources folder (context), simplifying the icon management process.
 Having a custom pool makes app creation more consistent and reduces maintenance across different components and modules.
 
