@@ -8,11 +8,11 @@ import DocCardList from '@theme/DocCardList';
 
 <!-- vale on -->
 
-In modern web applications, **routing** refers to the process of managing navigation between different views or components based on the current URL or path. In webforJ, routing establishes a sophisticated framework for **client-side navigation**, where UI updates happen dynamically without requiring full page reloads, enhancing performance and user experience.
+In modern web applications, **routing** refers to the process of managing navigation between different views or components based on the current URL or path. In webforJ, routing establishes a sophisticated framework for **client-side navigation**, where UI updates happen dynamically without requiring full page reloads, enhancing the performance of your app.
 
 ### Traditional vs client-side routing
 
-In traditional server-side routing, when a user clicks a link, the browser sends a request to the server for a new document. The server responds by sending a fresh HTML page, which forces the browser to re-evaluate CSS and JavaScript, re-render the entire document, and reset the app state. This cycle introduces delays and inefficiencies as the browser must reload resources and the page state. The process typically involves:
+In traditional server-side routing, when a user clicks a link, the browser sends a request to the server for a new document. The server responds by sending a fresh HTML page, which forces the browser to re-evaluate CSS and JavaScript, re-render the entire document, and reset the app state. This cycle introduces delays and inefficiencies, as the browser must reload resources and the page state. The process typically involves:
 
 1. **Request**: The user navigates to a new URL, triggering a request to the server.
 2. **Response**: The server sends back a new HTML document along with related assets (CSS, JS).
@@ -25,7 +25,7 @@ This approach can lead to performance bottlenecks and suboptimal user experience
 1. **Single Initial Request**: The browser loads the app once, including all required assets (HTML, CSS, JavaScript).
 2. **URL Management**: The router listens for URL changes and updates the view based on the current route.
 3. **Dynamic Component Rendering**: The router maps the URL to a component and renders it dynamically, without refreshing the page.
-4. **State Preservation**: The state of the app is maintained between navigations, ensuring a smooth and continuous user experience.
+4. **State Preservation**: The state of the app is maintained between navigations, ensuring smooth transition between views.
 
 This design enables **deep linking** and **URL-driven state management**, allowing users to bookmark and share specific pages within the app while enjoying a smooth, single-page experience.
 
