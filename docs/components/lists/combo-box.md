@@ -137,8 +137,8 @@ If content was highlighted upon losing focus, it will be highlighted again upon 
 
 ## Slots
 
-Slots provide flexible options for improving the functionality of a `ComboBox`. You can have icons, labels, loading spinners, clear/reset capability, avatar/profile pictures, and other beneficial components nested within a `ComboBox`.
-The `ComboBox` has two slots: the `prefix` and `suffix` slots. By employing the `setPrefixComponent()` and `setSuffixComponent()` methods, you can effortlessly insert various components before and after the `ComboBox`, further improving its user interaction.
+Slots provide flexible options for improving the functionality of a `ComboBox`. You can have icons, labels, loading spinners, clear/reset capability, avatar/profile pictures, and other beneficial components nested within a `ComboBox` to further clarify intended meaning to users.
+The `ComboBox` has two slots: the `prefix` and `suffix` slots. Use the `setPrefixComponent()` and `setSuffixComponent()` methods to insert various components before and after the options within a `ComboBox`.
 
 ```java
 ComboBox comboBox = new ComboBox());
