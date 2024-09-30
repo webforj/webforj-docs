@@ -3,10 +3,10 @@ sidebar_position: 2
 title: Routable Apps
 ---
 
-Routing in webforJ is an optional component. Developers can choose between the webforJ routing solution or a traditional model with frames and without deep linking. To enable routing, the **`@Routify`** annotation must be applied at the app level. This grants webforJ the authority to manage browser history, respond to navigation events, and render the app’s components based on the URL.
+Routing in webforJ is an optional tool. Developers can choose between the webforJ routing solution or a traditional model with `Frame` manipulation and without deep linking. To enable routing, the **`@Routify`** annotation must be applied at the level of a class implementing `App`. This grants webforJ the authority to manage browser history, respond to navigation events, and render the app’s components based on the URL.
 
 :::info
-To learn more about building UIs using frames, built-in, and custom components, visit the [Building UIs](../building-ui/component-basics) section.
+To learn more about building UIs using frames, built-in, and custom components, visit the [Building UIs](../building-ui/basics) section.
 :::
 
 ### Purpose of the `@Routify` Annotation
