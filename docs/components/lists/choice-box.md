@@ -93,8 +93,8 @@ Passing a `String` value to either of these methods will allow for [any valid CS
 
 ## Slots
 
-Slots provide flexible options for improving the functionality of a `ChoiceBox`. You can have icons, labels, loading spinners, clear/reset capability, avatar/profile pictures, and other beneficial components nested within a `ChoiceBox`.
-The `ChoiceBox` has two slots: the `prefix` and `suffix` slots. By employing the `setPrefixComponent()` and `setSuffixComponent()` methods, you can effortlessly insert various components before and after the displayed option within a `ChoiceBox`, further improving its user interaction.
+Slots provide flexible options for improving the functionality of a `ChoiceBox`. You can have icons, labels, loading spinners, clear/reset capability, avatar/profile pictures, and other beneficial components nested within a `ChoiceBox` to further clarify intended meaning to users.
+The `ChoiceBox` has two slots: the `prefix` and `suffix` slots. Use the `setPrefixComponent()` and `setSuffixComponent()` methods to insert various components before and after the displayed option within a `ChoiceBox`.
 
 ```java
 ComboBox choiceBox = new ChoiceBox());
