@@ -77,7 +77,7 @@ public class OrderView extends Composite<Div> implements DidEnterObserver {
 }
 ```
 
-This pattern matches both `/order/123` and `/order`.
+This pattern matches both `/order/123` to include a numeric value to be included, and `/order`, allowing the omission of a numeric value when `/order` is entered.
 
 ## Regular expression constraints
 
