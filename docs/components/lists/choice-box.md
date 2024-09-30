@@ -98,8 +98,8 @@ The `ChoiceBox` has two slots: the `prefix` and `suffix` slots. Use the `setPref
 
 ```java
 ComboBox choiceBox = new ChoiceBox());
-  choiceBox.setPrefixComponent(new Img("http://localhost:8888/joystick.png"));
-  choiceBox.setSuffixComponent(new Img("http://localhost:8888/joystick.png"));
+  choiceBox.setPrefixComponent(TablerIcon.create("box"));
+  choiceBox.setSuffixComponent(TablerIcon.create("box"));
 ```
 
 ## Styling
