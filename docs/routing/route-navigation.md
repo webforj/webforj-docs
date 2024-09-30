@@ -3,7 +3,7 @@ sidebar_position: 4
 title: Route Navigation
 ---
 
-In webforJ, navigating between routes is the core mechanism for switching views and components based on user actions or URL changes. Navigation allows users to move seamlessly between different parts of the app without refreshing the page. This client-side navigation keeps the app responsive, and smooth while preserving the app's state.
+In webforJ, navigating between routes is the core mechanism for switching views and components based on user actions or URL changes. Navigation allows users to move seamlessly between different parts of the app without refreshing the page. This client-side navigation keeps the app responsive and smooth while preserving the app's state.
 
 ## Programmatic navigation
 
@@ -23,7 +23,7 @@ public class DashboardView extends Composite<Div> {
 Router.getCurrent().navigate(DashboardView.class);
 ```
 
-In this example, navigating to `DashboardView` component programmatically will cause the `DashboardView` component to be rendered
+In this example, navigating to `DashboardView` component programmatically  causes the `DashboardView` component to be rendered
 and the browser's URL to updated to `/dashboard`.
 
 It's also possible to navigate to the view by passing a new `Location`
@@ -32,8 +32,8 @@ It's also possible to navigate to the view by passing a new `Location`
 Router.getCurrent().navigate(new Location("/dashboard"));
 ```
 
-:::tip Navigation Methods for View Routing: Class vs. Location
-When navigating between views, developers have two options: they can either pass the view or route class, allowing the router to automatically generate the URL and render the view, or pass the location directly. Both methods are valid, but using the view class is the preferred approach because it offers better flexibility for future changes. For instance, if you later decide to update the route, you only need to modify the `@Route` annotation, without having to change any code that uses the view class for navigation.
+:::tip Class vs. Location: Methods for View Routing
+When navigating between views, developers have two options: they can either pass the view or route class, allowing the router to automatically generate the URL and render the view, or pass the location directly. Both methods are valid, but **using the view class is the preferred approach** because it offers better flexibility for future changes. For instance, if you later decide to update the route, you only need to modify the `@Route` annotation, without having to change any code that uses the view class for navigation.
 :::
 
 ### Navigation with parameters
@@ -89,8 +89,8 @@ Router.getCurrent().navigate(
     });
 ```
 
-:::info Component instance may be `null`
-The consumer receives a Java `Optional` for the component because it might be null or not created for various reasons. For example, the component may not be rendered if the navigation observers veto the navigation and stop the process.
+:::info Null instances
+The consumer receives a Java `Optional` for the component because it might be `null`, or not created for various reasons. For example, the component may not be rendered if the navigation observers veto the navigation and stop the process.
 :::
 
 ## Navigation options
@@ -118,10 +118,10 @@ Here are the main configuration options available within `NavigationOptions`:
    - **`REPLACE`**: Replaces the current route in the history stack with the new location, preventing the back button from navigating to the previous route.
 
 2. **Fire Events (`setFireEvents`)**  
-   Determines whether navigation lifecycle events should be fired during navigation. By default, events are fired (`true`). If set to `false`, no events will be fired, which is useful for silent navigations.
+   Determines whether navigation lifecycle events should be fired during navigation. By default, this is set to `true`, and events are fired. If set to `false`, no events will be fired, which is useful for silent navigation.
 
 3. **Invoke Observers (`setInvokeObservers`)**  
-   This flag controls whether the navigation should trigger observers within the navigated components. Observers typically handle events like route entry or exit. Disabling this (`false`) prevents observers from being invoked.
+   This flag controls whether the navigation should trigger observers within the navigated components. Observers typically handle events like route entry or exit. Setting this to `false` prevents observers from being invoked.
 
 4. **Update History (`setUpdateHistory`)**  
    When set to `false`, this option prevents the history location from being updated. This is useful when you want to change the view without affecting the browser’s back or forward navigation. It only affects history management, not the component lifecycle or route handling.
@@ -131,7 +131,7 @@ Here are the main configuration options available within `NavigationOptions`:
 
 ## Generating locations for views
 
-The router can generate the location for views based on the route pattern defined in the view. You can also provide additional parameters for dynamic and required segments in the URL.
+The router can generate the location for views based on the route pattern defined in the view. You can also provide additional parameters for dynamic and required segments in the URL. This can be useful when constructing links or sharing direct access points to specific views in the app.
 
 Here’s how to generate a `Location` based on a view class and route parameters:
 
@@ -143,4 +143,4 @@ Optional<Location> location = Router.getCurrent().getLocation(userProfileView, p
 console().log(location.get());
 ```
 
-This generates a `Location` object with the path `/user/JohnDoe`, the complete URI as a string, which is useful when constructing links or sharing direct access points to specific views in the app.
+This generates a `Location` object with the path `/user/JohnDoe`, the complete URI as a string.
