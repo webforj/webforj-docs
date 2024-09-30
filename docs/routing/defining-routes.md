@@ -5,7 +5,7 @@ title: Defining Routes
 
 Defining routes is essential for mapping URLs to specific components. This allows you to control how different parts of your UI are rendered based on the URL structure. The framework uses the `@Route` annotation to make this process declarative and straightforward, reducing the need for manual configuration.
 
-### Defining a Route with `@Route`
+### Defining a route with `@Route`
 
 The `@Route` annotation is used to bind a URL path to a specific component. This allows the component to be rendered whenever the app navigates to that URL. Here’s a simple example:
 
