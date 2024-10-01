@@ -11,12 +11,15 @@ import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
 import ParentLink from '@site/src/components/DocsTools/ParentLink';
 import TableBuilder from '@site/src/components/DocsTools/TableBuilder';
 import TabSwitcher from '@site/src/components/DocsTools/TabSwitcher';
+import DocCardList from '@theme/DocCardList';
+
 
 export default {
   ...MDXComponents,
   AppLayoutViewer,
   ComponentCard,
   ComponentDemo,
+  DocCardList,
   DocChip,
   EventTable,
   JavadocLink,
