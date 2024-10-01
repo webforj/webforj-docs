@@ -16,8 +16,8 @@ export default function ParentLink({parent, url = "./"}){
   return (
     <div>
       <Admonition type="info" title="Inheritance">
-        <p>{child !== defaultChildValue ? <code>{child}</code> : child} is a <code>{parent}</code> component, and inherits its features and behaviors. 
-        For an overview of <code>{parent}</code> properties, events, and other important information, please refer to the <a href={url}>{parent} documentation</a>.</p>
+        <p>{child !== defaultChildValue ? <code>{child}</code> : child} is a {parent} component, and inherits its features and behaviors. 
+        For an overview of {parent} properties, events, and other important information, please refer to the <a href={url}>{parent} documentation</a>.</p>
       </Admonition>
     </div>
   )
