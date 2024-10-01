@@ -9,6 +9,7 @@ import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
 import DocChip from '@site/src/components/DocsTools/DocChip';
 import EventTable from '@site/src/components/DocsTools/EventTable';
 import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
+import ParentLink from '@site/src/components/DocsTools/ParentLink';
 import TableBuilder from '@site/src/components/DocsTools/TableBuilder';
 import TabSwitcher from '@site/src/components/DocsTools/TabSwitcher';
 
@@ -21,6 +22,7 @@ export default {
   DocChip,
   EventTable,
   JavadocLink,
+  ParentLink,
   TableBuilder,
   TabSwitcher,
 };
