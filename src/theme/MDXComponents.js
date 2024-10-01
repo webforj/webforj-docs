@@ -3,7 +3,6 @@ import React from 'react';
 
 import MDXComponents from '@theme-original/MDXComponents';
 import AppLayoutViewer from '@site/src/components/DocsTools/AppLayoutViewer';
-import ComponentBasics from '@site/src/components/DocsTools/ComponentBasics';
 import ComponentCard from '@site/src/components/DocsTools/ComponentCard';
 import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
 import DocChip from '@site/src/components/DocsTools/DocChip';
@@ -16,7 +15,6 @@ import TabSwitcher from '@site/src/components/DocsTools/TabSwitcher';
 export default {
   ...MDXComponents,
   AppLayoutViewer,
-  ComponentBasics,
   ComponentCard,
   ComponentDemo,
   DocChip,
