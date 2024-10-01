@@ -11,8 +11,6 @@ title: File Chooser
 
 <JavadocLink type="foundation" location="com/webforj/component/optiondialog/FileChooserDialog" top='true'/>
 
-<ComponentBasics />
-
 `FileChooserDialog` is a modal dialog designed to allow the user to select a file or a directory from the server file system. The dialog blocks app execution until the user makes a selection or closes the dialog.
 
 ```java

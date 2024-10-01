@@ -8,8 +8,6 @@ title: Dialog
 
 <JavadocLink type="dialog" location="com/webforj/component/dialog/Dialog" top='true'/>
 
-<ComponentBasics />
-
 The webforJ dialog component is built to allow a developer to quickly and easily display a dialog on their application, for instances such as a login menu or information box.
 
 The component is built with three sections, each of which are `Panel` components: the **header**, the **content**, and the **footer**.

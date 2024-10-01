@@ -10,8 +10,6 @@ slug: colorfield
 
 <JavadocLink type="foundation" location="com/webforj/component/field/ColorField" top='true'/>
 
-<ComponentBasics />
-
 :::success **Important**
 The `ColorField` class is a Field component, and as such shares all of the commonalities belonging to a Field. Please refer to the **[Field documentation page](/docs/components/fields)** for an overview of Field properties, events, and other important information.
 :::

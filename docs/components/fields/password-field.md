@@ -10,8 +10,6 @@ slug: passwordfield
 
 <JavadocLink type="foundation" location="com/webforj/component/field/PasswordField" top='true'/>
 
-<ComponentBasics />
-
 :::success **Important**
 The `PasswordField` class is a Field component, and as such shares all of the commonalities belonging to a Field. Please refer to the **[Field documentation page](/docs/components/fields)** for an overview of Field properties, events, and other important information.
 :::

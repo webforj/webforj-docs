@@ -10,8 +10,6 @@ slug: combobox
 
 <JavadocLink type="foundation" location="com/webforj/component/list/ComboBox" top='true'/>
 
-<ComponentBasics />
-
 The `ComboBox` component is a user interface element designed to present users with a list of options or choices, as well as a field for entering their own custom values. Users can select a single option from this list, typically by clicking the `ComboBox`, which triggers the display of a dropdown list containing available choices, or type in a custom value. Users can also interact with the `ComboBox` with the arrow keys. When a user makes a selection, the chosen option is then displayed in the `ComboBox`. 
 
 <!-- <ComponentDemo 

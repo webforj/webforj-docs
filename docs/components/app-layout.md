@@ -6,7 +6,6 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <JavadocLink type="applayout" location="com/webforj/component/layout/applayout/AppLayout" top='true'/>
-<ComponentBasics />
 
 The `AppLayout` is a comprehensive responsive layout component that provides a header, a footer, a drawer, and content section. The header and footer are fixed, the drawer slides in and out of the viewport, and the content is scrollable.
 

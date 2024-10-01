@@ -11,8 +11,6 @@ title: File Upload
 
 <JavadocLink type="foundation" location="com/webforj/component/optiondialog/FileUploadDialog" top='true'/>
 
-<ComponentBasics />
-
 A `FileUploadDialog` is a modal dialog designed to allow the user to upload files from their local file system. The dialog blocks app execution until the user selects files to upload or closes the dialog.
 
 ```java

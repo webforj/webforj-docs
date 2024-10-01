@@ -11,8 +11,6 @@ title: Message
 
 <JavadocLink type="foundation" location="com/webforj/component/optiondialog/MessageDialog" top='true'/>
 
-<ComponentBasics />
-
 A `MessageDialog` is a modal dialog designed to display a message to the user with an `OK` button to dismiss the dialog. It blocks app execution until the user interacts with it or it closes due to a timeout.
 
 ```java

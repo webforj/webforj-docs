@@ -11,8 +11,6 @@ import TabItem from '@theme/TabItem';
 
 <JavadocLink type="foundation" location="com/webforj/component/optioninput/CheckBox" top='true'/>
 
-<ComponentBasics />
-
 The `CheckBox` class creates a component that can be selected or deselected, and which displays its state to the user. When clicked, a check mark appears inside the box, to indicate an affirmative choice (on). When clicked again, the check mark disappears, indicating a negative choice (off).
 
 By providing a clear and straightforward visual indication of selection status, checkboxes enhance user interaction and decision-making, making them an essential element in modern user interfaces.
