@@ -11,9 +11,7 @@ slug: timefield
 
 <JavadocLink type="foundation" location="com/webforj/component/field/TimeField" top='true'/>
 
-:::success **Important**
-The `TimeField` class is a Field component, and as such shares all of the commonalities belonging to a Field. Please refer to the **[Field documentation page](/docs/components/fields)** for an overview of Field properties, events, and other important information.
-:::
+<ParentLink parent="Field" />
 
 <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.fielddemos.TimeFieldDemo' 

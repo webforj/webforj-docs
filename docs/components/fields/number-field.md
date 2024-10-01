@@ -10,9 +10,8 @@ slug: numberfield
 
 <JavadocLink type="foundation" location="com/webforj/component/field/NumberField" top='true' />
 
-:::success **Important**
-The `NumberField` class is a Field component, and as such shares all of the commonalities belonging to a Field. Please refer to the **[Field documentation page](/docs/components/fields)** for an overview of Field properties, events, and other important information.
-:::
+<ParentLink parent="Field" />
+
 
 The `NumberField` component can be used to accept numerical input from the user. It ensures that only valid numeric values are entered and provides a convenient interface for inputting numbers.
 

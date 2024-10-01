@@ -10,9 +10,7 @@ slug: passwordfield
 
 <JavadocLink type="foundation" location="com/webforj/component/field/PasswordField" top='true'/>
 
-:::success **Important**
-The `PasswordField` class is a Field component, and as such shares all of the commonalities belonging to a Field. Please refer to the **[Field documentation page](/docs/components/fields)** for an overview of Field properties, events, and other important information.
-:::
+<ParentLink parent="Field" />
 
 The `PasswordField` component provides a way for the user to securely enter a password. The element is presented as a one-line plain text editor control in which the text is obscured so that it cannot be read, usually by replacing each character with a symbol such as the asterisk ("*") or a dot ("•"). This character will vary depending on the user agent and operating system.
 

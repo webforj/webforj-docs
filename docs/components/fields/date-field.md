@@ -10,9 +10,7 @@ slug: datefield
 
 <JavadocLink type="foundation" location="com/webforj/component/field/DateField" top='true'/>
 
-:::success **Important**
-The `DateField` class is a Field component, and as such shares all of the commonalities belonging to a Field. Please refer to the **[Field documentation page](/docs/components/fields)** for an overview of Field properties, events, and other important information.
-:::
+<ParentLink parent="Field" />
 
 The `DateField` is a user interface component that allows users to input or select dates. It provides an intuitive and efficient way to handle date-related information in various applications. This section outlines the best practices for using the `DateField` component effectively.
 

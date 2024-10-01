@@ -10,6 +10,8 @@ slug: listbox
 
 <JavadocLink type="foundation" location="com/webforj/component/list/ListBox" top='true'/>
 
+<ParentLink parent="List" />
+
 The `ListBox` component is a user interface element designed to display a scrollable list of objects and allows users to select single or multiple items from the list. Users can also interact with the `ListBox` with the arrow keys. 
 
 <!-- <ComponentDemo 

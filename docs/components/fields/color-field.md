@@ -10,9 +10,7 @@ slug: colorfield
 
 <JavadocLink type="foundation" location="com/webforj/component/field/ColorField" top='true'/>
 
-:::success **Important**
-The `ColorField` class is a Field component, and as such shares all of the commonalities belonging to a Field. Please refer to the **[Field documentation page](/docs/components/fields)** for an overview of Field properties, events, and other important information.
-:::
+<ParentLink parent="Field" />
 
 The `ColorField` component is a powerful and versatile tool designed to provide an intuitive and interactive way to explore and select colors within your application. Whether you're designing a user interface, creating visualizations, or enhancing user experience, the `ColorField` component offers a seamless and efficient approach to working with colors. 
 
