@@ -8,17 +8,17 @@ import ComponentViewer from '@site/src/components/PageTools/ComponentViewer'
 
 <JavadocLink type="foundation" location="com/webforj/component/field/AbstractField"/>
 
-webforJ supports seven different types of field components, each with various behaviors and implementations that suit various
-needs. While each of these components have variations in their implementations, there are commonalities amongst all of the 
-field classes that will be described here.
+WebforJ supports seven different types of field components, each with different behaviors and implementations that suit various
+needs. While each of these components have variations in their implementations, this article describes commonalities among all of the 
+field classes.
 
 :::info
-This section describes common functionality amongst various field components in webforJ, and is not itself a class that can be instantiated and used.
+This section describes common functionality of various field components in webforJ, and is not itself a class that can be instantiated and used.
 :::
 
 <!-- <ComponentViewer componentData={componentData} /> -->
 
-## Shared Field Properties 
+## Shared field properties 
 
 <!-- ### Autocomplete
 
@@ -41,29 +41,29 @@ Field components contain built-in visual validation which notifies users if a re
 By calling the `setSpellCheck(true)` method, you can enable the spellcheck feature for a field. This means that when a user enters text into the field, the browser or user agent may check the spelling of the entered text for errors.
 
 
-## Parts and CSS Properties
+## Parts and CSS properties
 
 :::info
-As all field components are built from a singular web component, they will all share the
+Because all field components are built from a singular web component, they all share the
 following Shadow Parts and CSS Property values
 :::
 
 
-### Shadow Parts
+### Shadow parts
 
-These are the various parts of the shadow DOM for the component, which will be required when styling via CSS is desired.
+These are the various parts of the shadow DOM for the component, which are required when styling via CSS.
 
 <TableBuilder tag={require('@site/docs/components/_dwc_control_map.json').Field}  table='parts'/>
 
-### CSS Properties
+### CSS properties
 
 These are the various CSS properties that are used in the component, with a short description of their use.
 
 <TableBuilder tag={require('@site/docs/components/_dwc_control_map.json').Field}  table='properties'/>
 
-### Reflected Attributes
+### Reflected attributes
 
-The reflected attributes of a component will be shown as attributes in the rendered HTML element for the component in the DOM. This means that styling can be applied using these attributes.
+The reflected attributes of a component are shown as attributes in the rendered HTML element for the component in the DOM. This means that styling can be applied using these attributes.
 
 <TableBuilder tag={require('@site/docs/components/_dwc_control_map.json').Field} table="reflects"/>
 
@@ -74,4 +74,5 @@ This component relies on the following components - see the related article for 
 <TableBuilder tag='dwc-field' table="dependencies"/>
 
 ## Topics
+
 <DocCardList className="topics-section" />

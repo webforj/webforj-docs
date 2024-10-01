@@ -13,6 +13,8 @@ slug: timefield
 
 <ParentLink parent="Field" />
 
+`TimeField` is a user interface component that allows users to input or select times. It provides an intuitive and efficient way to handle time-related information in various applications. This section outlines the best practices for using the `TimeField` component effectively.
+
 <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.fielddemos.TimeFieldDemo' 
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/fielddemos/TimeFieldDemo.java'
