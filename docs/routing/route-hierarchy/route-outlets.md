@@ -3,7 +3,7 @@ sidebar_position: 3
 title: Route Outlets
 ---
 
-An **outlet** is a designated component , either a [route layout](./route-types#layout-routes) or a [route view](./route-types#view-routes), where child routes are dynamically rendered. It defines where the content of the child route will appear within the parent route. Outlets are fundamental to creating modular, nested UIs and flexible navigation structures.
+An **outlet** is a designated component, either a [route layout](./route-types#layout-routes) or a [route view](./route-types#view-routes), where child routes are dynamically rendered. It defines where the content of the child route will appear within the parent route. Outlets are fundamental to creating modular, nested UIs and flexible navigation structures.
 
 ## Defining an outlet
 
