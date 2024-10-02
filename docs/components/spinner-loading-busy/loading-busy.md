@@ -25,7 +25,7 @@ Both components provide visual cues to ensure that users are aware of ongoing pr
 
 ## Basics
 
-Creating both `Loading` and `BusyIndicator` components in a webforJ application involves a straightforward process. These components are used to display an overlay, signaling to users that the system is busy or processing an action.
+Creating both `Loading` and `BusyIndicator` components in a webforJ application is a straightforward process.
 
 The simplest way to create a `Loading` component is by initializing it without any additional settings. By default, this will display a basic spinner over its parent content. However, you can also provide a message for more context.
 
@@ -46,6 +46,19 @@ height = '300px'
 />
 
 In this example, the `BusyIndicator` prevents any user actions across the entire interface until the operation is completed.
+
+### Scoping
+
+The `Loading` component in webforJ can be scoped to a specific parent container, such as a `Div`, ensuring that it only blocks user interaction within that element. By default, the `Loading` component is relative to its parent, meaning it will only overlay the parent component rather than the entire application.
+
+To limit the `Loading` component to its parent, simply add the `Loading` component to the parent container. For example, if you're adding it to a `Div`, the loading overlay will only apply to that `Div`:
+
+```java
+Div parentDiv = new Div();  
+Loading loading = new Loading();
+parentDiv.add(loading);
+loading.open();  // Loading will only block interaction within the parentDiv
+```
 
 ## Backdrops
 
@@ -68,81 +81,69 @@ BusyIndicator busyIndicator = getBusyIndicator();
 busyIndicator.setBackdropVisible(false);  // Disables the backdrop
 busyIndicator.open();
 ```
-
+:::info Backdrop Disabling
 Even when the backdrop is disabled, the `Loading` and `BusyIndicator` components will continue to block user interaction to ensure the underlying process completes uninterrupted. The backdrop simply controls the visual overlay, not the interaction blocking behavior.
+:::
 
-## Scoping
-
-The `Loading` component in webforJ can be scoped to a specific parent container, such as a `Div`, ensuring that it only blocks user interaction within that element. By default, the `Loading` component is relative to its parent, meaning it will only overlay the parent component rather than the entire application.
-
-To limit the `Loading` component to its parent, simply add the `Loading` component to the parent container. For example, if you're adding it to a `Div`, the loading overlay will only apply to that `Div`:
-
-```java
-Div parentDiv = new Div();  
-Loading loading = new Loading();
-parentDiv.add(loading);
-loading.open();  // Loading will only block interaction within the parentDiv
-```
 
 ## `Spinner`
 
-For both the `Loading` and `BusyIndicator` components in webforJ, the `Spinner` is an integral part that visually signals to users that an operation is ongoing. The `Spinner` provides feedback that the system is processing in the background, allowing users to understand that their action has been registered.
+In both the `Loading` and `BusyIndicator` components in webforJ, the `Spinner` visually indicates that a background operation is in progress. webforJ offers the same customization options for the `Spinner` in both components, including setting its size, speed, direction, theme, and visibility.
 
 
-By default, the `Loading` component includes a spinner that shows users that a background operation is in progress. You can also customize the spinner with different settings, such as its visibility, size, and direction.
-
-To integrate a spinner within a `Loading` component:
+You can customize the spinner within a `Loading` component with several options, such as changing its size, direction, speed, theme, and controlling its visibility:
 
 ```java
 Loading loading = new Loading("Loading data...");
 // Customize the spinner
-loading.getSpinner().setExpanse(SpinnerExpanse.LARGE).setClockwise(false);
+loading.getSpinner()
+    .setExpanse(SpinnerExpanse.LARGE)   // Set the spinner size
+    .setClockwise(false)                // Set direction (counterclockwise)
+    .setSpeed(1200)                     // Set the speed in milliseconds
+    .setTheme(Theme.SUCCESS)            // Set the spinner theme
+    .setVisible(true);                  // Set spinner visibility
 loading.open();
 ```
 
 
-The `BusyIndicator` component also includes a spinner by default, but it comes with a wider range of customization options, allowing you to modify the appearance and behavior of the spinner to fit your application’s requirements. You can change the spinner’s theme, size (expanse), speed, and direction.
-
-Here’s an example of how to customize the spinner for a `BusyIndicator`:
+Similarly, the `BusyIndicator` component allows you to customize the spinner with the same options:
 
 ```java
 BusyIndicator busyIndicator = getBusyIndicator();
-// Customize the spinner with theme, expanse, and speed
+// Customize the spinner
 busyIndicator.getSpinner()
-    .setTheme(Theme.PRIMARY)
-    .setExpanse(SpinnerExpanse.LARGE)
-    .setSpeed(1500);  // Speed in milliseconds
+    .setExpanse(SpinnerExpanse.LARGE)   // Set the spinner size
+    .setClockwise(true)                 // Set direction (clockwise)
+    .setSpeed(1000)                     // Set the speed in milliseconds
+    .setTheme(Theme.WARNING)            // Set the spinner theme
+    .setVisible(true);                  // Set spinner visibility
 busyIndicator.setText("Processing...");
 busyIndicator.open();
 ```
 
 
-### Hiding the `Spinner`
+## Use Cases
 
-Both the `Loading` component and `BusyIndicator` in webforJ include a spinner by default, which indicates that an operation is in progress. However, you can choose to hide the spinner while keeping the overlay and any accompanying text visible.
+### `Loading`
 
-To hide the spinner in either component, simply use the `setVisible(false)` method on the spinner instance.
+- **Data Fetching**  
+   When retrieving data from a server or API, the `Loading` component is used to overlay a specific section of the UI, such as a card or form, to inform users that the system is working in the background. This is ideal when you want to show progress on just one part of the screen without blocking the entire interface.
 
-Example for Hiding the Spinner in `Loading`:
+- **Content Loading in Cards/Sections**  
+   The `Loading` component can be scoped to specific areas of a page, such as individual cards or containers. This is useful when you want to indicate that a particular section of the UI is still loading while allowing users to interact with other parts of the page.
 
-```java
-Loading loading = new Loading("Processing...");
-loading.getSpinner().setVisible(false);  // Hides the spinner
-loading.open();
-```
+- **Complex Form Submissions**  
+   For longer form submissions where validation or processing takes time, the `Loading` component provides visual feedback to users, reassuring them that their input is being processed.
 
-Example for Hiding the Spinner in `BusyIndicator`:
+### `BusyIndicator`
 
-```java
-BusyIndicator busyIndicator = getBusyIndicator();
-busyIndicator.setText("Submitting form...");
-busyIndicator.getSpinner().setVisible(false);  // Hides the spinner
-busyIndicator.open();
-```
+- **Page-Wide Processing**  
+   The `BusyIndicator` is well-suited for larger, page-wide operations, such as when a user initiates a task that affects the entire page, like uploading a file or processing data across multiple sections. It can inform users that the entire app is working, preventing further interaction until the process is complete.
 
-In both cases, the spinner will no longer be displayed, but the overlay (and any provided message) will remain visible, continuing to block user interaction until the process is complete.
+- **Critical System Operations**  
+   When performing system-critical tasks such as syncing data, applying system-wide updates, or processing sensitive information, the `BusyIndicator` gives clear visual feedback that a major operation is ongoing, allowing the user to wait until it’s completed.
 
-
-
+- **Asynchronous Data Loads**  
+   In scenarios where asynchronous data processing is involved (e.g., when calling multiple APIs or waiting for complex computations), the `BusyIndicator` component provides a more global indication that the system is occupied and users should wait before performing additional actions.
 
 
