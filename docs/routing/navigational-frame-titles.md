@@ -69,5 +69,5 @@ In this example:
 - If the route is `/profile/123`, the title will be updated to "Profile - User 123".
 
 :::tip Combining annotations and dynamic titles
-You can combine both static and dynamic methods to achieve more complex behaviors. If a route component has both a `@FrameTitle` annotation and implements the `HasFrameTitle` interface, the dynamically provided title from `getFrameTitle()` will take precedence over the static value from the annotation.
+You can combine both static and dynamic methods. If a route component has both a `@FrameTitle` annotation and implements the `HasFrameTitle` interface, the dynamically provided title from `getFrameTitle()` will take precedence over the static value from the annotation.
 :::
