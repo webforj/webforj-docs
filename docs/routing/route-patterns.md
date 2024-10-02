@@ -49,13 +49,13 @@ Named parameters are defined by prefixing a colon `:` to the parameter name in t
 **Example:**
 
 ```java
-@Route("product/:id<[0-9]+>")
+@Route("product/:id")
 public class ProductView extends Composite<Div> {
   // Component logic here
 }
 ```
 
-This pattern matches URLs like `/product/123` where `id` must be a numeric value.
+This pattern matches URLs like `/product/123` where `id` is `123`
 
 ## Optional parameters
 
