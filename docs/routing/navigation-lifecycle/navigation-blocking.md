@@ -3,9 +3,9 @@ sidebar_position: 3
 title: Navigation Blocking
 ---
 
-Navigation blocking adds one or more layers of "vetoer" to the entire underlying history API. If any veto handlers are present, navigation will be blocked as follows:
+Navigation blocking adds one or more layers of control to the entire underlying router API. If any blocking handlers are present, navigation will be prevented as follows:
 
-If the navigation is triggered by something controlled at the router level, you can perform any task or show a UI prompt to the user to confirm the action. Each component implementing the `WillLeaveObserver` in the route tree will be called. The implementer must invoke `accept` to continue the navigation or `reject` to block it. If multiple components implement the `WillLeaveObserver` in the route's tree, the veto handlers will be executed sequentially in the reverse order
+If the navigation is triggered by something controlled at the router level, you can perform any task or show a UI prompt to the user to confirm the action. Each component implementing the `WillLeaveObserver` in the [route tree](../route-hierarchy/overview) will be called. The implementer must invoke `accept` to continue the navigation or `reject` to block it. If multiple components implement the `WillLeaveObserver` in the route's tree, the veto handlers will be executed sequentially in the reverse order
 
 :::info Practical Example of Veto Handling
 To see how vetoing works in practice, refer to the [Using Lifecycle Observers examples](observers#example-handling-unsaved-changes-with-willleaveobserver)
