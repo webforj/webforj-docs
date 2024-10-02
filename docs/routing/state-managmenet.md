@@ -66,7 +66,7 @@ public class ProductView extends Composite<Div> {
 
 ## Saving and restoring state in browser history
 
-In addition to updating the URL, it is possible to save arbitrary state objects in the browser's history stack. This means you can stash additional data related to the current view (for instance: form inputs, filters, etc.) without embedding them directly into the URL.
+In addition to updating the URL, it's possible to save arbitrary state objects in the browser's history. This means you can stash additional data related to the current view (for instance: form inputs, filters, etc.) without embedding them directly into the URL.
 
 ### Example: Saving selection state
 
