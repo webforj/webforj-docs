@@ -30,7 +30,7 @@ public class DashboardView extends Composite<Div> implements WillEnterObserver {
 }
 ```
 
-Here, `onWillEnter` checks if the user is authenticated. If not, the navigation is vetoed, preventing the view from being rendered and redirecting to the login page instead.
+Here, `onWillEnter` checks if the user is authenticated. If not, the navigation is vetoed, preventing the navigation from being complete and redirecting to the login page instead.
 
 :::warning Example of Authenticated Routes - Not Production-Ready
 This previous is just an example of how to use authenticated routes.
