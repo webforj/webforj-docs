@@ -1,6 +1,6 @@
 ---
 sidebar_position: 10
-title: Updating Frame Title
+title: Navigational Frame Titles
 ---
 
 The frame title of a route can be set both statically via annotations or dynamically through code during runtime. This flexibility allows developers to define titles that reflect the purpose of a view and adapt to specific contexts when necessary.
