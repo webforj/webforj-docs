@@ -3,7 +3,9 @@ sidebar_position: 10
 title: Navigational Frame Titles
 ---
 
-The frame title of a route can be set both statically via annotations or dynamically through code during runtime. This flexibility allows developers to define titles that reflect the purpose of a view and adapt to specific contexts when necessary.
+In webforJ, all routes are rendered within a Frame, which serves as a top-level container responsible for displaying the content of the current route. As users navigate between different routes, the Frame Title is updated dynamically to reflect the active view, helping provide clear context on the user's current location within the app.
+
+The title of a frame can be set either statically using annotations or dynamically through code at runtime. This flexible approach allows developers to define titles that align with the purpose of each view, while also adapting to specific scenarios or parameters as needed.
 
 ## Frame title with annotations
 
