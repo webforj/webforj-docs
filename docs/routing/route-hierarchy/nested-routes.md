@@ -7,7 +7,7 @@ Nested routes allow child routes to be rendered within parent routes, creating a
 
 ## Defining nested routes
 
-Nested routes are created using the `outlet` parameter in the `@Route` annotation, which establishes a parent-child relationship. The `outlet` determines where the child component will be rendered within the parent layout.
+Nested routes are created using the `outlet` parameter in the `@Route` annotation, which establishes a parent-child relationship. The `outlet` determines where the child component will be rendered within the parent route.
 
 ```java
 @Route
