@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Introduction To Routing
+title: Routing
 ---
 
 <!-- vale off -->
