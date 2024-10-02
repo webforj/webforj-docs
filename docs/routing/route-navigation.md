@@ -7,7 +7,7 @@ In webforJ, navigating between routes is the core mechanism for switching views 
 
 ## Programmatic navigation
 
-webforJ provides an easy way to programmatically navigate between routes. You can trigger navigation from anywhere in your app by using the `Router` class. This allows dynamic changes in the displayed components based on events such as button clicks or other user interactions.
+You can trigger navigation from anywhere in your app by using the `Router` class. This allows dynamic changes in the displayed components based on events such as button clicks or other user interactions.
 
 Here’s an example of how to navigate to a specific route:
 
@@ -118,16 +118,16 @@ Here are the main configuration options available within `NavigationOptions`:
    - **`REPLACE`**: Replaces the current route in the history stack with the new location, preventing the back button from navigating to the previous route.
 
 2. **Fire Events (`setFireEvents`)**  
-   Determines whether navigation lifecycle events should be fired during navigation. By default, this is set to `true`, and events are fired. If set to `false`, no events will be fired, which is useful for silent navigation.
+   Determines whether navigation [lifecycle events](./navigation-lifecycle/navigation-events) should be fired during navigation. By default, this is set to `true`, and events are fired. If set to `false`, no events will be fired, which is useful for silent navigation.
 
 3. **Invoke Observers (`setInvokeObservers`)**  
-   This flag controls whether the navigation should trigger observers within the navigated components. Observers typically handle events like route entry or exit. Setting this to `false` prevents observers from being invoked.
+   This flag controls whether the navigation should trigger [observers](./navigation-lifecycle/observers) within the navigated components. Observers typically handle events like route entry or exit. Setting this to `false` prevents observers from being invoked.
 
 4. **Update History (`setUpdateHistory`)**  
    When set to `false`, this option prevents the history location from being updated. This is useful when you want to change the view without affecting the browser’s back or forward navigation. It only affects history management, not the component lifecycle or route handling.
 
 5. **State Object (`setState`)**  
-   The state object allows you to pass additional information when updating the browser’s history. This object is stored in the browser's history state and can be used later for custom purposes, like saving the state of the app during navigation.
+   [The state object](./state-managmenet#saving-and-restoring-state-in-browser-history) allows you to pass additional information when updating the browser’s history. This object is stored in the browser's history state and can be used later for custom purposes, like saving the state of the app during navigation.
 
 ## Generating locations for views
 

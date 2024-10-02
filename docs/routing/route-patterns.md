@@ -102,7 +102,7 @@ This pattern only matches product codes in the format `ABC-1234`. For example, `
 
 ## Wildcard segments
 
-Wildcards can be used to capture entire paths beyond a particular route segment, and they can be named for better readability. However, unlike named parameters, a wildcard segment can't have any constraints.
+Wildcards can be used to capture entire paths following a specific route segment, but they can only appear as the final segment in the pattern, resolving all subsequent values in the URL. For better readability, wildcard segments can be named. However, unlike named parameters, wildcard segments can't have any constraints.
 
 **Example:**
 
