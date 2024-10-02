@@ -125,7 +125,7 @@ In this example:
 - The `ProfileView` class is annotated with `@Route("profile")`.
 - The route is dynamically registered at runtime using `registry.register(ProfileView.class)`.
 
-## Registering routes from an entire Package
+## Registering routes from an entire package
 
 If your app has a large number of routes organized within a package, you can register all `@Route`-annotated components from the package dynamically.
 
