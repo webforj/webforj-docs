@@ -85,7 +85,7 @@ public class ProductView extends Composite<Div> implements DidEnterObserver {
 ```
 
 In this example:
-- `getArray("category")` retrieves all values associated with the `category` key, returning them as a list.
+- `getList("category")` retrieves all values associated with the `category` key, returning them as a list.
 
 :::tip Multiple Values Delimiter
 By default, the `getList()` method uses a comma (`,`) as the delimiter. You can customize the delimiter by passing a different character or a regular expression as second parameter to the `getList(String key, String regex)` method.
