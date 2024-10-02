@@ -30,7 +30,7 @@ Global listeners can be attached to various lifecycle events, including:
 You can also hook into the lifecycle events using observers. For more details, refer to the [Lifecycle Observers](./observers).
 :::
 
-### Example: Global WillLeaveEvent listener
+### Example: Global `WillLeaveEvent` listener
 
 ```java
 Router.getCurrent().addWillLeaveListener(event -> {
