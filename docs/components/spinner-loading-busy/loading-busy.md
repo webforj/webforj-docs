@@ -32,16 +32,16 @@ The simplest way to create a `Loading` component is by initializing it without a
 Here's an example of creating a `Loading` component with a message:
 
 <ComponentDemo 
-path='http://localhost:8888/webapp/controlsamples/componentdemos/loadingbusydemos/LoadingDemo'  
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/spinnerdemos/LoadingDemo.java'
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.loadingbusydemos.LoadingDemo' 
+javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/loadingbusydemos/LoadingDemo.java'
 height = '300px'
 />
 
 The `BusyIndicator` in webforJ displays as a simple spinner, making it easy to use without configuration. However, you can customize it by adding a message, adjusting the spinner's theme, or modifying visibility settings. This allows you to provide more context or style while maintaining a functional, out-of-the-box solution.
 
 <ComponentDemo 
-path='http://localhost:8888/webapp/controlsamples/componentdemos/loadingbusydemos/BusyDemo'  
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/spinnerdemos/BusyDemo.java'
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.loadingbusydemos.BusyDemo' 
+javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/loadingbusydemos/BusyDemo.java'
 height = '300px'
 />
 
@@ -59,6 +59,10 @@ Loading loading = new Loading();
 parentDiv.add(loading);
 loading.open();  // Loading will only block interaction within the parentDiv
 ```
+
+#### Difference from `BusyIndicator`
+
+The `BusyIndicator` is typically used for global operations, covering the entire application interface, while the `Loading` component allows for more targeted usage. The `Loading` component can be scoped to specific areas, disabling interaction only within its parent, whereas the `BusyIndicator` blocks the entire interface until the process is complete."
 
 ## Backdrops
 
@@ -93,34 +97,19 @@ In both the `Loading` and `BusyIndicator` components in webforJ, the `Spinner` v
 
 You can customize the spinner within a `Loading` component with several options, such as changing its size, direction, speed, theme, and controlling its visibility:
 
-```java
-Loading loading = new Loading("Loading data...");
-// Customize the spinner
-loading.getSpinner()
-    .setExpanse(SpinnerExpanse.LARGE)   // Set the spinner size
-    .setClockwise(false)                // Set direction (counterclockwise)
-    .setSpeed(1200)                     // Set the speed in milliseconds
-    .setTheme(Theme.SUCCESS)            // Set the spinner theme
-    .setVisible(true);                  // Set spinner visibility
-loading.open();
-```
-
+<ComponentDemo 
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.loadingbusydemos.LoadingSpinnerDemo' 
+javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/loadingbusydemos/LoadingSpinnerDemo.java'
+height = '200px'
+/>
 
 Similarly, the `BusyIndicator` component allows you to customize the spinner with the same options:
 
-```java
-BusyIndicator busyIndicator = getBusyIndicator();
-// Customize the spinner
-busyIndicator.getSpinner()
-    .setExpanse(SpinnerExpanse.LARGE)   // Set the spinner size
-    .setClockwise(true)                 // Set direction (clockwise)
-    .setSpeed(1000)                     // Set the speed in milliseconds
-    .setTheme(Theme.WARNING)            // Set the spinner theme
-    .setVisible(true);                  // Set spinner visibility
-busyIndicator.setText("Processing...");
-busyIndicator.open();
-```
-
+<ComponentDemo 
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.loadingbusydemos.BusySpinnerDemo' 
+javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/loadingbusydemos/BusySpinnerDemo.java'
+height = '200px'
+/>
 
 ## Use Cases
 
@@ -146,4 +135,24 @@ busyIndicator.open();
 - **Asynchronous Data Loads**  
    In scenarios where asynchronous data processing is involved (e.g., when calling multiple APIs or waiting for complex computations), the `BusyIndicator` component provides a more global indication that the system is occupied and users should wait before performing additional actions.
 
+## Styling 
+
+### Shadow Parts
+
+These are the various parts of the [shadow DOM](../../glossary#shadow-dom) for the component, which will be required when styling via CSS is desired.
+
+<TableBuilder tag={require('@site/docs/components/_dwc_control_map.json').Loading} table='parts' exclusions=''/>
+
+### CSS Properties
+
+These are the various CSS properties that are used in the component, with a short description of their use.
+
+<TableBuilder tag={require('@site/docs/components/_dwc_control_map.json').Loading} exclusions='' table='properties'/>
+
+### Reflected Attributes
+
+The reflected attributes of a component will be shown as attributes in the rendered HTML element for the component in the DOM. This means that styling can be applied using these attributes.
+
+
+<TableBuilder tag={require('@site/docs/components/_dwc_control_map.json').Loading} table="reflects"/>
 
