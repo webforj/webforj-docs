@@ -17,7 +17,7 @@ For example:
 
 ## Retrieving query parameters
 
-Query parameters are accessed through the `ParametersBag` object, which is available in the `DidEnterEvent` event. To retrieve query parameters, use the `getQueryParameters()` method of the `Location` object.
+Query parameters are accessed through the `ParametersBag` object. To retrieve query parameters, use the `getQueryParameters()` method of the `Location` object.
 
 Here’s how you can retrieve query parameters from a URL in a view:
 
