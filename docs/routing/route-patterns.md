@@ -132,12 +132,6 @@ The priority attribute allows the router to determine the order in which routes 
 
 If two routes share the same priority, the router resolves the conflict by selecting the route that was registered first. This mechanism ensures the correct route is chosen, even when multiple routes overlap in their URL patterns.
 
-### Resolving route conflicts with priority
-
-Route conflicts occur when two or more routes can match the same URL pattern. Without a mechanism to determine precedence, the router might choose an incorrect or unexpected route, causing unexpected behavior in your app.
-
-The priority attribute ensures that more specific routes are matched before more general ones. Routes with a higher priority are matched first. If two routes have the same priority, the router selects the one that was registered first.
-
 ### Example: Conflicting routes
 
 Consider a scenario where two routes match similar URL patterns:
