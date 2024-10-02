@@ -15,8 +15,6 @@ For example:
 /products?category=electronics&sort=price
 ```
 
-In this case, `category` filters products by "electronics," and `sort` orders them by "price."
-
 ## Retrieving query parameters
 
 Query parameters are accessed through the `ParametersBag` class, which is available in the `DidEnterEvent` event. To retrieve query parameters, use the `getQueryParameters()` method of the `Location` object.
