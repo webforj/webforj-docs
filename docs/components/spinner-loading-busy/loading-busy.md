@@ -14,10 +14,10 @@ import Chip from '@mui/material/Chip';
 <DocChip tooltipText="This component will render with a shadow DOM, an API built into the browser that facilitates encapsulation." label="Shadow" component="a" href="../glossary#shadow-dom" target="_blank" clickable={true} iconName="shadow" />
 
 
-<DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-spinner" clickable={false} iconName='code'/>
+<DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-loading" clickable={false} iconName='code'/>
 
 
-<JavadocLink type="spinner" location="com/webforj/component/spinner/Spinner" top='true'/>
+<JavadocLink type="loading" location="com/webforj/component/spinner/Loading" top='true'/>
 
 The `Loading` and `BusyIndicator` components in webforJ are designed to display overlays that indicate the system is processing an operation, temporarily blocking user interaction until the task is completed. These components are essential for improving user experience, particularly in scenarios where operations like data loading, computations, or background tasks may take some time.
 

@@ -27,7 +27,7 @@ A `Spinner` is commonly used when data is being loaded, forms are being submitte
 To create a `Spinner`, you can specify the theme and size (expanse). The basic syntax involves creating a `Spinner` instance and defining its appearance and behavior through methods such as `setTheme()` and `setExpanse()`.
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerDemo'  
+path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerDemoView'  
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/spinnerdemos/SpinnerDemo.java'
 height = '225px'
 />
