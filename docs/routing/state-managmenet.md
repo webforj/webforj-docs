@@ -7,7 +7,7 @@ Creating seamless, dynamic user experiences often requires that the state of you
 
 ### Updating the URL
 
-When the state of a web page changes, like filtering a product list or navigating through different views, you often need the URL to reflect those changes. You can use the `replaceState` or `pushState` methods provided by the BrowserHistory class to manipulate the URL without reloading the page:
+When the state of a web page changes, like filtering a product list or navigating through different views, you often need the URL to reflect those changes. You can use the `replaceState` or `pushState` methods provided by the `BrowserHistory` class to manipulate the URL without reloading the page:
 
 - **`pushState`**: Adds a new entry to the browser’s history stack without reloading the page. This is useful for navigating between different views or dynamic content.
 - **`replaceState`**: Updates the current entry in the browser’s history without adding a new entry. This is ideal for updating state within the same view.
