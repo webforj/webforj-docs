@@ -132,6 +132,10 @@ The priority attribute allows the router to determine the order in which routes 
 
 If two routes share the same priority, the router resolves the conflict by selecting the route that was registered first. This mechanism ensures the correct route is chosen, even when multiple routes overlap in their URL patterns.
 
+:::info Default Priority  
+By default, all routes are assigned a priority of `10`.  
+:::
+
 ### Example: Conflicting routes
 
 Consider a scenario where two routes match similar URL patterns:
