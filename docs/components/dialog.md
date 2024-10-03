@@ -41,12 +41,6 @@ height = '225px'
   >- Videos
   >- Other media
 
-
-## Constructors
-
-The Dialog can be constructed using the default `Dialog()` constructor. Once the object has been instantiated, call the `show()` method on the object itself to display the dialog.
-
-
 ## Backdrop and Blur
 
 By enabling the backdrop attribute of the webforJ `Dialog` component, a backdrop will be displayed behind the `Dialog`. Additionally, when enabled, the Dialog's blurred attribute will blur the backdrop of the `Dialog`. Modifying these settings can help users by providing depths, visual hierarchy, and context, leading to more clear guidance for a user.

@@ -15,18 +15,6 @@ webforJ developers have the option of choosing not only from the rich library of
 The `Element` component cannot be extended, and is not the base component for all components within webforJ. To read more about webforJ's component hierarchy, read [this article](../architecture/controls-components.md).
 :::
 
-## Creating a Web Element
-
-The `Element` component has three constructors provided to quickly and efficiently create web elements in your webforJ program.
-
-1. `Element()` : This parameterless constructor will create a `Div` element that can be added to your application. 
-
-2. `Element(String node)`: This constructor takes a single `String` argument. This argument should be the name of the HTML node you want to create, which will then create that desired element that can be added to your application.
-
-3. `Element(String node, String html)`: Using this constructor allows you to specify the desired node name, as well as include HTML content to be included in the element. 
-
-The below example will create an HTML `<input>` tag and give it some styling:
-
 <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples/elementinputdemo?' 
 javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/element/ElementInputDemoView.java'
