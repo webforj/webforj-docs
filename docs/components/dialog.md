@@ -52,7 +52,9 @@ javaC='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/co
 height = '300px'
 />
 
-## Closing the Dialog
+## Opening and closing the `Dialog`
+
+After creating a new `Dialog` object, use the `show()` method to display the dialog.
 
 The `Dialog` supports multiple cancellation methods for closure of the component: hitting the `ESC` key, clicking outside of the `Dialog`, or using the `hide()` method. The first two properties are customizable via their respective methods:
 `setCancelOnEscKey()` and `setCancelOnOutsideClick()`. The `hide()` method allows for the `Dialog` to be closed programmatically, such as by clicking a button on the `Dialog` after saving data. A method to quickly enable or disable users' ability to close the `Dialog`, `setClosable()` will prevent or allow both escape and click closure of the `Dialog`.
