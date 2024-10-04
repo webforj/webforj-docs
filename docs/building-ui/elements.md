@@ -24,7 +24,7 @@ javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads
 
 In order to utilize events that may come with your element, you can use the `Element` component's `addEventListener` methods. Adding an event requires at least the type/name of the event the component expects, and a listener to be added to the event. 
 
-There are also additional options to further customize events by using the [Event Options](#) configurations.
+There are also additional options to further customize events by using the Event Options configurations.
 
 <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples/elementinputevent?' 
