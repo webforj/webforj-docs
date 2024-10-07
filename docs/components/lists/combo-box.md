@@ -88,6 +88,12 @@ javaC='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/co
 height='250px'
 />
 
+## Opening and Closing
+
+The visibility of the options for a `ComboBox` can be programmatically controlled with the `open()` and `close()` methods.
+These methods allow you to display the list of options for selection or hide it as needed, providing greater flexibility in managing the behavior of a `ComboBox`.
+Additionally, webforJ has event listeners for when the `ComboBox` is closed and when it's opened, giving you more control to trigger specific actions.
+
 ## Opening Dimensions
 
 The `ComboBox` component has methods that allow manipulation of the dropdown dimensions. The **maximum height** and **minimum width** of the dropdown can be set using the <JavadocLink type="foundation" location="com/webforj/component/list/DwcSelectDropdown" code='true' suffix='#setOpenHeight(int)'>setOpenHeight()</JavadocLink> and <JavadocLink type="foundation" location="com/webforj/component/list/DwcSelectDropdown" code='true' suffix='#setOpenWidth(int)'>setOpenWidth()</JavadocLink> methods, respectively. 
