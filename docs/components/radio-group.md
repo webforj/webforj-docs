@@ -11,7 +11,7 @@ import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
 
 The `RadioButtonGroup` class is used to group related radio buttons together, which helps establish the mutual exclusivity among the options within that group. Users can select only one radio button within a given radio group. When a user selects a radio button within a group, any previously selected radio button in the same group automatically becomes deselected. This ensures that only one option can be chosen at a time.
 
-:::success tip
+:::tip
 A `RadioButton` component stores the group to which it belongs, which can be accessed via the `getButtonGroup()` method.
 :::
 
