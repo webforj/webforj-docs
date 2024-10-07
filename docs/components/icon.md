@@ -16,7 +16,7 @@ import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
 
 The weborJ `Icon` component allows you to effortlessly include icons in your user interface. 
 Icons are a fundamental part of enhancing the design of the user interface, making it faster for users to scan the screen for actionable items.
-Using icons in your app creates visual cues for navigation and actions, which can reduce the amount of text needed and ultimately simplify the user interface. You can choose from three icon pools and also gives you the option to create new ones from scratch.
+Using icons in your app creates visual cues for navigation and actions, which can reduce the amount of text needed and simplify the user interface. You can choose from three icon pools and also gives you the option to create new ones from scratch.
 
 :::tip Did you know?
 
