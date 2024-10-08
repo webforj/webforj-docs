@@ -18,13 +18,11 @@ import Chip from '@mui/material/Chip';
 
 <JavadocLink type="spinner" location="com/webforj/component/spinner/Spinner" top='true'/>
 
-The `Spinner` component provides a visual indicator that something is being processed or loaded in the background. It is often used to indicate that data or content is being fetched or when a process takes time to complete. The spinner offers user feedback, signaling that the system is actively working.
-
-A `Spinner` is commonly used when data is being loaded, forms are being submitted, or any process takes time to complete. It keeps users informed that the system is working in the background, improving the experience by preventing confusion or frustration during delays. 
+The `Spinner` component provides a visual indicator that indicates ongoing processing or loading in the background. It's often used to show that the system is fetching data or when a process takes time to complete. The spinner offers user feedback, signaling that the system is actively working.
 
 ## Basics
 
-To create a `Spinner`, you can specify the theme and size (expanse). The basic syntax involves creating a `Spinner` instance and defining its appearance and behavior through methods such as `setTheme()` and `setExpanse()`.
+To create a `Spinner`, you can specify the theme and expanse. The basic syntax involves creating a `Spinner` instance and defining its appearance and behavior through methods such as `setTheme()` and `setExpanse()`.
 
 <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerDemoView'  
@@ -32,13 +30,13 @@ javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/ja
 height = '225px'
 />
 
-## Managing Speed and Pausing
+## Managing speed and pausing
 
-webforJ allows you to set the speed in milliseconds for the `Spinner` and pause/resume the animation with ease. 
+It's possible to set the speed in milliseconds for the `Spinner` and pause/resume the animation with ease. 
 
-Use cases for setting speeds include differentiating between loading processes (e.g., faster `Spinners` for smaller tasks and slower `Spinners` for larger tasks), while pausing is useful when user action or confirmation is required before continuing the process.
+Use cases for setting speeds include differentiating between loading processes (for example, faster `Spinners` for smaller tasks and slower `Spinners` for larger tasks), while pausing is useful when user action or confirmation is required before continuing the process.
 
-### Adjusting Speed
+### Adjusting speed
 
 You can control how fast the `Spinner` rotates by adjusting its speed in milliseconds using the `setSpeed()` method. A lower value will make the `Spinner` rotate faster, while higher values will slow it down.
 
@@ -50,7 +48,7 @@ spinner.setSpeed(500); // Rotates faster
 By default, the `Spinner` will take 1000 milliseconds to complete one full rotation.
 :::
 
-### Pausing and Resuming
+### Pausing and resuming
 
 Pausing the `Spinner` is helpful when a process is temporarily halted or awaiting user input. It informs users that the system is on hold, rather than actively working, improving clarity during multi-step processes.
 
@@ -69,7 +67,7 @@ javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/ja
 height = '150px'
 />
 
-## Spin Direction
+## Spin direction
 
 The direction of the `Spinner` can be controlled to rotate **clockwise** or **counterclockwise**. You can specify this behavior using the `setClockwise()` method.
 
@@ -78,7 +76,7 @@ spinner.setClockwise(false);  // Rotates counterclockwise
 spinner.setClockwise(true);   // Rotates clockwise
 ```
 
-This option can be used to visually indicate a special state or simply as a unique design choice. Changing the spin direction might be useful for differentiating between types of processes, such as progress vs. reversal, or to provide a distinct visual cue in specific contexts.
+This option visually indicates a special state or serves as a unique design choice. Changing the spin direction can help differentiate between types of processes, such as progress vs. reversal, or provide a distinct visual cue in specific contexts.
 
 <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerDirectionDemo'  
@@ -90,23 +88,23 @@ height = '150px'
 
 ### Themes
 
-The `Spinner` component comes with several built-in themes that allow you to quickly apply styles without needing custom CSS. These themes change the visual appearance of the spinner, making it appropriate for different use cases and contexts. Using these predefined themes ensures consistency in styling throughout your application.
+The `Spinner` component comes with several built-in themes that allow you to quickly apply styles without needing custom CSS. These themes change the visual appearance of the spinner, making it appropriate for different use cases and contexts. Using these predefined themes ensures consistency in styling throughout your app.
 
-While spinners can be used in a variety of situations, here are some example use cases for the different themes:
+While spinners serve various situations, here are some example use cases for the different themes:
 
-- **Primary**: Ideal for emphasizing a loading state that is a key part of the user flow, such as while submitting a form or processing an important action.
+- **Primary**: Ideal for emphasizing a loading state that's a key part of the user flow, such as while submitting a form or processing an important action.
   
-- **Success**: Useful to represent successful background processes, such as when a form has been submitted and the application is performing the final steps of the process.
+- **Success**: Useful to represent successful background processes, such as when a user submits a form and the app is performing the final steps of the process.
   
-- **Danger**: Applicable for risky or high-stakes operations, like deleting important data or making irreversible changes, where a visual indicator of urgency or caution is required.
+- **Danger**: Use this for risky or high-stakes operations, like deleting important data or making irreversible changes, where a visual indicator of urgency or caution is necessary.
   
-- **Warning**: Good for indicating a cautionary or less urgent process, such as when the user is waiting for data validation, but no immediate action is required.
+- **Warning**: Use this to indicate a cautionary or less urgent process, such as when the user waits for data validation, but doesn't require immediate action.
 
-- **Gray**: Works well for subtle background processes, such as low-priority or passive loading tasks, like when fetching supplemental data that doesn’t directly impact the user experience.
+- **Gray**: Works well for subtle background processes, such as low-priority or passive loading tasks, like when fetching supplemental data that doesn't directly impact the user experience.
   
-- **Info**: Suitable for loading scenarios where additional information or clarification is being provided to the user, such as displaying a spinner alongside a message that explains what is being processed.
+- **Info**: Suitable for loading scenarios where you're providing additional information or clarification to the user, such as displaying a spinner alongside a message that explains the ongoing process.
 
-These themes can be applied programmatically to the spinner, providing visual cues that align with the context and importance of the operation.
+You can apply these themes programmatically to the spinner, providing visual cues that align with the context and importance of the operation.
 
 You can specify this behavior using the `setTheme()` method.
 
@@ -118,7 +116,7 @@ height = '100px'
 
 ### Expanses
 
-The size of the spinner, known as **expanse**, can be adjusted to fit the visual space you need. The spinner supports various sizes including `Expanse.SMALL` , `Expanse.MEDIUM` , and `Expanse.LARGE`. 
+You can adjust the size of the spinner, known as **expanse**, to fit the visual space you need. The spinner supports various sizes including `Expanse.SMALL`, `Expanse.MEDIUM`, and `Expanse.LARGE`.
 
 <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.spinnerdemos.SpinnerExpanseDemo'  
