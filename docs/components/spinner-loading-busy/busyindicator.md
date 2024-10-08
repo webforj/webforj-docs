@@ -14,10 +14,10 @@ import Chip from '@mui/material/Chip';
 <DocChip tooltipText="This component will render with a shadow DOM, an API built into the browser that facilitates encapsulation." label="Shadow" component="a" href="../glossary#shadow-dom" target="_blank" clickable={true} iconName="shadow" />
 
 
-<DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-busy-indicator" clickable={false} iconName='code'/>
+<DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-loading" clickable={false} iconName='code'/>
 
 
-<JavadocLink type="busyindicator" location="com/webforj/component/spinner/BusyIndicator" top='true'/>
+<JavadocLink type="busyindicator" location="com/webforj/component/spinner/Loading" top='true'/>
 
 The `BusyIndicator` provides visual cues to ensure that users are aware of ongoing processes, preventing them from interacting with the system prematurely. It typically covers the entire app interface for global operations.
 
