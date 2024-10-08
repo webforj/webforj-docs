@@ -18,9 +18,8 @@ With a simple drag-and-hover interface, users can effortlessly navigate through 
 
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.fielddemos.ColorFieldDemo' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/fielddemos/ColorFieldDemo.java'
-javaC=''
+path='https://demo.webforj.com/webapp/controlsamples/colorfielddemo?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/fields/colorfield/ColorFieldDemoView.java'
 cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/fieldstyles/color_field_styles.css'
 height='300px'
 />
@@ -39,15 +38,6 @@ The `ColorField` is best used in scenarios where color selection is a crucial pa
 3. **Data Visualization**: Color fields are valuable in applications that involve data visualization, as they allow users to select colors for charts, graphs, heatmaps, and other visual representations.
 
 4. **Form Inputs**: When designing forms that require color inputs, using a color field simplifies the color selection process for users.
-
-### Constructors
-
-The `ColorField` class has four constructors:
-
-1. `ColorField(String label, Color color)`: Creates a `ColorField` with a given label and color.
-2. `ColorField(String label)`: Creates a `ColorField` with a given label but with no pre-populated color.
-3. `ColorField(Color color)`: Creates a `ColorField` with a given color, but without a label.
-4. `ColorField()`: Creates a `ColorField` without any provided information.
 
 ### Color Code Format
 

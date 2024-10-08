@@ -16,9 +16,8 @@ slug: numberfield
 The `NumberField` component can be used to accept numerical input from the user. It ensures that only valid numeric values are entered and provides a convenient interface for inputting numbers.
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.fielddemos.NumberFieldDemo' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/fielddemos/NumberFieldDemo.java'
-javaC=''
+path='https://demo.webforj.com/webapp/controlsamples/numberfielddemo?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/fields/numberfield/NumberFieldDemoView.java'
 cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/fieldstyles/date_field_styles.css'
 />
 
@@ -34,13 +33,6 @@ The `NumberField` is best used in scenarios where capturing or manipulating nume
 
 4. **Measurement and Unit Conversion**: In applications that deal with measurements or unit conversions, the `NumberField` is ideal for inputting numerical values with units such as length, weight, or volume.
 
-### Constructors
-
-The `NumberField` class has three constructors:
-
-1. `NumberField(String label, Double value)`: Creates a `NumberField` with a given label and value.
-2. `NumberField(String label)`: Creates a `NumberField` with a given label but with no pre-populated numerical value.
-3. `NumberField()`: Creates a `NumberField` without any provided information.
 
 ### Maximum and Minimum
 

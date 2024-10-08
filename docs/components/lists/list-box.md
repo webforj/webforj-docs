@@ -14,13 +14,6 @@ slug: listbox
 
 The `ListBox` component is a user interface element designed to display a scrollable list of objects and allows users to select single or multiple items from the list. Users can also interact with the `ListBox` with the arrow keys. 
 
-<!-- <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.listboxdemos.ListboxDemo' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/listboxdemos/ListboxDemo.java'
-cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/listboxstyles/listbox_demo.css' 
-height = '250px'
-/> -->
-
 ## Usages
 
 1. **User Role Assignment**: In applications with user access control, administrators can use a `ListBox` to assign roles and permissions to users. Users are selected from a list, and the roles or permissions are assigned based on their selection. This ensures precise and controlled access to different features and data within the application.
@@ -36,12 +29,6 @@ height = '250px'
 
 4. **Content Categorization**: In content management systems, `ListBox` components assist in categorizing articles, images, or files. Users can select one or more categories to associate with their content, making it easier to organize and search for content items in the system.
 
-## Constructors
-
-1. <JavadocLink type="foundation" location="com/webforj/component/list/ListBox" code='true' suffix='#<init>()'>ListBox()</JavadocLink>: Constructs a new `ListBox` without a label.
-2. <JavadocLink type="foundation" location="com/webforj/component/list/ListBox" code='true' suffix='#<init>(java.lang.String)'>ListBox(String label)</JavadocLink>: Constructs a new `ListBox` with the specified label.
-3. <JavadocLink type="foundation" location="com/webforj/component/list/ListBox" code='true' suffix='#<init>(java.lang.String,org.dwcj.component.event.ComponentEventListener)'>ListBox(String label, ComponentEventListener< ListSelectEvent> selectListener)</JavadocLink>: Constructs a new `ListBox` with the given label and a listener to handle item selection events.
-
 ## Selection Options
 
 By default, the list box is configured to allow selection of a single item at a time. However, this can be easily configured with a built-in method which allows users to select multiple items ***using the `Shift` key*** for contiguous entry selection and ***`Control` (Windows) or `Command` (Mac) key*** for separate, multiple item selection. Use the <JavadocLink type="foundation" location="com/webforj/component/list/ListBox" code='true' suffix='#setSelectionMode(org.dwcj.component.list.MultipleSelectableList.SelectionMode)'>setSelectionMode()</JavadocLink> function to change this property. True will enable multiple selection, false disables it. 
@@ -49,24 +36,14 @@ By default, the list box is configured to allow selection of a single item at a 
 Additionally, the arrow keys can be used to navigate the `ListBox`, and typing a letter key while the `ListBox` has focus will select the option that begins with that letter, or cycle through the options beginning with that letter should multiple options exist.
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.listboxdemos.ListboxMultipleSelection' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/listboxdemos/ListboxMultipleSelection.java'
+path='https://demo.webforj.com/webapp/controlsamples/listboxmultipleselection?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/lists/listbox/ListboxMultipleSelectionView.java'
 javaC='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/code_snippets/listbox/MultipleSelection.txt'
 height = '250px'
 />
 
 ## Styling
 
-<!-- ### Expanses
-There are five `ListBox` expanses that are supported which allow for quick styling without using CSS. Expanses are supported by use of a built-in enum class. <br/>
-
-<ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.listboxdemos.ListboxExpanses' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/listboxdemos/ListboxExpanses.java'
-javaC='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/code_snippets/listbox/Expanses.txt'
-cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/listboxstyles/expanse_styles.css' 
-height = '300px'
-/> -->
 
 ### Shadow Parts
 
