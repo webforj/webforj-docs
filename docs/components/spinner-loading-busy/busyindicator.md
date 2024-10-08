@@ -46,8 +46,8 @@ BusyIndicator busyIndicator = getBusyIndicator();
 busyIndicator.setBackdropVisible(false);  // Disables the backdrop
 busyIndicator.open();
 ```
-:::info Backdrop Disabling
-Even when you disable the backdrop, the `BusyIndicator` component continues to block user interaction to ensure the underlying process completes uninterrupted. The backdrop simply controls the visual overlay, not the interaction blocking behavior.
+:::info Backdrop Turning Off
+Even when you turn off the backdrop, the `BusyIndicator` component continues to block user interaction to ensure the underlying process completes uninterrupted. The backdrop simply controls the visual overlay, not the interaction blocking behavior.
 :::
 
 ## `Spinner`
@@ -64,8 +64,7 @@ height = '200px'
 
 You can use methods like `setSpinnerSize()`, `setSpinnerSpeed()`, `setSpinnerClockwise()`, `setSpinnerTheme()`, and `setSpinnerVisible()` to adjust these properties of the spinner within your `BusyIndicator` component.
 
-## Use Cases
-
+## Use cases
 - **Page-Wide Processing**  
    The `BusyIndicator` is well-suited for larger, page-wide operations, such as when a user initiates a task that affects the entire page, like uploading a file or processing data across multiple sections. It can inform users that the entire app is working, preventing further interaction until the process is complete.
 

@@ -37,7 +37,7 @@ height = '300px'
 
 ## Scoping
 
-The `Loading` component in webforJ can be scoped to a specific parent container, such as a `Div`, ensuring that it only blocks user interaction within that element. By default, the `Loading` component is relative to its parent, meaning it overlays the parent component rather than the entire app.
+The `Loading` component in webforJ can scope itself to a specific parent container, such as a `Div`, ensuring that it only blocks user interaction within that element. By default, the `Loading` component is relative to its parent, meaning it overlays the parent component rather than the entire app.
 
 To limit the `Loading` component to its parent, simply add the `Loading` component to the parent container. For example, if you add it to a `Div`, the loading overlay applies only to that `Div`:
 
@@ -50,17 +50,17 @@ loading.open();  // Loading will only block interaction within the parentDiv
 
 ## Backdrop
 
-The `Loading` component in webforJ allows you to display a backdrop to block user interaction while a process is ongoing. By default, the component enables the backdrop, but you have the option to disable it if needed.
+The `Loading` component in webforJ allows you to display a backdrop to block user interaction while a process is ongoing. By default, the component enables the backdrop, but you have the option to turn it off if needed.
 
-For the `Loading` component, the backdrop is visible by default. You can explicitly enable or disable it using the `setBackdropVisible()` method:
+For the `Loading` component, the backdrop is visible by default. You can explicitly enable or turn off it using the `setBackdropVisible()` method:
 
 ```java
 Loading loading = new Loading();
 loading.setBackdropVisible(false);  // Disables the backdrop
 loading.open();
 ```
-:::info Backdrop Disabling
-Even when you disable the backdrop, the `Loading` component continues to block user interaction to ensure the underlying process completes uninterrupted. The backdrop simply controls the visual overlay, not the interaction blocking behavior.
+:::info Backdrop Off
+Even when you turn off the backdrop, the `Loading` component continues to block user interaction to ensure the underlying process completes uninterrupted. The backdrop simply controls the visual overlay, not the interaction blocking behavior.
 :::
 
 ## `Spinner`
@@ -77,8 +77,7 @@ height = '200px'
 
 You can use methods like `setSpinnerSize()`, `setSpinnerSpeed()`, `setSpinnerClockwise()`, `setSpinnerTheme()`, and `setSpinnerVisible()` to adjust these properties of the spinner within your `Loading` component.
 
-## Use Cases
-
+## Use cases
 - **Data Fetching**  
    When retrieving data from a server or API, the `Loading` component overlays a specific section of the UI, such as a card or form, to inform users that the system is working in the background. This is ideal when you want to show progress on just one part of the screen without blocking the entire interface.
 
