@@ -18,8 +18,6 @@ import Chip from '@mui/material/Chip';
 
 <JavadocLink type="spinner" location="com/webforj/component/spinner/Spinner" top='true'/>
 
-<ComponentBasics />
-
 A `Spinner` is a UI component used to indicate the progress of an indeterminate operation. When a process takes time to complete but the exact duration is unknown (such as loading content or submitting a form), a spinner provides a visual cue to users that something is in progress. 
 
 webforJ's `Spinner` and its variants are highly customizable, allowing developers to customize it in a way that best suits the needs of the app being created.
