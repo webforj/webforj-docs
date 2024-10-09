@@ -13,7 +13,7 @@ needs. While each of these components have variations in their implementations, 
 field classes.
 
 :::info
-This section describes common functionality of various field components in webforJ, and is not itself a class that can be instantiated and used.
+This section describes common features of various field components in webforJ, and isn't itself a class that can be instantiated and used.
 :::
 
 <!-- <ComponentViewer componentData={componentData} /> -->
