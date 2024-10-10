@@ -34,5 +34,7 @@
 "Icon" :"dwc-icon",
 "Splitter":"dwc-splitter",
 "Login":"dwc-login",
-"Spinner": "dwc-spinner"
+"Spinner": "dwc-spinner",
+"Loading": "dwc-loading",
+"BusyIndicator": "dwc-loading"
 }

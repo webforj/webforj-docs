@@ -1,15 +1,6 @@
 ---
-sidebar_position: 2
 title: Loading
 ---
-
-import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
-import TableBuilder from '@site/src/components/DocsTools/TableBuilder';
-import EventTable from '@site/src/components/DocsTools/EventTable';
-import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
-import DocChip from '@site/src/components/DocsTools/DocChip';
-import FiberSmartRecordIcon from '@mui/icons-material/FiberSmartRecord';
-import Chip from '@mui/material/Chip';
 
 <DocChip tooltipText="This component will render with a shadow DOM, an API built into the browser that facilitates encapsulation." label="Shadow" component="a" href="../glossary#shadow-dom" target="_blank" clickable={true} iconName="shadow" />
 
@@ -19,19 +10,17 @@ import Chip from '@mui/material/Chip';
 
 <JavadocLink type="loading" location="com/webforj/component/spinner/Loading" top='true'/>
 
-The `Loading` component in webforJ displays an overlay that indicates the system is processing an operation, temporarily blocking user interaction until the task completes. This component enhances user experience, particularly in scenarios where operations like data loading, computations, or background tasks may take some time.
+The `Loading` component in webforJ displays an overlay that signals the processing of an operation, temporarily preventing user interaction until the task is complete. This feature improves the user experience, especially in situations where tasks like data loading, computations, or background processes may take some time.
 
 ## Basics
-
-Creating a `Loading` component in a webforJ app is a straightforward process.
 
 The simplest way to create a `Loading` component is by initializing it without any additional settings. By default, this displays a basic spinner over its parent content. However, you can also provide a message for more context.
 
 Here's an example of creating a `Loading` component with a message:
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.loadingbusydemos.LoadingDemo' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/loadingbusydemos/LoadingDemo.java'
+path='https://demo.webforj.com/webapp/controlsamples/loadingdemo?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/loadingbusy/LoadingDemoView.java'
 height = '300px'
 />
 
@@ -43,6 +32,7 @@ To limit the `Loading` component to its parent, simply add the `Loading` compone
 
 ```java
 Div parentDiv = new Div();  
+parentDiv.setStyle("position", "relative");
 Loading loading = new Loading();
 parentDiv.add(loading);
 loading.open();  // Loading will only block interaction within the parentDiv
@@ -70,12 +60,10 @@ The `Loading` component in webforJ includes a `Spinner` that visually indicates 
 Here's an example of how you can customize the spinner within a `Loading` component:
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.loadingbusydemos.LoadingSpinnerDemo' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/loadingbusydemos/LoadingSpinnerDemo.java'
+path='https://demo.webforj.com/webapp/controlsamples/loadingspinnerdemo?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/loadingbusy/LoadingSpinnerDemoView.java'
 height = '200px'
 />
-
-You can use methods like `setSpinnerSize()`, `setSpinnerSpeed()`, `setSpinnerClockwise()`, `setSpinnerTheme()`, and `setSpinnerVisible()` to adjust these properties of the spinner within your `Loading` component.
 
 ## Use cases
 - **Data Fetching**  
