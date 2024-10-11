@@ -21,6 +21,7 @@ Here's an example of creating a `Loading` component with a message:
 <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples/loadingdemo?' 
 javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/loadingbusy/LoadingDemoView.java'
+cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/spinnerstyles/loadingdemo_styles.css'
 height = '300px'
 />
 
@@ -62,6 +63,7 @@ Here's an example of how you can customize the spinner within a `Loading` compon
 <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples/loadingspinnerdemo?' 
 javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/loadingbusy/LoadingSpinnerDemoView.java'
+cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/loadingstyles/loadingspinnerdemo.css'
 height = '300px'
 />
 
