@@ -43,7 +43,7 @@ By default, the `Spinner` will take 1000 milliseconds to complete one full rotat
 
 Pausing the `Spinner` is useful when a program is temporarily halted or waiting for user input. It lets users know that the program is on hold, rather than actively running, which enhances clarity during multi-step processes.
 
-To pause and resume the Spinner, use the setPaused() method. This is particularly helpful when you need to temporarily stop the spinning animation.      
+To pause and resume the Spinner, use the `setPaused()` method. This is particularly helpful when you need to temporarily stop the spinning animation.      
 
 ```java
 spinner.setPaused(true);  // Pause the spinner

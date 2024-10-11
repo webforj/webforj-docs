@@ -8,11 +8,11 @@ title: BusyIndicator
 <DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-loading" clickable={false} iconName='code'/>
 
 
-<JavadocLink type="busyindicator" location="com/webforj/component/spinner/Loading" top='true'/>
+<JavadocLink type="foundation" location="com/webforj/BusyIndicator" top='true'/>
 
 The `BusyIndicator` provides visual cues to ensure that users are aware of ongoing processes, preventing them from interacting with the system prematurely. It typically covers the entire app interface for global operations.
 
-While the [`Loading`](../spinner-loading-busy/loading.md) component focuses on specific areas or components within the app, the `BusyIndicator` handles global, app-wide processes and blocks interaction across the entire interface. This difference in scope makes the [`Loading`](../spinner-loading-busy/loading.md) component ideal for more localized, component-specific scenarios, such as loading data in a particular section of a page. In contrast, the `BusyIndicator` is suitable for system-wide operations that affect the entire app, such as initializing the app or performing a major data sync.
+While the [`Loading`](../components/loading) component focuses on specific areas or components within the app, the `BusyIndicator` handles global, app-wide processes and blocks interaction across the entire interface. This difference in scope makes the [`Loading`](../components/loading) component ideal for more localized, component-specific scenarios, such as loading data in a particular section of a page. In contrast, the `BusyIndicator` is suitable for system-wide operations that affect the entire app, such as initializing the app or performing a major data sync.
 
 ## Basics
 

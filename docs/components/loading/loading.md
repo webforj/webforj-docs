@@ -8,9 +8,9 @@ title: Loading
 <DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-loading" clickable={false} iconName='code'/>
 
 
-<JavadocLink type="loading" location="com/webforj/component/spinner/Loading" top='true'/>
+<JavadocLink type="loading" location="com/webforj/component/loading/Loading" top='true'/>
 
-The `Loading` component in webforJ displays an overlay that signals the processing of an operation, temporarily preventing user interaction until the task is complete. This feature improves the user experience, especially in situations where tasks like data loading, computations, or background processes may take some time.
+The `Loading` component in webforJ displays an overlay that signals the processing of an operation, temporarily preventing user interaction until the task is complete. This feature improves the user experience, especially in situations where tasks like data loading, computations, or background processes may take some time. For global, app-wide processes, consider using the [`BusyIndicator`](../components/busyindicator) component, which blocks interaction across the entire interface.
 
 ## Basics
 
@@ -62,7 +62,7 @@ Here's an example of how you can customize the spinner within a `Loading` compon
 <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples/loadingspinnerdemo?' 
 javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/loadingbusy/LoadingSpinnerDemoView.java'
-height = '200px'
+height = '300px'
 />
 
 ## Use cases
