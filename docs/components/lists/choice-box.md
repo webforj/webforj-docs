@@ -81,7 +81,7 @@ These methods allow you to display the list of options for selection or hide it 
 Additionally, webforJ has event listeners for when the `ChoiceBox` is closed and when it's opened, giving you more control to trigger specific actions.
 
 ```Java
-//Change the focus to the next component in a form
+//Focus or open the next component in a form
 ChoiceBox university = new ChoiceBox("University");
 ChoiceBox major = new ChoiceBox("Major");
 Button submit = new Button("Submit");

@@ -93,7 +93,7 @@ These methods allow you to display the list of options for selection or hide it 
 Additionally, webforJ has event listeners for when the `ComboBox` is closed and when it's opened, giving you more control to trigger specific actions.
 
 ```Java
-//Change the focus to the next component in a form
+//Focus or open the next component in a form
 ComboBox university = new ComboBox("University");
 ComboBox major = new ComboBox("Major");
 Button submit = new Button("Submit");
@@ -101,7 +101,7 @@ Button submit = new Button("Submit");
 //... Add lists of universities and majors
 
 university.onClose( e ->{
-  major.focus();
+  major.open();
 });
 
 major.onClose( e ->{
