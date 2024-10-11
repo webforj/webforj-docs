@@ -16,7 +16,7 @@ import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
 
 The weborJ `Icon` component allows you to effortlessly include icons in your user interface. 
 Icons are a fundamental part of enhancing the design of the user interface, making it faster for users to scan the screen for actionable items.
-Using icons in your app creates visual cues for navigation and actions, which can reduce the amount of text needed and simplify the user interface. You can choose from three icon pools and also gives you the option to create new ones from scratch.
+Using icons in your app creates visual cues for navigation and actions, which can reduce the amount of text needed and simplify the user interface. You can choose from three existing icon pools and webforJ also gives you the option to create new ones from scratch.
 
 :::tip Did you know?
 
@@ -26,7 +26,7 @@ Some components, like `PasswordField` and `TimeField`, have built-in icons to he
 
 ## Basics
 
-Every `Icon` is designed as a Scalable Vector Graphics (SVG) image, which means they can easily scale to any size without losing clarity or quality.
+Every `Icon` is designed as a Scalable Vector Graphics (SVG) image, which means it can easily scale to any size without losing clarity or quality.
 Additionally, `Icon` components are loaded on demand from a content delivery network (CDN), which helps reduce latency and improve overall performance.
 
 When creating an `Icon`, you'll need to identify a specific pool and the name of the icon itself.
@@ -49,7 +49,7 @@ WebforJ gives you the flexibility to choose from three pools and use them as uni
 
 :::tip
 
-For those interested in creating their own pools, see [Creating custom pools](#creating-custom-pools).
+If you're interested in creating your own icon pool, see [Creating custom pools](#creating-custom-pools).
 
 :::
 
@@ -134,7 +134,7 @@ Having a custom pool makes app creation more consistent and reduces maintenance 
 Custom pools can be created from a folder containing SVG images and by using the `IconPoolBuilder` class. From there, you can choose the name of your custom pool and use that with the SVG file names to create custom icon components.
 
 :::tip
-Make sure to design icons with equal width and height, as icon components are designed to occupy a square space.
+Make sure to design icons with equal width and height, as `Icon` components are designed to occupy a square space.
 :::
 
 <!-- IconCustomPool.java -->
@@ -158,7 +158,7 @@ mainFrame.add(layout);
 
 - **Accessibility:** Use a tool tip or a label on icons to make your app accessible to visually impaired users relying on screen readers.
 - **Avoid ambiguity:** Avoid using icons if the meaning isn’t clear or widely understood. If users have to guess what the icon represents, it defeats the purpose.
-- **Use icons sparignly:** Too many icons can overwhelm users, so only use icons when they add clarity or reduce complexity.
+- **Use icons sparingly:** Too many icons can overwhelm users, so only use icons when they add clarity or reduce complexity.
 
 ## Styling
 An Icon inherits the theme of its direct parent component, but you can override this by applying a theme to an `Icon` directly.
