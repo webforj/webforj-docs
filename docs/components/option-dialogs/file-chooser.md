@@ -3,14 +3,7 @@ sidebar_position: 5
 title: File Chooser
 ---
 
-<!-- vale off -->
-import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
-import TableBuilder from '@site/src/components/DocsTools/TableBuilder';
-import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
-import DocChip from '@site/src/components/DocsTools/DocChip';
-
 # File Chooser Dialog
-<!-- vale on -->
 
 <DocChip tooltipText="This component will render with a shadow DOM, an API built into the browser that facilitates encapsulation." label="Shadow" target="_blank" clickable={false} iconName='shadow' />
 
@@ -28,13 +21,9 @@ OptionDialog.showFileChooserDialog("Select a file");
 
 The `FileChooserDialog` provides a way to select files or directories from the file system, enabling users to choose directories for saving data, or perform file operations.
 
-## Constructors
-
-The `FileChooserDialog` can be initiated through the `OptionDialog` factory class using one of the various `showFileChooserDialog` methods to configure its attributes and display the dialog directly. For more control over the configurations, the dialog can also be created using one of its several constructors.
-
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.optiondialog.filechooser.FileChooserDialogBasic' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/optiondialog/filechooser/FileChooserDialogBasic.java'
+path='https://demo.webforj.com/webapp/controlsamples/filechooserdialogbasic?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/optiondialog/filechooser/FileChooserDialogBasicView.java'
 height = '600px'
 />
 
@@ -89,8 +78,8 @@ dialog.show();
 When the seletion mode is `FILES`, The `FileChooserDialog` allows you to set filters to limit the types of files that listed. You can configure filters using the `setFilters(List<FileChooserFilter> filters)` method.
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.optiondialog.filechooser.FileChooserDialogFilters' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/optiondialog/filechooser/FileChooserDialogFilters.java'
+path='https://demo.webforj.com/webapp/controlsamples/filechooserdialogfilters?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/optiondialog/filechooser/FileChooserDialogFiltersView.java'
 height = '600px'
 />
 

@@ -2,11 +2,6 @@
 title: Login
 ---
 
-import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
-import TableBuilder from '@site/src/components/DocsTools/TableBuilder';
-import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
-import DocChip from '@site/src/components/DocsTools/DocChip';
-
 <DocChip tooltipText="This component will render with a shadow DOM, an API built into the browser that facilitates encapsulation." label="Shadow" target="_blank" clickable={false} iconName='shadow' />
 
 <DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-login" clickable={false} iconName='code'/>
@@ -16,8 +11,8 @@ import DocChip from '@site/src/components/DocsTools/DocChip';
 The Login component is designed to provide a and user-friendly interface for authentication, allowing users to log in using a username and password. It supports various customizations to enhance user experience across different devices and locales.
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.login.LoginBasic' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/login/LoginBasic.java'
+path='https://demo.webforj.com/webapp/controlsamples/loginbasic?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/login/LoginBasicView.java'
 height = '450px'
 />
 
@@ -28,11 +23,6 @@ The Login component provides a user-friendly login form interface within a dialo
    >- Visibility toggle for password to verify input.
    >- Input validation feedback to prompt correct format before submission.
 
-## Constructors
-
-You can construct the `Login` component using the default `Login()` constructor. Once the component has been instantiated, call the `open()` method on the component itself to display the login dialog.
-
-
 ## Login submission
 
 When users enter their username and password, the login component validates these inputs as required fields. Once the validation passes, a form submission event is triggered, delivering the entered credentials. To prevent multiple submissions, the `Signin` button is immediately disabled.
@@ -40,8 +30,8 @@ When users enter their username and password, the login component validates thes
 The demo below illustrates a basic form submission process. If the username and password are both set to `"admin"` respectively, the login dialog closes, and a logout button appears. If the credentials don't match, the default error message of the login form is displayed.
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.login.LoginSubmission' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/login/LoginSubmission.java'
+path='https://demo.webforj.com/webapp/controlsamples/loginsubmission?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/login/LoginSubmissionView.java'
 height = '450px'
 />
 
@@ -60,8 +50,8 @@ The titles, descriptions, labels, and messages within the login component are fu
 The demo below illustrates how to provide a German translation for the login dialog, ensuring that all interface elements are adapted to the German language to enhance user experience for German-speaking users.
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.login.LoginInternationalization' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/login/LoginInternationalization.java'
+path='https://demo.webforj.com/webapp/controlsamples/logininternationalization?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/login/LoginInternationalizationView.java'
 height = '500px'
 />
 
@@ -72,8 +62,8 @@ The login component includes [several slots](#slots), which allow you to add ext
 In the example below, a Customer ID field is added to the login form. Users must provide a valid ID to complete authentication, enhancing security and ensuring that access is granted only after verifying all required credentials.
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.login.LoginCustomFields' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/login/LoginCustomFields.java'
+path='https://demo.webforj.com/webapp/controlsamples/logincustomfields?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/login/LoginCustomFieldsView.java'
 cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/login/LoginCustomFields/style.css'
 height = '700px'
 />
@@ -89,8 +79,8 @@ In certain scenarios, it may be desirable to add a cancel button alongside the `
 To make the cancel button visible, you must provide a label for it - once labeled, it will appear on the screen. You can also listen to cancel events to respond appropriately to user actions, ensuring a smooth and user-friendly experience for navigating the app.
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.login.LoginCancelButton' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/login/LoginCancelButton.java'
+path='https://demo.webforj.com/webapp/controlsamples/logincancelbutton?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/login/LoginCancelButtonView.java'
 height = '450px'
 />
 

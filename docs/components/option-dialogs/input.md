@@ -3,14 +3,7 @@ sidebar_position: 4
 title: Input
 ---
 
-<!-- vale off -->
-import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
-import TableBuilder from '@site/src/components/DocsTools/TableBuilder';
-import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
-import DocChip from '@site/src/components/DocsTools/DocChip';
-
 # Input Dialog
-<!-- vale on -->
 
 <DocChip tooltipText="This component will render with a shadow DOM, an API built into the browser that facilitates encapsulation." label="Shadow" target="_blank" clickable={false} iconName='shadow' />
 
@@ -22,18 +15,14 @@ An `InputDialog` is a modal dialog designed to prompt the user for input. The di
 
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.optiondialog.input.InputDialogBasic' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/optiondialog/input/InputDialogBasic.java'
+path='https://demo.webforj.com/webapp/controlsamples/inputdialogbasic?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/optiondialog/input/InputDialogBasicView.java'
 height = '500px'
 />
 
 ## Usages
 
 The `InputDialog` provides a way to request input from users, such as text, numbers, or other data, ensuring that they provide necessary information before proceeding.
-
-## Constructors
-
-The `InputDialog` can be initiated through the `OptionDialog` factory class using one of the various `showInputDialog` methods to configure its attributes and display the dialog directly. For more control over the configurations, the dialog can also be created using one of its several constructors.
 
 ## Types
 
@@ -66,8 +55,8 @@ In the following sample, The user is prompted to enter its password to access th
 again.
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.optiondialog.input.InputDialogType' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/optiondialog/input/InputDialogType.java'
+path='https://demo.webforj.com/webapp/controlsamples/inputdialogtype?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/optiondialog/input/InputDialogTypeView.java'
 height = '350px'
 />
 

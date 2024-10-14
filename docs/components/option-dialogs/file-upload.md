@@ -3,14 +3,7 @@ sidebar_position: 6
 title: File Upload
 ---
 
-<!-- vale off -->
-import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
-import TableBuilder from '@site/src/components/DocsTools/TableBuilder';
-import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
-import DocChip from '@site/src/components/DocsTools/DocChip';
-
 # File Upload Dialog
-<!-- vale on -->
 
 <DocChip tooltipText="This component will render with a shadow DOM, an API built into the browser that facilitates encapsulation." label="Shadow" target="_blank" clickable={false} iconName='shadow' />
 
@@ -28,10 +21,6 @@ UploadedFile result = OptionDialog.showFileUploadDialog("Upload a file");
 
 The `FileUploadDialog` provides a way to select and upload files, enabling users to submit documents, images, or other file types required by the app.
 
-## Constructors
-
-The `FileUploadDialog` can be initiated through the `OptionDialog` factory class using one of the various `showFileUploadDialog` methods to configure its attributes and display the dialog directly. For more control over the configurations, the dialog can also be created using one of its several constructors.
-
 ## Result
 
 The `FileUploadDialog` returns an `UploadedFile` object that contains information about the uploaded file, such as its name, size, and content. If the user closes the dialog without selecting a file, the result will be `null`.
@@ -41,8 +30,8 @@ The resulting string will be returned from the `show()` method, or the equivalen
 :::
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.optiondialog.fileupload.FileUploadDialogBasic' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/optiondialog/fileupload/FileUploadDialogBasic.java'
+path='https://demo.webforj.com/webapp/controlsamples/fileuploaddialogbasic?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/optiondialog/fileupload/FileUploadDialogBasicView.java'
 height = '400px'
 />
 

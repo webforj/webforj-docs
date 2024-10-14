@@ -4,8 +4,6 @@ title: Rendering
 slug: rendering
 ---
 
-import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
-
 # Rich Content and Client-Side Rendering
 
 Tables in webforj are also configurable using the following tools to display rich content within cells. This includes interactive components or formatted data within the table cells.
@@ -99,10 +97,9 @@ Renderers allow for custom events to be written as well by extending any of the 
 Below is an example of a `Table` that uses renderers to display rich content:
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=addondemos.tabledemos.TableRichContent' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/addondemos/tabledemos/TableRichContent.java'
-cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/tablestyles/richcontent/styles.css'
-urls={['https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/addondemos/tabledemos/MusicRecord.java', 
-'https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/addondemos/tabledemos/Service.java']}
+path='https://demo.webforj.com/webapp/controlsamples/tablerichcontent?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/table/TableRichContentView.java'
+urls={['https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/table/MusicRecord.java', 
+'https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/table/Service.java']}
 height='600px'
 />

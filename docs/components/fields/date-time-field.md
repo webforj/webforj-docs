@@ -4,28 +4,19 @@ title: DateTimeField
 slug: datetimefield
 ---
 
-import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
-import TableBuilder from '@site/src/components/DocsTools/TableBuilder';
-import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
-import DocChip from '@site/src/components/DocsTools/DocChip';
-
 <DocChip tooltipText="This component will render with a shadow DOM, an API built into the browser that facilitates encapsulation." label="Shadow" component="a" href="../../glossary#shadow-dom" target="_blank" clickable={true} iconName="shadow" />
 
 <DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-field" clickable={false} iconName='code'/>
 
-
 <JavadocLink type="foundation" location="com/webforj/component/field/DateTimeField" top='true'/>
 
-:::success **Important**
-The `DateTimeField` class is a Field component, and as such shares all of the commonalities belonging to a Field. Please refer to the **[Field documentation page](/docs/components/fields)** for an overview of Field properties, events, and other important information.
-:::
+<ParentLink parent="Field" />
 
 The `DateTimeField` class provides a user interface component that allows the user to enter both a date and a time, including the year, month, and day, as well as the time in hours and minutes. It offers the flexibility to validate the input or use a special date-time picker interface.
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.fielddemos.DateTimeFieldDemo' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/fielddemos/DateTimeFieldDemo.java'
-javaC=''
+path='https://demo.webforj.com/webapp/controlsamples/datetimefielddemo?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/fields/datetimefield/DateTimeFieldDemoView.java'
 cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/fieldstyles/date_field_styles.css'
 />
 
@@ -42,14 +33,6 @@ The `DateTimeField` is best used in scenarios where capturing or displaying both
 
 4. **Task Management and Deadlines**: `DateTimeFields` are valuable in applications that involve task management or setting deadlines where both the date and time are relevant for accurate scheduling.
 
-### Constructors
-
-The `DateTimeField` class has four constructors:
-
-1. `DateTimeField(String label, LocalDateTime dateTime)`: Creates a `DateTimeField` with a given label and datetime.
-2. `DateTimeField(String label)`: Creates a `DateTimeField` with a given label but with no pre-populated datetime.
-3. `DateTimeField(LocalDateTime dateTime)`: Creates a `DateTimeField` with a given datetime, but without a label.
-4. `DateTimeField()`: Creates a `DateTimeField` without any provided information.
 
 ### Maximum and Minimum
 

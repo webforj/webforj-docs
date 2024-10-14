@@ -2,22 +2,17 @@
 title: Drawer
 ---
 
-import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
-import TableBuilder from '@site/src/components/DocsTools/TableBuilder';
-import AppLayoutViewer from '@site/src/components/DocsTools/AppLayoutViewer';
-import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
-
 <JavadocLink type="drawer" location="com/webforj/component/drawer/Drawer" top='true'/>
 
 The drawer is a container that slides into the viewport to expose additional options and information. Multiple drawers can be created in an application, and they will be stacked above each other.
 
 The Drawer component can be used in many different situations, such as by providing a navigation menu that can be toggled, a panel that displays supplementary or contextual information, or to optimize usage on a mobile device. The following example will show a mobile application that uses the webforJ AppLayout component, and displays a "Welcome Popup" drawer at the bottom when first loaded. Additionally, a navigational Drawer component can be toggled in the application by clicking on the hamburger menu.
 
-<AppLayoutViewer url='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.drawerdemos.DrawerWelcome' mobile='true'/>
+<AppLayoutViewer url='https://demo.webforj.com/webapp/controlsamples/drawerwelcome?' mobile='true'/>
 
 <ComponentDemo 
 frame="hidden"
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/drawerdemos/DrawerWelcome.java'
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/drawer/DrawerWelcomeView.java'
 cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/drawerstyles/drawer_welcome.css'
 />
 
@@ -31,21 +26,15 @@ cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/r
 
 4. **Notifications**: For applications with notifications or alerts, a drawer can slide in to display new messages or updates. Users can quickly check and dismiss notifications without leaving their current view.
 
-## Constructors
-
-The Drawer component contains a single default constructor which will create a new instance of the Drawer class.
-
-```java
-Drawer newDrawer = new Drawer()
-```
-
 <ComponentDemo
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.drawerdemos.DrawerDemo'
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/drawerdemos/DrawerDemo.java'
+path='https://demo.webforj.com/webapp/controlsamples/drawerdemo?'
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/drawer/DrawerDemoView.java'
 height='600px'
 />
 
-Various properties exist that allow for the customization of various attributes of the Drawer component. Below are those properties with examples for their modification.
+## Customization
+
+Various properties exist that allow for the customization of various attributes of the Drawer component. This section outlines those properties with examples for their modification.
 
 ## Autofocus
 
@@ -60,8 +49,8 @@ By automatically focusing on the first item, the developer ensures that users ca
 This property can also be particularly beneficial for individuals who rely on keyboard navigation or assistive technologies such as screen readers. It provides a clear starting point within the drawer and allows users to access the desired functionality without unnecessary manual input.
 
 <ComponentDemo
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.drawerdemos.DrawerAutoFocus'
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/drawerdemos/DrawerAutoFocus.java'
+path='https://demo.webforj.com/webapp/controlsamples/drawerautofocus?'
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/drawer/DrawerAutoFocusView.java'
 height='600px'
 />
 
@@ -107,12 +96,6 @@ By defining a maximum size for the drawer, developers maintain control over its 
 The Drawer's max size property is particularly beneficial when dealing with responsive and adaptive designs. It ensures that the drawer remains visually pleasing and functional across different devices, screen orientations, and viewports.
 
 When the drawer's content exceeds the defined maximum size, developers can implement appropriate techniques to handle overflow, such as scrolling within the drawer or utilizing additional UI patterns like tabs or accordions. This helps maintain a clean and organized interface while accommodating larger amounts of content. -->
-<!-- 
-<ComponentDemo
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.drawerdemos.DrawerSize'
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/drawerdemos/DrawerSize.java'
-height='600px'
-/> -->
 
 ## Placement
 
@@ -138,8 +121,8 @@ The placement property allows developers to choose the most appropriate position
 By leveraging the placement property, developers can create intuitive and efficient user interfaces. For example, placing the drawer on the left or right side allows for quick access to additional functionalities or navigation options, while top or bottom placements are well-suited for contextual information or supplementary content.
 
 <ComponentDemo
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.drawerdemos.DrawerPlacement'
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/drawerdemos/DrawerPlacement.java'
+path='https://demo.webforj.com/webapp/controlsamples/drawerplacement?'
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/drawer/DrawerPlacementView.java'
 height='600px'
 />
 

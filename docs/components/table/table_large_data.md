@@ -4,8 +4,6 @@ title: Large Data Sets
 slug: data
 ---
 
-import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
-
 ## Virtual Scrolling
 
 The `Table` component is built to efficiently handle large datasets by utilizing virtual scrolling, which  is a technique used in web applications to optimize the rendering and performance of large lists or tables by rendering only the visible items on the screen.
@@ -27,10 +25,10 @@ The main advantage of virtual scrolling is improved performance, especially when
 The below `Table` shows all olympic winners - a large dataset that benefits greatly from the table's virtual scrolling functionality:
 
 <ComponentDemo
-path='https://demo.webforj.com/webapp/controlsamples?class=addondemos.tabledemos.TableOlympicWinners' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/addondemos/tabledemos/TableOlympicWinners.java'
-urls={['https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/addondemos/tabledemos/MusicRecord.java', 
-'https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/addondemos/tabledemos/Service.java']}
+path='https://demo.webforj.com/webapp/controlsamples/tableolympicwinners?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/table/TableOlympicWinnersView.java'
+urls={['https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/table/MusicRecord.java', 
+'https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/table/Service.java']}
 height='600px'
 />
 

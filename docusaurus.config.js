@@ -106,6 +106,7 @@ const config = {
           alt: 'webforJ Logo',
           src: 'img/webforj.svg',
           href: 'https://webforj.com/',
+          target: '_self'
         },
         items: [
           // {
@@ -118,8 +119,8 @@ const config = {
             docid: 'intro',
             position: 'left',
             label: 'Installation',
-            to: '/docs/installation',
-            activeBasePath: '/docs/installation'
+            to: '/docs/category/installation',
+            activeBasePath: '/docs/category/installation'
           },
           {
             docid: 'started',

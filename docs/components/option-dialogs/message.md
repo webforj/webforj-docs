@@ -3,14 +3,7 @@ sidebar_position: 2
 title: Message
 ---
 
-<!-- vale off -->
-import ComponentDemo from '@site/src/components/DocsTools/ComponentDemo';
-import TableBuilder from '@site/src/components/DocsTools/TableBuilder';
-import JavadocLink from '@site/src/components/DocsTools/JavadocLink';
-import DocChip from '@site/src/components/DocsTools/DocChip';
-
 # Message Dialog
-<!-- vale on -->
 
 <DocChip tooltipText="This component will render with a shadow DOM, an API built into the browser that facilitates encapsulation." label="Shadow" target="_blank" clickable={false} iconName='shadow' />
 
@@ -27,10 +20,6 @@ OptionDialog.showMessageDialog("Hello World!");
 ## Usages
 
 The Message Dialog provides a way to display informational alerts, such as notifications, updates, or simple messages that only require the user to acknowledge them without providing any input.
-
-## Constructors
-
-The `MessageDialog` can be initiated through the `OptionDialog` factory class using one of the various `showMessageDialog` methods to configure its attributes and display the dialog directly. For more control over the configurations, the dialog can also be created using one of its several constructors.
 
 ```java showLineNumbers
 MessageDialog dialog = new MessageDialog(
@@ -53,8 +42,8 @@ The `MessageDialog` supports the following message types. When you configures a 
 In the following sample, The code configures a message dialog of type `WARNING`. with a custom title and message.
 
 <ComponentDemo 
-path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.optiondialog.message.MessageDialogType' 
-javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/optiondialog/message/MessageDialogType.java'
+path='https://demo.webforj.com/webapp/controlsamples/messagedialogtype?' 
+javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/optiondialog/message/MessageDialogTypeView.java'
 height = '350px'
 />
 
