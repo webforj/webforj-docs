@@ -53,7 +53,7 @@ One common use case is a **Cookies Consent Notification**, where users can inter
 <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.toastdemos.ToastCookiesDemo' 
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/componentdemos/toastdemos/ToastCookiesDemo.java'
-cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/toaststyles/toastcookiesdemo_styles.css'
+cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/toaststyles/toastcookiesdemo.css'
 height='350px'
 />
 
@@ -108,6 +108,7 @@ toast.open();
 <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.toastdemos.ToastPlacementDemo' 
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/componentdemos/toastdemos/ToastPlacementDemo.java'
+cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/toaststyles/toastplacementdemo.css'
 height='300px'
 />
 
@@ -126,7 +127,7 @@ By adding this kind of interactivity, you can give users the ability to handle t
 <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.toastdemos.ToastInteractiveDemo' 
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/componentdemos/toastdemos/ToastInteractiveDemo.java'
-cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/toaststyles/toastinteractivedemo_styles.css'
+cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/toaststyles/toastinteractivedemo.css'
 height='300px'
 />
 
@@ -156,7 +157,7 @@ Since the `Toast` isn't located in a specific position in the DOM, you can targe
 <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples?class=componentdemos.toastdemos.ToastThemeDemo' 
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/demos/componentdemos/toastdemos/ToastThemeDemo.java'
-cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/toaststyles/toastthemedemo_styles.css'
+cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/toaststyles/toastthemedemo.css'
 height='200px'
 />
 
