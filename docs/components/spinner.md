@@ -74,7 +74,6 @@ This option visually indicates a special state or serves as a unique design choi
 <ComponentDemo 
 path='https://demo.webforj.com/webapp/controlsamples/spinnerdirectiondemo?' 
 javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads/main/src/main/java/com/webforj/samples/views/spinner/SpinnerDirectionDemoView.java'
-cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/spinnerstyles/spinnerdirectiondemo.css'
 height = '150px'
 />
 
