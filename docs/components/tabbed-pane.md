@@ -6,10 +6,9 @@ slug: tabbedpane
 import FiberSmartRecordIcon from '@mui/icons-material/FiberSmartRecord';
 import Chip from '@mui/material/Chip';
 
-<DocChip tooltipText="This component will render with a shadow DOM, an API built into the browser that facilitates encapsulation." label="Shadow" component="a" href="../glossary#shadow-dom" target="_blank" clickable={true} iconName="shadow" />
+<DocChip chip='shadow' />
 
-<DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-tabbed-pane" clickable={false} iconName='code'/>
-
+<DocChip chip='name' label="dwc-tabbed-pane" />
 
 <JavadocLink type="foundation" location="com/webforj/component/tabbedpane/TabbedPane" top='true'/>
 
@@ -65,11 +64,11 @@ Tabs are comprised of the following properties, which are then used when adding 
         pane.addTab(new Tab("Documents", TablerIcon.create("files")));
         ```
 
-## `Tab` manipulation
+## `Tab` Manipulation
 
-Various methods exist to allow developers to add, insert, remove, and manipulate various properties of `Tab` elements within the `TabbedPane`.
+Various methods exist to allow developers to add, insert, remove and manipulate various properties of `Tab` elements within the `TabbedPane`.
 
-### Adding a Tab
+### Adding a `Tab`
 
 The `addTab()` and `add()` methods exist in different overloaded capacities to allow developers flexibility in adding new tabs to the `TabbedPane`. Adding a `Tab` will place it after any previously existing tabs.
 
@@ -83,7 +82,7 @@ The `addTab()` and `add()` methods exist in different overloaded capacities to a
 The `add(Component... component)` determines the name of the passed `Component` by calling the `component.getName()` on the passed argument.
 :::
 
-### Inserting tabs
+### Inserting a `Tab`
 
 In addition to adding a `Tab` at the end of the existing tabs, it is also possible to create a new one at a designated position. To do this, multiple overloaded versions of the `insertTab()`. 
 
@@ -92,7 +91,7 @@ In addition to adding a `Tab` at the end of the existing tabs, it is also possib
 3. **`insertTab(int index, String text, Component component)`** - Inserts a `Tab` with the given `String` as the text of the `Tab`, and the provided `Component` displayed in the content section of the `TabbedPane`.
 4. **`insertTab(int index, Tab tab, Component component)`** - Inserts the provided `Tab` and displays the provided `Component` in the content section of the `TabbedPane`.
 
-### Removing tabs
+### Removing a `Tab`
 
 To remove a single `Tab` from the `TabbedPane`, use one of the following methods:
 
@@ -169,7 +168,7 @@ javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads
 height="300px"
 />
 
-### Activation Modes 
+### Activation modes 
 
 For more fine-grained control over how the `TabbedPane` behaves when being navigated by the keyboard, the `Activation` mode can be set to specify how the component should behave.
 
@@ -183,7 +182,7 @@ javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads
 height="250px"
 />
 
-### Removal Options
+### Removal options
 
 Individual `Tab` elements can be set to be closable. Closable tabs will have a close button added to the tab, which fires a close event when clicked. The `TabbedPane` dictates how this behavior is handled.
 
@@ -193,7 +192,7 @@ Individual `Tab` elements can be set to be closable. Closable tabs will have a c
 
 ## Styling
 
-### Expanse and theme
+### Expanse and Theme
 
 The `TabbedPane` comes with built-in `Expanse` and `Theme` options similar to other webforJ components. These can be used to quickly add styling that conveys various meaning to the end user without needing to style the component with CSS.
 

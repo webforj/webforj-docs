@@ -4,9 +4,9 @@ title: NumberField
 slug: numberfield
 ---
 
-<DocChip tooltipText="This component will render with a shadow DOM, an API built into the browser that facilitates encapsulation." label="Shadow" component="a" href="../../glossary#shadow-dom" target="_blank" clickable={true} iconName="shadow" />
+<DocChip chip='shadow' />
 
-<DocChip tooltipText="The name of the web component that will render in the DOM." label="dwc-field" clickable={false} iconName='code'/>
+<DocChip chip='name' label="dwc-field" />
 
 <JavadocLink type="foundation" location="com/webforj/component/field/NumberField" top='true' />
 
@@ -38,7 +38,7 @@ The `NumberField` is best used in scenarios where capturing or manipulating nume
 
 You can use the `setMax()` and `setMin()` methods to specify the acceptable time range. If the value entered into the component is outside of the specified value, the component fails constraint validation. Also, if there is already a maximum or minimum set, the value given to the other method must be lower or higher respectively.
 
-### Granularity
+## Granularity
 
 You can use the `setStep` method to specify the granularity that the value must adhere to when using arrow keys to modify the value. This will increment or decrement the component's value by a certain step each time. This does not apply when a user enters a value directly, but only when interacting with the `NumberField` using the arrow keys.
 
