@@ -52,11 +52,11 @@ The `Button` class is a versatile component that is commonly used in various sit
 
 
 
-## Adding Icons to Buttons
+## Adding icons to buttons
 
 In addition to, or instead of having text on a `Button`, it is possible to add an icon to a button as well. To add these icons, set the button's text to have an `<html>` tag, with a `<dwc-icon>` tag inside with the name attribute set accordingly. In addition to an icon, include text to the left or right of the `<dwc-icon>` tag to include a label as well. Icons added to the left and/or right of the button should be done using the `prefix` and `suffix` slots.
 
-To read more about customizing, configuring and styling icons, read [**this page**](../components/dwc-icon).
+To read more about customizing, configuring, and styling icons, read [**this page**](../components/dwc-icon).
 
 :::tip
 Icons added in this way will automatically be configured to match the theme of the Button, but need to be manually configured if a different sized icon is desired when changing `Button` expanse.
@@ -75,7 +75,7 @@ height="200px"
 
 The `Button` component utilizes naming, which is used for accessibility. When a name is not explicitly set, the label of the `Button` will be used instead. However, some icons do not have labels, and only display non-text elements, such as icons. In this case, it is expedient to use the `setName()` method to ensure that the `Button` component created complies with accessibility standards.
 
-## Disabling a Button
+## Disabling a button
 
 Button components, like many others, can be disabled to convey to a user that a certain action is not yet or is no longer available. A disabled button will decrease the opacity of the button, and is available for all button themes and expanses.
 
@@ -169,7 +169,7 @@ This component relies on the following components - see the related article for 
 
 <TableBuilder tag='dwc-button' table="dependencies"/>
 
-## Best Practices 
+## Best practices 
 
 To ensure an optimal user experience when using the `Button` component, consider the following best practices:
 

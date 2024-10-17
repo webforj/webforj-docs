@@ -106,7 +106,7 @@ This component relies on the following components - see the related article for 
 
 <TableBuilder tag='dwc-checkbox' table="dependencies"/>
 
-## Best Practices
+## Best practices
 
 To ensure an optimal user experience when using the `Checkbox` component, consider the following best practices:
 
