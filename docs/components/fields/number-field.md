@@ -50,7 +50,7 @@ You can set placeholder text for the `NumberField` using the `setPlaceholder` me
 If the numeric input relates to a specific unit of measurement or has a particular context, provide clear labeling or additional information to guide users and ensure accurate input.
 :::
 
-## Best Practices
+## Best practices
 
 To ensure a seamless integration and optimal user experience, consider the following best practices when using the `NumberField`:
 

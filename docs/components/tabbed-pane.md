@@ -83,7 +83,7 @@ The `addTab()` and `add()` methods exist in different overloaded capacities to a
 The `add(Component... component)` determines the name of the passed `Component` by calling the `component.getName()` on the passed argument.
 :::
 
-### Inserting a Tab
+### Inserting tabs
 
 In addition to adding a `Tab` at the end of the existing tabs, it is also possible to create a new one at a designated position. To do this, multiple overloaded versions of the `insertTab()`. 
 
@@ -92,7 +92,7 @@ In addition to adding a `Tab` at the end of the existing tabs, it is also possib
 3. **`insertTab(int index, String text, Component component)`** - Inserts a `Tab` with the given `String` as the text of the `Tab`, and the provided `Component` displayed in the content section of the `TabbedPane`.
 4. **`insertTab(int index, Tab tab, Component component)`** - Inserts the provided `Tab` and displays the provided `Component` in the content section of the `TabbedPane`.
 
-### Removing a Tab
+### Removing tabs
 
 To remove a single `Tab` from the `TabbedPane`, use one of the following methods:
 
@@ -106,7 +106,7 @@ In addition to the two above methods for removal of a single `Tab`, use the **`r
 The `remove()` and `removeAll()` methods do not remove tabs within the component.
 :::
 
-### Tab/Component Association
+### Tab/Component association
 
 To change the `Component` to be displayed for a given `Tab`, call the `setComponentFor()` method, and pass either the instance of the `Tab`, or the index of that Tab within the `TabbedPane`.
 
@@ -114,7 +114,7 @@ To change the `Component` to be displayed for a given `Tab`, call the `setCompon
 If this method is used on a `Tab` that is already associated with a `Component`, the previously associated `Component` will be destroyed.
 :::
 
-## Configuration and Layout
+## Configuration and layout
 
 The `TabbedPane` class has two constituent parts: a `Tab` that is displayed in a specified location, and a component to be displayed. This can be a single component, or a [`Composite`](../building-ui/composite-components) component, allowing for the display of more complex components within a tab's content section.
 
@@ -126,7 +126,7 @@ The `TabbedPane` supports navigating through the various tabs via swiping. This 
 javaE='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/java/componentdemos/tabbedpanedemos/TabbedPaneSwipe.java'
 /> -->
 
-### Tab Placement 
+### Tab placement 
 
 The `Tabs` within a `TabbedPane` can be placed in various positions within the component based on the application developers preference. Provided options are set using the provided enum, which has the values of `TOP`, `BOTTOM`, `LEFT`, `RIGHT`, or `HIDDEN`. The default setting is `TOP`.
 
@@ -149,7 +149,7 @@ javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads
 height="250px"
 />
 
-### Border and Activity Indicator
+### Border and activity indicator
 
 The `TabbedPane` will have a border displayed for the tabs within it by default, placed dependant on which `Placement` has been set. This border helps to visualize the space that the various tabs within the pane take up. 
 
@@ -193,7 +193,7 @@ Individual `Tab` elements can be set to be closable. Closable tabs will have a c
 
 ## Styling
 
-### Expanse and Theme
+### Expanse and theme
 
 The `TabbedPane` comes with built-in `Expanse` and `Theme` options similar to other webforJ components. These can be used to quickly add styling that conveys various meaning to the end user without needing to style the component with CSS.
 

@@ -53,7 +53,7 @@ List<MusicRecord> data = new Gson().fromJson(
 CollectionRepository<MusicRecord> dataRepository = new CollectionRepository<>(data);
 ```
 
-### 3. Instantiate `Table` and dd columns
+### 3. Instantiate `Table` and add columns
 
 Instantiate a new `Table` object, and use one of the provided factory methods to add the desired columns to a newly created `Table`:
 

@@ -34,7 +34,7 @@ The `DateTimeField` is best used in scenarios where capturing or displaying both
 4. **Task Management and Deadlines**: `DateTimeFields` are valuable in applications that involve task management or setting deadlines where both the date and time are relevant for accurate scheduling.
 
 
-## Maximum and Minimum
+## Maximum and minimum
 
 You can use the `setMax()` and `setMin()` methods to specify the acceptable range of dates and times. If the value entered into the component is outside of the specified timestamp, the component fails constraint validation. Also, if there is already a maximum or minimum set, the value given to the other method must be lower or higher respectively.
 
@@ -46,7 +46,7 @@ The `DateTimeField` will, by default, display its information within the UI elem
 When displaying time, the seconds will display by default. However, if the component is given a `LocaleDateTime` object with the seconds set to 0, the seconds are then hidden from the display.
 :::
 
-## Static Utilities 
+## Static utilities 
 
 The DateTimeField class also provides the following static utility methods:
 
@@ -56,7 +56,7 @@ The DateTimeField class also provides the following static utility methods:
 
 - `isValidDateTime(String dateTimeAsString)`: Checks to see if the given string is a valid yyyy-MM-ddTHH:mm:ss date and time. This will return a boolean value true if so, false otherwise.
 
-## Best Practices
+## Best practices
 
 To ensure an optimal user experience when using the `DateField` component, consider the following best practices:
 

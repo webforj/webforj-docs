@@ -39,7 +39,7 @@ javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads
 cssURL='https://raw.githubusercontent.com/webforj/ControlSamples/main/src/main/resources/css/applayout/applayout.css'
 />
 
-## Full-Width Navbars
+## Full width navbar
 
 By default, the AppLayout renders the header and the footer in the off-screen mode. The off-screen mode means that the header and the footer position will be shifted to fit beside the opened drawer. Disabling this mode will cause the header and footer to take the full available space and shift the drawer top and bottom position to fit with the header and the footer.
 

@@ -53,7 +53,7 @@ The `TimeField` will, by default, display its information within the UI element 
 When displaying time, the seconds will display by default. However, if the component is given a `LocaleTime` object with the seconds set to 0, the seconds are then hidden from the display.
 :::
 
-## Static Utilities 
+## Static utilities 
 
 The `TimeField` class also provides the following static utility methods:
 
@@ -63,7 +63,7 @@ The `TimeField` class also provides the following static utility methods:
 
 - `isValidTime(String timeAsString)`: Check if the given string is a valid HH:mm:ss time. This will return a boolean value true if so, false otherwise.
 
-## Best Practices
+## Best practices
 
 1. **Provide Clear Time Format Examples**: Clearly indicate the expected time format to users within or near the `TimeField`. Use examples or placeholders to guide users in entering time correctly. Consider displaying the time format dynamically based on the user's locale if applicable.
 

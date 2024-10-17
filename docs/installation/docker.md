@@ -96,7 +96,7 @@ Once this is finished, click the `Run` button at the bottom of the window, which
 Make sure to take note of the custom Host port number you provide, as this will be needed later.
 :::
 
-## 3. Running Your application
+## 3. Running your app
 
 Once the container has been created, webforJ applications can be run within the container instead of locally. First, it is necessary to configure
 the POM file of your project correctly. Once this is done, going to a specific URL in the browser will show the application.
