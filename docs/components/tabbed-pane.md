@@ -65,9 +65,9 @@ Tabs are comprised of the following properties, which are then used when adding 
         pane.addTab(new Tab("Documents", TablerIcon.create("files")));
         ```
 
-## `Tab` Manipulation
+## `Tab` manipulation
 
-Various methods exist to allow developers to add, insert, remove and manipulate various properties of `Tab` elements within the `TabbedPane`.
+Various methods exist to allow developers to add, insert, remove, and manipulate various properties of `Tab` elements within the `TabbedPane`.
 
 ### Adding a Tab
 
