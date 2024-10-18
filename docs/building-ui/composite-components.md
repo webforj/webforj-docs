@@ -6,8 +6,6 @@ draft: false
 
 <JavadocLink type="foundation" location="com/webforj/component/Composite" top='true'/>
 
-# Composite components in webforJ
-
 Developers will often wish to create components that contain constituent components for application level use. The `Composite` component gives developers the tools they need to create their own components while maintaining control over what they choose to expose to users. 
 
 It allows developers to manage a specific type of `Component` instance, providing a way to encapsulate its behavior. It requires any extending subclass to specify the type of `Component` it intends to manage, ensuring a subclass of `Composite` is intrinsically linked to its underlying `Component`.

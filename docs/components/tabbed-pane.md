@@ -64,7 +64,7 @@ Tabs are comprised of the following properties, which are then used when adding 
         pane.addTab(new Tab("Documents", TablerIcon.create("files")));
         ```
 
-## `Tab` Manipulation
+## `Tab` manipulation
 
 Various methods exist to allow developers to add, insert, remove and manipulate various properties of `Tab` elements within the `TabbedPane`.
 
@@ -192,7 +192,7 @@ Individual `Tab` elements can be set to be closable. Closable tabs will have a c
 
 ## Styling
 
-### Expanse and Theme
+### Expanse and theme
 
 The `TabbedPane` comes with built-in `Expanse` and `Theme` options similar to other webforJ components. These can be used to quickly add styling that conveys various meaning to the end user without needing to style the component with CSS.
 
@@ -202,7 +202,7 @@ javaE='https://raw.githubusercontent.com/webforj/webforj-docs-samples/refs/heads
 height="250px"
 />
 
-### Shadow Parts
+### Shadow parts
 
 These are the various parts of the [shadow DOM](../glossary#shadow-dom) for the component, which will be required when styling via CSS is desired.
 
@@ -214,13 +214,13 @@ Listed below are the slots available for utilization within the `Button` compone
 
 <TableBuilder tag={require('@site/docs/components/_dwc_control_map.json').TabbedPane} table='slots' />
 
-### CSS Properties
+### CSS properties
 
 These are the various CSS properties that are used in the component, with a short description of their use.
 
 <TableBuilder tag={require('@site/docs/components/_dwc_control_map.json').TabbedPane} table='properties' />
 
-### Reflected Attributes
+### Reflected attributes
 
 The reflected attributes of a component will be shown as attributes in the rendered HTML element for the component in the DOM. This means that styling can be applied using these attributes.
 
@@ -232,7 +232,7 @@ This component relies on the following components - see the related article for 
 
 <TableBuilder tag='dwc-tabbed-pane' table="dependencies" />
 
-## Best Practices 
+## Best practices 
 
 The following practices are recommended for utilizing the `TabbedPane` within applications:
 

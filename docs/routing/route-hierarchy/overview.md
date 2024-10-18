@@ -3,7 +3,7 @@ import DocCardList from '@theme/DocCardList';
 
 <!-- vale on -->
 
-# Route Hierarchy
+# Route hierarchy
 
 Routes are organized into a hierarchical tree structure that enables developers to define layouts, manage views, and dynamically render components across various parts of the app. 
 

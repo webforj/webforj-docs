@@ -55,7 +55,7 @@ The DateTimeField class also provides the following static utility methods:
 
 - `isValidDateTime(String dateTimeAsString)`: Checks to see if the given string is a valid yyyy-MM-ddTHH:mm:ss date and time. This will return a boolean value true if so, false otherwise.
 
-### Best Practices
+### Best practices
 
 To ensure an optimal user experience when using the `DateField` component, consider the following best practices:
 

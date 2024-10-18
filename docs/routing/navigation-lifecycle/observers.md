@@ -12,7 +12,7 @@ Observers allow components to react to lifecycle events by implementing interfac
 - **`WillLeaveObserver`**: Provides a way to manage logic before a user leaves a route, such as checking for unsaved changes.
 - **`DidLeaveObserver`**: Used for cleanup actions or other tasks that should run after a component is detached from the DOM.
 
-## Example: Authentication with `WillEnterObserver`
+## Example: authentication with `WillEnterObserver`
 
 ```java
 @Route(value = "dashboard")
