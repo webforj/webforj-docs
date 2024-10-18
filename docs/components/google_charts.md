@@ -170,8 +170,6 @@ chart.addReadyListener(e -> {
 
 The `GoogleChartSelectedEvent` is triggered whenever a user selects a data point or segment in a Google Chart component. This event enables interaction with the selected chart data, providing details about what was selected. The event can be listened for by using the `addSelectedListener()` method on the `GoogleChart` instance.
 
-The `GoogleChartSelectedEvent` is useful in applications where user interaction with the chart is necessary. 
-
 ```java
 GoogleChart chart = new GoogleChart(GoogleChart.Type.BAR);
 
